@@ -1,15 +1,17 @@
 body {
+  display: grid;
   background-color: rgb(246,246,250);
+  margin: 0px 0px 0px 0px;
 }
 .container {
-  width: 1400px;
+  max-width: 1400px;
   display: grid;
   height: 2045px;
   gap: 10px;
   grid-template-columns: 1400px;
   grid-template-rows: 112px 1825px 88px;
   grid-template-areas:
-  "nav"
+  "nav" 
   "main"
   "footer";
 }
@@ -17,7 +19,7 @@ body {
 .container2 {
   display: grid;
   height: 1825px;
-  padding: 0px 24px 0px 24px;
+  padding: 0px 24px 16px 24px;
   gap:32px;
   grid-template-columns: 891px 429px;
   grid-template-rows: 1809px;
@@ -71,19 +73,23 @@ main{
   grid-area: main;
 }
 #sidebar {
+  display: grid;
   grid-area: sidebar;
   background-color: rgb(246,246,250);
 }
 #content1 {
+  display: grid;
   grid-area: content1;
-  gap: 27px;
   background-color: rgb(246,246,250);
+  gap: 27px;
 }
 #vnalichii {
   grid-area: vnalichii;
+  border-style: solid;
 }
 #otsutsv {
   grid-area: otsutsv;
+  border-style: solid;
 }
 #dostavkaBlock {
   grid-area: dostavkaBlock;
@@ -119,10 +125,12 @@ main{
 
 }
 #sidebarItog {
+  display: grid;
   background-color: rgb(255,255,255);
   border-radius: 16px;
   height: 572px;
-  margin: -12px;
+  width: 429px;
+  margin-top: -12px;
 }
 
 #Skruglenie2 {

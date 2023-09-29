@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(246,246,250);
+}
 .container {
   width: 1400px;
   display: grid;
@@ -20,6 +23,7 @@
   grid-template-rows: 1809px;
   grid-template-areas:
   "content1 sidebar";
+  background-color: rgb(246,246,250);
 
 }
 .container3 {
@@ -29,40 +33,106 @@
   grid-template-columns: 891px;
   grid-template-rows: 516px 404px 746px;
   grid-template-areas:
-  "content2"
-  "content3"
-  "content4";
+  "vnalichii"
+  "otsutsv"
+  "dostavkaBlock";
+
+}
+.container4 {
+  display: grid;
+  height: 746px;
+  gap: 16px;
+  grid-template-columns: 891px;
+  grid-template-rows: 362px 136px 216px;
+  grid-template-areas:
+  "dostavka1"
+  "oplata"
+  "poluchatel";
 
 }
 
 nav {
-  background: red;
+  background-color: rgb(103,37,168);
   grid-area: nav;
 }
+#navigationBlock {
+  height: 88px;
+  width: 1400px;
+  background-color: rgb(103,37,168);
+}
+#Skruglenie {
+  height: 24px;
+  width: 1400px;
+  background-color: rgb(246,246,250);
+  border-radius: 24px 24px 0px 0px;
+}
+
 main{
-  background: green;
   grid-area: main;
 }
 #sidebar {
-  background: aqua;
   grid-area: sidebar;
+  background-color: rgb(246,246,250);
 }
 #content1 {
-  background: brown;
   grid-area: content1;
   gap: 27px;
+  background-color: rgb(246,246,250);
 }
-#content2 {
-  background: #26a193;
-  grid-area: content2;
+#vnalichii {
+  grid-area: vnalichii;
+}
+#otsutsv {
+  grid-area: otsutsv;
+}
+#dostavkaBlock {
+  grid-area: dostavkaBlock;
+}
+
+#dostavka1 {
+  grid-area: dostavka1;
+  height: 362px;
+}
+#oplata {
+  grid-area: oplata;
+  height: 136px;
+}
+#poluchatel {
+  grid-area: poluchatel;
+  height: 216px;
+}
+#dostavka1Round {
+  background-color: rgb(255,255,255);
+  border-radius: 16px;
+  height: 362px;
+}
+#oplataRound {
+  background-color: rgb(255,255,255);
+  border-radius: 16px;
+  height: 136px;
 
 }
-#content3 {
-  background: #1b2eab;
-  grid-area: content3;
+#poluchatelRound {
+  background-color: rgb(255,255,255);
+  border-radius: 16px;
+  height: 216px;
 
 }
+#sidebarItog {
+  background-color: rgb(255,255,255);
+  border-radius: 16px;
+  height: 572px;
+  margin: -12px;
+}
+
+#Skruglenie2 {
+  height: 24px;
+  width: 1400px;
+  background-color: rgb(246,246,250);
+  border-radius: 0px 0px 24px 24px;
+}
+
 footer {
-  background: blueviolet;
+  background-color: rgb(103,37,168);
   grid-area: footer;
 }

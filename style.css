@@ -3,6 +3,7 @@ body {
   background-color: rgb(246,246,250);
   margin: 0px 0px 0px 0px;
 }
+
 .container {
   max-width: 1400px;
   display: grid;
@@ -11,7 +12,7 @@ body {
   grid-template-columns: 1400px;
   grid-template-rows: 112px 1825px 88px;
   grid-template-areas:
-  "nav" 
+  "nav"
   "main"
   "footer";
 }
@@ -59,12 +60,12 @@ nav {
 }
 #navigationBlock {
   height: 88px;
-  width: 1400px;
+  max-width: 1400px;
   background-color: rgb(103,37,168);
 }
 #Skruglenie {
   height: 24px;
-  width: 1400px;
+  max-width: 1400px;
   background-color: rgb(246,246,250);
   border-radius: 24px 24px 0px 0px;
 }
@@ -135,7 +136,7 @@ main{
 
 #Skruglenie2 {
   height: 24px;
-  width: 1400px;
+  max-width: 1400px;
   background-color: rgb(246,246,250);
   border-radius: 0px 0px 24px 24px;
 }
@@ -143,4 +144,52 @@ main{
 footer {
   background-color: rgb(103,37,168);
   grid-area: footer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 1024px;
+    display: grid;
+    height: 100vh;
+    min-height: 2045px;
+    gap: 10px;
+    grid-template-columns: 1024px;
+    grid-template-rows: 112px 1825px 88px;
+    grid-template-areas:
+  "nav"
+  "main"
+  "footer";
+  }
+  .container2 {
+    display: grid;
+
+    padding: 0px 24px 16px 24px;
+    gap:32px;
+    grid-template-columns: 640px 304px;
+    grid-template-rows: 1809px;
+    grid-template-areas:
+  "content1 sidebar";
+    background-color: rgb(246,246,250);
+
+  }
+  .container3 {
+    display: grid;
+    height: 1746px;
+    gap:40px;
+    grid-template-columns: 640px;
+    grid-template-rows: 516px 404px 746px;
+    grid-template-areas:
+  "vnalichii"
+  "otsutsv"
+  "dostavkaBlock";
+
+  }
+  #sidebarItog {
+    display: grid;
+    background-color: rgb(255,255,255);
+    border-radius: 16px;
+    height: 572px;
+    width: 303px;
+    margin-top: -12px;
+  }
 }

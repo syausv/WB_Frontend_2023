@@ -3,54 +3,16 @@ body {
   background-color: rgb(246,246,250);
   margin: 0px 0px 0px 0px;
 }
-
 .container {
   display: grid;
-  height: 100vh;
   gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1.8fr 0.088fr;
+  grid-template-rows: 112px 1825px 88px;
   grid-template-areas:
   "nav"
   "main"
   "footer";
 }
-
-.container2 {
-  display: grid;
-  padding: 0px 24px 16px 24px;
-  gap:32px;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-  "content1 sidebar";
-  background-color: rgb(246,246,250);
-
-}
-.container3 {
-  display: grid;
-  gap:40px;
-  grid-template-columns: 891px;
-  grid-template-rows: 516px 404px 746px;
-  grid-template-areas:
-  "vnalichii"
-  "otsutsv"
-  "dostavkaBlock";
-
-}
-.container4 {
-  display: grid;
-
-  gap: 16px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 362px 136px 216px;
-  grid-template-areas:
-  "dostavka1"
-  "oplata"
-  "poluchatel";
-
-}
-
 nav {
   background-color: rgb(103,37,168);
   grid-area: nav;
@@ -65,14 +27,31 @@ nav {
   background-color: rgb(246,246,250);
   border-radius: 24px 24px 0px 0px;
 }
-
 main{
   grid-area: main;
+}
+.container2 {
+  display: grid;
+  padding: 0px 24px 16px 24px;
+  gap:32px;
+  grid-template-columns: minmax(640px, 891px) minmax(304px, 429px);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "content1 sidebar";
+  background-color: rgb(246,246,250);
 }
 #sidebar {
   display: grid;
   grid-area: sidebar;
   background-color: rgb(246,246,250);
+}
+#sidebarItog {
+  display: grid;
+  background-color: rgb(255,255,255);
+  border-radius: 16px;
+  height: 572px;
+  max-width: 429px;
+  margin-top: -12px;
 }
 #content1 {
   display: grid;
@@ -80,13 +59,21 @@ main{
   background-color: rgb(246,246,250);
   gap: 27px;
 }
+.container3 {
+  display: grid;
+  gap:40px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 516px 404px 746px;
+  grid-template-areas:
+  "vnalichii"
+  "otsutsv"
+  "dostavkaBlock";
+}
 #vnalichii {
-
   grid-area: vnalichii;
   border-style: solid;
 }
 #otsutsv {
-
   grid-area: otsutsv;
   border-style: solid;
 }
@@ -94,127 +81,178 @@ main{
   grid-area: dostavkaBlock;
 }
 
+.container4 {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 362px 136px 216px;
+  grid-template-areas:
+  "dostavka1"
+  "oplata"
+  "poluchatel";
+}
 #dostavka1 {
   grid-area: dostavka1;
-  height: 362px;
-}
-#oplata {
-  grid-area: oplata;
-  height: 136px;
-}
-#poluchatel {
-  grid-area: poluchatel;
-  height: 216px;
+  min-width: 638px;
 }
 #dostavka1Round {
-  background-color: rgb(255,255,255);
-  border-radius: 16px;
-  height: 362px;
+   background-color: rgb(255,255,255);
+   border-radius: 16px;
+   height: 362px;
+ }
+#oplata {
+  grid-area: oplata;
 }
 #oplataRound {
   background-color: rgb(255,255,255);
   border-radius: 16px;
   height: 136px;
-
+}
+#poluchatel {
+  grid-area: poluchatel;
+  min-width: 638px;
 }
 #poluchatelRound {
   background-color: rgb(255,255,255);
   border-radius: 16px;
   height: 216px;
-
 }
-#sidebarItog {
-  display: grid;
-  background-color: rgb(255,255,255);
-  border-radius: 16px;
-  height: 572px;
-  width: 429px;
-  margin-top: -12px;
-}
-
 #Skruglenie2 {
   height: 24px;
-  background-color: rgb(246,246,250);
+  background-color: rgb(246, 246, 250);
   border-radius: 0px 0px 24px 24px;
 }
-
 footer {
   height: 88px;
   background-color: rgb(103,37,168);
   grid-area: footer;
 }
-@media only screen and (max-width: 425px) {
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-color: rgb(246,246,250);
+    margin: 0px 0px 0px 0px;
+  }
   .container {
-    display: grid;
-    max-width: 425px;
-    height: 100vh;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1.8fr 0.088fr;
+    grid-template-columns:  minmax(320px, 480px);
+    grid-template-rows: 80px 1fr 88px 56px;
     grid-template-areas:
   "nav"
   "main"
-  "footer";
+  "footer"
+  "tabbar";
   }
   .container2 {
-    display: grid;
-    padding: 0px 24px 16px 24px;
-    gap:32px;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(320px, 480px);
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
   "content1"
   "sidebar";
     background-color: rgb(246,246,250);
-
   }
-
-}
-
-
-@media (max-width: 426px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1.8fr 0.088fr;
-    grid-template-areas:
-  "nav"
-  "main"
-  "footer";
+  #tabbar {
+    grid-area: tabbar;
   }
-  .container2 {
-    display: grid;
-    padding: 0px 24px 16px 24px;
-    gap:32px;
-    grid-template-columns: 640px 304px;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-  "content1 sidebar";
+  #sidebar {
+    grid-area: sidebar;
     background-color: rgb(246,246,250);
+  }
+  #content1 {
+    grid-area: content1;
+    background-color: rgb(246,246,250);
+  }
 
+  nav {
+    background-color: rgb(103,37,168);
+    grid-area: nav;
+  }
+  #navigationBlock {
+    height: 88px;
+    max-width: 480px;
+    background-color: rgb(103,37,168);
+  }
+  #Skruglenie {
+    height: 24px;
+    background-color: rgb(246,246,250);
+    border-radius: 24px 24px 0px 0px;
+  }
+  main{
+    grid-area: main;
+  }
+  #sidebarItog {
+    background-color: rgb(255,255,255);
+    border-radius: 16px;
+    max-height: 572px;
+    max-width: 429px;
+  }
+  #content1 {
+    grid-area: content1;
+    background-color: rgb(246,246,250);
+    gap: 27px;
   }
   .container3 {
-    display: grid;
-    height: 1746px;
     gap:40px;
-    grid-template-columns: 640px;
+    grid-template-columns: 1fr;
     grid-template-rows: 516px 404px 746px;
     grid-template-areas:
   "vnalichii"
   "otsutsv"
   "dostavkaBlock";
-
   }
-  #sidebarItog {
-    display: grid;
+  #vnalichii {
+    grid-area: vnalichii;
+    border-style: solid;
+  }
+  #otsutsv {
+    grid-area: otsutsv;
+    border-style: solid;
+  }
+  #dostavkaBlock {
+    grid-area: dostavkaBlock;
+  }
+
+  .container4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 362px 136px 216px;
+    grid-template-areas:
+  "dostavka1"
+  "oplata"
+  "poluchatel";
+  }
+  #dostavka1 {
+    grid-area: dostavka1;
+    max-width: 638px;
+  }
+  #dostavka1Round {
     background-color: rgb(255,255,255);
     border-radius: 16px;
-    height: 572px;
-    width: 303px;
-    margin-top: -12px;
+    height: 362px;
+  }
+  #oplata {
+    grid-area: oplata;
+  }
+  #oplataRound {
+    background-color: rgb(255,255,255);
+    border-radius: 16px;
+    height: 136px;
+  }
+  #poluchatel {
+    grid-area: poluchatel;
+    man-width: 638px;
+  }
+  #poluchatelRound {
+    background-color: rgb(255,255,255);
+    border-radius: 16px;
+    height: 216px;
+  }
+  #Skruglenie2 {
+    height: 24px;
+    background-color: rgb(246, 246, 250);
+    border-radius: 0px 0px 24px 24px;
+  }
+  footer {
+    height: 88px;
+    background-color: rgb(103,37,168);
+    grid-area: footer;
   }
 }
-

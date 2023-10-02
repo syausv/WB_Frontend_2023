@@ -5,12 +5,11 @@ body {
 }
 
 .container {
-  max-width: 1400px;
   display: grid;
-  height: 2045px;
+  height: 100vh;
   gap: 10px;
-  grid-template-columns: 1400px;
-  grid-template-rows: 112px 1825px 88px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1.8fr 0.088fr;
   grid-template-areas:
   "nav"
   "main"
@@ -19,11 +18,10 @@ body {
 
 .container2 {
   display: grid;
-  height: 1825px;
   padding: 0px 24px 16px 24px;
   gap:32px;
-  grid-template-columns: 891px 429px;
-  grid-template-rows: 1809px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
   "content1 sidebar";
   background-color: rgb(246,246,250);
@@ -31,7 +29,6 @@ body {
 }
 .container3 {
   display: grid;
-  height: 1746px;
   gap:40px;
   grid-template-columns: 891px;
   grid-template-rows: 516px 404px 746px;
@@ -43,9 +40,9 @@ body {
 }
 .container4 {
   display: grid;
-  height: 746px;
+
   gap: 16px;
-  grid-template-columns: 891px;
+  grid-template-columns: 1fr;
   grid-template-rows: 362px 136px 216px;
   grid-template-areas:
   "dostavka1"
@@ -65,7 +62,6 @@ nav {
 }
 #Skruglenie {
   height: 24px;
-  max-width: 1400px;
   background-color: rgb(246,246,250);
   border-radius: 24px 24px 0px 0px;
 }
@@ -85,10 +81,12 @@ main{
   gap: 27px;
 }
 #vnalichii {
+
   grid-area: vnalichii;
   border-style: solid;
 }
 #otsutsv {
+
   grid-area: otsutsv;
   border-style: solid;
 }
@@ -136,25 +134,23 @@ main{
 
 #Skruglenie2 {
   height: 24px;
-  max-width: 1400px;
   background-color: rgb(246,246,250);
   border-radius: 0px 0px 24px 24px;
 }
 
 footer {
+  height: 88px;
   background-color: rgb(103,37,168);
   grid-area: footer;
 }
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 425px) {
   .container {
-    width: 1024px;
     display: grid;
+    max-width: 425px;
     height: 100vh;
-    min-height: 2045px;
     gap: 10px;
-    grid-template-columns: 1024px;
-    grid-template-rows: 112px 1825px 88px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1.8fr 0.088fr;
     grid-template-areas:
   "nav"
   "main"
@@ -162,11 +158,39 @@ footer {
   }
   .container2 {
     display: grid;
+    padding: 0px 24px 16px 24px;
+    gap:32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+  "content1"
+  "sidebar";
+    background-color: rgb(246,246,250);
 
+  }
+
+}
+
+
+@media (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1.8fr 0.088fr;
+    grid-template-areas:
+  "nav"
+  "main"
+  "footer";
+  }
+  .container2 {
+    display: grid;
     padding: 0px 24px 16px 24px;
     gap:32px;
     grid-template-columns: 640px 304px;
-    grid-template-rows: 1809px;
+    grid-template-rows: 1fr;
     grid-template-areas:
   "content1 sidebar";
     background-color: rgb(246,246,250);
@@ -193,3 +217,4 @@ footer {
     margin-top: -12px;
   }
 }
+

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(246,246,250);
   margin: 0px 0px 0px 0px;
@@ -14,28 +19,125 @@ body {
 }
 .contantContainer {
   column-gap: 32px;
+  row-gap: 40px;
   display: grid;
   border-style: solid;
   grid-area: contantContainer;
   padding: 0px 24px 16px 24px;
   grid-template-columns: 0.4fr 0.5fr 0.4fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
   grid-template-areas:
+  "h1 h1 sidebarItog"
   "vnalichii vnalichii sidebarItog"
   "otsutsv otsutsv sidebarItog"
   "blockDelivery blockDelivery sidebarItog";
+}
+.containerVnalichii {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24px 1fr;
+  border-style: solid;
+  gap: 16px;
+  grid-template-areas:
+     "vyborVse"
+     "tovary";
+}
+#tovary {
+  border-style: solid;
+  grid-area: tovary;
+}
+#vyborVse {
+  border-style: solid;
+  grid-area: vyborVse;
 }
 #vnalichii {
   border-style: solid;
   grid-area: vnalichii;
 }
+.containerTovary{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-style: solid;
+  gap: 20px;
+  grid-template-areas:
+     "tovar1"
+     "tovar2"
+     "tovar3";
+}
+#tovar1 {
+  border-style: solid;
+  grid-area: tovar1;
+}
+#tovar2 {
+  border-style: solid;
+  grid-area: tovar2;
+}
+#tovar3 {
+  border-style: solid;
+  grid-area: tovar3;
+}
+
 #otsutsv {
   border-style: solid;
   grid-area: otsutsv;
 }
+.containerOtsutsv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24px 1fr;
+  border-style: solid;
+  gap: 16px;
+  grid-template-areas:
+     "otsutsvInto"
+     "tovaryOtsutsv";
+}
+#otsutsvInto {
+  border-style: solid;
+  grid-area: otsutsvInto;
+}
+#tovaryOtsutsv {
+  border-style: solid;
+  grid-area: tovaryOtsutsv;
+}
+.containertovaryOtsutsv{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-style: solid;
+  gap: 20px;
+  grid-template-areas:
+     "otsutsvTovar1"
+     "otsutsvTovar2"
+     "otsutsvTovar3";
+}
+#otsutsvTovar1 {
+  border-style: solid;
+  grid-area: otsutsvTovar1;
+}
+#otsutsvTovar2 {
+  border-style: solid;
+  grid-area: otsutsvTovar2;
+}
+#otsutsvTovar3 {
+  border-style: solid;
+  grid-area: otsutsvTovar3;
+}
+
 #blockDelivery {
   border-style: solid;
   grid-area: blockDelivery;
+}
+.containerDelivery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 362px 136px 216px;
+  border-style: solid;
+  gap: 16px;
+  grid-template-areas:
+     "dostavka1Round"
+     "oplataRound"
+     "poluchatelRound";
 }
 #dostavka1Round {
   border-style: solid;
@@ -53,7 +155,10 @@ body {
   border-style: solid;
   grid-area: sidebarItog;
 }
-
+#Itog {
+  border-style: solid;
+  height: 572px;
+}
 #tabbar{
   display: none;
 }
@@ -89,7 +194,28 @@ footer {
   border-style: solid;
   grid-area: tabbar;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
+  .contantContainer {
+    column-gap: 32px;
+    row-gap: 40px;
+    display: grid;
+    border-style: solid;
+    grid-area: contantContainer;
+    padding: 0px 24px 16px 24px;
+    grid-template-columns: 0.4fr 0.5fr 0.4fr;
+    grid-template-rows: auto 516px 404px 746px;
+    grid-template-areas:
+  "h1 h1 sidebarItog"
+  "vnalichii vnalichii sidebarItog"
+  "otsutsv otsutsv sidebarItog"
+  "blockDelivery blockDelivery sidebarItog";
+  }
+  #Itog {
+    border-style: solid;
+    height: 604px;
+  }
+}
+@media only screen and (max-width: 900px) {
   .contantContainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -127,7 +253,21 @@ footer {
   #tabbar {
     border-style: solid;
     display: block;
-    height: 50px;
+    height: 40px;
     grid-area: tabbar;
+  }
+  nav {
+    background-color: rgb(103,37,168);
+    height: 80px;
+  }
+  #Skruglenie {
+    height: 24px;
+    background-color: rgb(246,246,250);
+    border-radius: 24px 24px 0px 0px;
+  }
+  #navigationBlock {
+    height: 56px;
+    max-width: 1400px;
+    background-color: rgb(103,37,168);
   }
 }

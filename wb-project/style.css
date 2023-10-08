@@ -78,7 +78,7 @@ body {
 .tovar{
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 1fr 226px;
+  grid-template-columns: auto 226px;
   grid-template-rows: auto;
   grid-templates-areas:
     "picAndDescription sumAndCount";
@@ -209,6 +209,14 @@ body {
      "otsutsvTovar2"
      "otsutsvTovar3";
 }
+.tovarOtsutsvuyut{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto 226px;
+  grid-template-rows: auto;
+  grid-templates-areas:
+    "picAndDescription sumAndCount";
+}
 #otsutsvTovar1 {
   border-style: solid;
   grid-area: otsutsvTovar1;
@@ -240,6 +248,75 @@ body {
 #dostavka1Round {
   border-style: solid;
   grid-area: dostavka1Round;
+}
+
+.containerdostavka1Round{
+  border-style: solid;
+  display: grid;
+  padding: 16px 0px 24px 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 276px 22px;
+  row-gap: 24px;
+  grid-template-areas:
+     "idContainerDostavkaTitle"
+     "idStrokaInfoOtkaz";
+}
+#idContainerDostavkaTitle{
+  border-style: solid;
+  grid-area: idContainerDostavkaTitle;
+}
+#idStrokaInfoOtkaz{
+  border-style: solid;
+  grid-area: idStrokaInfoOtkaz;
+}
+.containerDostavkaTitle{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 32px 228px;
+  gap: 16px;
+  grid-template-areas:
+     "h4"
+     "IdContainerAdressDelivery";
+}
+#h4 {
+  border-style: solid;
+  grid-area: h4;
+}
+#IdContainerAdressDelivery {
+  border-style: solid;
+  grid-area: IdContainerAdressDelivery;
+}
+.containerAdressDelivery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 32px;
+  grid-template-areas:
+     "labelContainerAdressDelivery adressContainerAdressDelivery";
+}
+#labelContainerAdressDelivery{
+  grid-area: labelContainerAdressDelivery;
+}
+#adressContainerAdressDelivery{
+  grid-area: adressContainerAdressDelivery;
+}
+.containerSmallTovary6{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px;
+  grid-template-areas:
+     "picSmall1 picSmall2 picSmall3";
+}
+#picSmall1{
+  grid-area: picSmall1;
+}
+#picSmall2{
+  grid-area: picSmall2;
+}
+#picSmall3{
+  grid-area: picSmall3;
 }
 #oplataRound {
   border-style: solid;

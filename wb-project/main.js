@@ -151,16 +151,127 @@ border-radius: 8px;"> </div>
     <div id="otsutsv" class="containerOtsutsv">
       <div id="otsutsvInto">Отсутсвуют</div>
       <div id="tovaryOtsutsv" class="containertovaryOtsutsv">
-        <div id="otsutsvTovar1"></div>
-        <div id="otsutsvTovar2"></div>
-        <div id="otsutsvTovar3"></div>
+        <div id="otsutsvTovar1" class="tovar" >
+         <div id="picAndDescription4" class="containerPicAndDescription">
+            <div id="IdClickAndPic4" class="ClickAndPic">
+              <div class="ClickFromClickAndPic"> </div>
+              <div class="PictureFromClickAndPic">
+                <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+border-radius: 8px;"> </div>
+              </div>
+            </div>
+            <div id="IdDescriptionFromPicAndDescription4" class="DescriptionFromPicAndDescription">
+              <div id="nameFromDescriptionFromPicAndDescription4"> Футболка UZcotton мужская</div>
+              <div id="specificationFromDescriptionFromPicAndDescription4"
+                   class="containerSpecificationFromDescriptionFromPicAndDescription">
+                <div id="idThingColor4">Цвет: белый</div>
+                <div id="idThingSize4">Размер: 56</div>
+              </div>
+            </div>
+          </div>
+          <div id="sumAndCount4" class="containerSumAndCount">
+              <div id="iconsFromOtsuts">
+                <i>1</i>
+                <i>2</i>
+            </div>
+          </div>
+     </div>
+        <div id="otsutsvTovar2" class="tovar">
+                 <div id="picAndDescription5" class="containerPicAndDescription">
+            <div id="IdClickAndPic5" class="ClickAndPic">
+              <div class="ClickFromClickAndPic"> </div>
+              <div class="PictureFromClickAndPic">
+                <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+border-radius: 8px;"> </div>
+              </div>
+            </div>
+            <div id="IdDescriptionFromPicAndDescription5" class="DescriptionFromPicAndDescription">
+              <div id="nameFromDescriptionFromPicAndDescription5"> Футболка UZcotton мужская</div>
+              <div id="specificationFromDescriptionFromPicAndDescription5"
+                   class="containerSpecificationFromDescriptionFromPicAndDescription">
+                <div id="idThingColor5">Цвет: белый</div>
+                <div id="idThingSize5">Размер: 56</div>
+              </div>
+            </div>
+          </div>
+          <div id="sumAndCount5" class="containerSumAndCount">
+              <div id="iconsFromOtsuts2">
+                <i>1</i>
+                <i>2</i>
+            </div>
+          </div>
+</div>
+        <div id="otsutsvTovar3" class="tovar">
+        <div id="picAndDescription6" class="containerPicAndDescription">
+            <div id="IdClickAndPic6" class="ClickAndPic">
+              <div class="ClickFromClickAndPic"> </div>
+              <div class="PictureFromClickAndPic">
+                <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+border-radius: 8px;"> </div>
+              </div>
+            </div>
+            <div id="IdDescriptionFromPicAndDescription6" class="DescriptionFromPicAndDescription">
+              <div id="nameFromDescriptionFromPicAndDescription6"> Футболка UZcotton мужская</div>
+              <div id="specificationFromDescriptionFromPicAndDescription6"
+                   class="containerSpecificationFromDescriptionFromPicAndDescription">
+                <div id="idThingColor6">Цвет: белый</div>
+                <div id="idThingSize6">Размер: 56</div>
+              </div>
+            </div>
+          </div>
+          <div id="sumAndCount6" class="containerSumAndCount">
+              <div id="iconsFromOtsuts3">
+                <i>1</i>
+                <i>2</i>
+            </div>
+          </div>
+</div>
       </div>
     </div>
     <div id="blockDelivery" class="containerDelivery">
-      <div id="dostavka1Round">Способ доставки</div>
-      <div id="oplataRound"> Способ оплаты</div>
+      <div id="dostavka1Round" class="containerdostavka1Round" >
+     <div id="idContainerDostavkaTitle" class="containerDostavkaTitle"> 
+                     <div id="h4">Способ доставки</div>
+                     <div id="IdContainerAdressDelivery" class="containerAdressDelivery"> 
+                     <div id="labelContainerAdressDelivery"> 
+                     <div>Пункт выдачи</div>
+                      <div> Стоимость доставки </div>
+                      <div> 5—6 февраля </div>
+                      <div> 7—8 февраля</div>
+         </div>
+         
+         <div id="adressContainerAdressDelivery"> 
+          <div id="idAdressDeliveryOfPost">
+          <div>Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
+          <div id="idInfoRaitingPost"> 
+          <div>icon </div>
+          <div>Ежедневно с 10 до 21 </div>
+          </div>
+          </div>
+          <div> Бесплатно </div>
+           <div id="idSmallTovary"> 
+             <div id="idContainerSmallTovary6" class="containerSmallTovary6">
+               <div id="picSmall1" style="width: 40px ;height: 56px ;background-color: black"> </div>
+               <div id="picSmall2" style="width: 40px ;height: 56px ;background-color: black"> </div>
+               <div id="picSmall3" style="width: 40px ;height: 56px ;background-color: black"> </div>
+             </div>
+            </div>
+                <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ;background-color: black" </div> </div>
+            </div>
+            </div>
+             </div>
+             </div>      
+      <div id="idStrokaInfoOtkaz"> hruuuuuu </div>    
+       </div>
+      
+      <div id="oplataRound"> 
+      
+      
+      
+      </div>
       <div id="poluchatelRound">Получатель</div>
-    </div></div>
+      </div>
+</div>
     <div id="sidebarItog">
       <div id="Itog">Итог</div>
     </div>

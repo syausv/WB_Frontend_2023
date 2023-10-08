@@ -322,18 +322,112 @@ body {
   border-style: solid;
   grid-area: oplataRound;
 }
+.containerOplata{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 72px 16px;
+  padding: 16px 24px 24px 24px;
+  gap: 8px;
+  grid-template-areas:
+     "sposobOplaty"
+     "spishemOplatu";
+}
+#sposobOplaty {
+  grid-area: sposobOplaty;
+}
+.containerSposobOplaty{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 32px 24px;
+  gap: 16px;
+  grid-template-areas:
+     "h6SposobOplaty"
+     "cartMir";
+}
+#h6SposobOplaty {
+
+  grid-area: h6SposobOplaty;
+}
+#cartMir {
+
+  grid-area: cartMir;
+}
+#spishemOplatu {
+  border-style: solid;
+  grid-area: spishemOplatu;
+}
 #poluchatelRound {
   border-style: solid;
   grid-area: poluchatelRound;
+}
+.containerPoluchatelRound{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 32px 128px;
+  padding: 16px 24px 24px 24px;
+  border-style: solid;
+  gap: 16px;
+  grid-template-areas:
+     "h6ЗoluchatelRound"
+     "idAnketa";
+}
+#h6ЗoluchatelRound {
+  border-style: solid;
+  grid-area: h6ЗoluchatelRound;
+}
+#idAnketa {
+  border-style: solid;
+  grid-area: idAnketa;
+}
+.classAnketa{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px 64px;
+  border-style: solid;
+  grid-template-areas:
+     "idNameSurname"
+     "idMailNumInn";
+}
+#idNameSurname {
+  border-style: solid;
+  grid-area: idNameSurname;
+}
+#idMailNumInn {
+  border-style: solid;
+  grid-area: idMailNumInn;
 }
 #sidebarItog {
   border-style: solid;
   grid-area: sidebarItog;
 }
-#Itog {
+
+.containerItog{
   margin-top: -12px;
   border-style: solid;
-  height: 572px;
+  gap: 24px;
+  padding: 16px 24px 24px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 420px 88px;
+  border-style: solid;
+  grid-template-areas:
+     "idStoimodyZakaza"
+     "idKnopkaZakaza";
+}
+#idStoimodyZakaza {
+  border-style: solid;
+  grid-area: idStoimodyZakaza;
+}
+#idKnopkaZakaza {
+  border-style: solid;
+  grid-area: idKnopkaZakaza;
+}
+.ceny{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: '203tov 2302com';
+  justify-content: space-between;
 }
 #tabbar{
   display: none;
@@ -472,6 +566,7 @@ footer {
     border-style: solid;
     height: 604px;
   }
+
   #tabbar {
     border-style: solid;
     display: block;

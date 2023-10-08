@@ -264,16 +264,60 @@ border-radius: 8px;"> </div>
       <div id="idStrokaInfoOtkaz"> hruuuuuu </div>    
        </div>
       
-      <div id="oplataRound"> 
+      <div id="oplataRound" class="containerOplata"> 
       
-      
-      
+       <div id="sposobOplaty" class="containerSposobOplaty"> 
+         <div id="h6SposobOplaty">Способ оплаты </div>
+         <div id="cartMir" style="gap: 4px"> мир карта </div>
+         </div>
+       <div id="spishemOplatu">Спишем оплату с карты при получении </div>
       </div>
-      <div id="poluchatelRound">Получатель</div>
+      <div id="poluchatelRound" class="containerPoluchatelRound">
+      
+      <div id="h6ЗoluchatelRound"> Получатель </div>
+      <div id="idAnketa" class="classAnketa">
+       <div  id="idNameSurname"> 
+        <input>
+        <input>
+        </div>
+       <div  id="idMailNumInn">
+        <input>
+        <input>
+        <input>
+        </div>
+       </div>
+</div>
       </div>
 </div>
     <div id="sidebarItog">
-      <div id="Itog">Итог</div>
+      <div id="Itog" class="containerItog">
+      <div id="idStoimodyZakaza"> 
+      <div id="idCena">
+       <div>Итого  2 101 063 сом </div>
+        <div>
+            <div class="ceny"> <div id="203tov">203 товара</div>   <div id="2302com">2 302 048 сом</div> </div>
+            <div class="ceny"> <div id="skidkaWord">Скидка</div>  <div id="985сом">−200985 сом</div></div>
+            <div class="ceny"> <div  id="dostavkaWord">Доставка</div>   <div id="besplatno">Бесплатно</div></div>
+         </div>
+       </div>
+      <div id="idDostavka">
+       <div> 
+           <div> Доставка в пункт выдачи</div>
+           <div> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+           <div>5–8 фев </div>
+          </div>
+       <div class="containerBesplatDostavka">
+         <div>icon </div>
+         <div>
+           <div>Обратная доставка товаров насклад при отказе— </div>
+            <div>бесплатно </div>
+         </div>
+        </div>
+       </div>
+      <div id="idOplataKartoy"> </div>
+      </div>
+      <div id="idKnopkaZakaza"> 1</div>
+</div>
     </div>
   </div>
   <footer>

@@ -24,7 +24,7 @@ body {
   border-style: solid;
   grid-area: contantContainer;
   padding: 0px 24px 16px 24px;
-  grid-template-columns:  auto auto;
+  grid-template-columns:  1fr 0.5fr;
   grid-template-rows: auto auto;
   grid-template-areas:
   "h1  sidebarItog"
@@ -191,18 +191,15 @@ body {
      "tovaryOtsutsv";
 }
 #otsutsvInto {
-  border-style: solid;
   grid-area: otsutsvInto;
 }
 #tovaryOtsutsv {
-  border-style: solid;
   grid-area: tovaryOtsutsv;
 }
 .containertovaryOtsutsv{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 108px 108px 108px;
-  border-style: solid;
   gap: 20px;
   grid-template-areas:
      "otsutsvTovar1"
@@ -218,27 +215,22 @@ body {
     "picAndDescription sumAndCount";
 }
 #otsutsvTovar1 {
-  border-style: solid;
   grid-area: otsutsvTovar1;
 }
 #otsutsvTovar2 {
-  border-style: solid;
   grid-area: otsutsvTovar2;
 }
 #otsutsvTovar3 {
-  border-style: solid;
   grid-area: otsutsvTovar3;
 }
 
 #blockDelivery {
-  border-style: solid;
   grid-area: blockDelivery;
 }
 .containerDelivery {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 362px 136px 216px;
-  border-style: solid;
   gap: 16px;
   grid-template-areas:
      "dostavka1Round"
@@ -246,7 +238,6 @@ body {
      "poluchatelRound";
 }
 #dostavka1Round {
-  border-style: solid;
   grid-area: dostavka1Round;
 }
 
@@ -262,11 +253,9 @@ body {
      "idStrokaInfoOtkaz";
 }
 #idContainerDostavkaTitle{
-  border-style: solid;
   grid-area: idContainerDostavkaTitle;
 }
 #idStrokaInfoOtkaz{
-  border-style: solid;
   grid-area: idStrokaInfoOtkaz;
 }
 .containerDostavkaTitle{
@@ -280,11 +269,9 @@ body {
      "IdContainerAdressDelivery";
 }
 #h4 {
-  border-style: solid;
   grid-area: h4;
 }
 #IdContainerAdressDelivery {
-  border-style: solid;
   grid-area: IdContainerAdressDelivery;
 }
 .containerAdressDelivery{
@@ -319,7 +306,6 @@ body {
   grid-area: picSmall3;
 }
 #oplataRound {
-  border-style: solid;
   grid-area: oplataRound;
 }
 .containerOplata{
@@ -353,11 +339,9 @@ body {
   grid-area: cartMir;
 }
 #spishemOplatu {
-  border-style: solid;
   grid-area: spishemOplatu;
 }
 #poluchatelRound {
-  border-style: solid;
   grid-area: poluchatelRound;
 }
 .containerPoluchatelRound{
@@ -365,69 +349,60 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 32px 128px;
   padding: 16px 24px 24px 24px;
-  border-style: solid;
   gap: 16px;
   grid-template-areas:
      "h6ЗoluchatelRound"
      "idAnketa";
 }
 #h6ЗoluchatelRound {
-  border-style: solid;
   grid-area: h6ЗoluchatelRound;
 }
 #idAnketa {
-  border-style: solid;
   grid-area: idAnketa;
 }
 .classAnketa{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 64px 64px;
-  border-style: solid;
   grid-template-areas:
      "idNameSurname"
      "idMailNumInn";
 }
 #idNameSurname {
-  border-style: solid;
   grid-area: idNameSurname;
 }
 #idMailNumInn {
-  border-style: solid;
   grid-area: idMailNumInn;
 }
 #sidebarItog {
-  border-style: solid;
   grid-area: sidebarItog;
 }
 
 .containerItog{
   margin-top: -12px;
-  border-style: solid;
   gap: 24px;
   padding: 16px 24px 24px 24px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 420px 88px;
   border-style: solid;
+  background-color: #FFFFFF;
+  border-radius: 16px;
   grid-template-areas:
      "idStoimodyZakaza"
      "idKnopkaZakaza";
 }
 
 #idStoimodyZakaza {
-  border-style: solid;
   grid-area: idStoimodyZakaza;
 }
 #idKnopkaZakaza {
-  border-style: solid;
   grid-area: idKnopkaZakaza;
 }
 .containerRazdelenieZakaz{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  border-style: solid;
   gap: 24px;
   grid-template-areas:
      "containerCena"
@@ -435,11 +410,9 @@ body {
      "idOplataKartoy";
 }
 #idDostavka {
-  border-style: solid;
   grid-area: idDostavka;
 }
 #idOplataKartoy {
-  border-style: solid;
   grid-area: idOplataKartoy;
 }
 .containerDostavka{
@@ -461,29 +434,23 @@ body {
 }
 .containerCena{
   grid-area: containerCena;
-  border-style: solid;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 33px 72px;
-  border-style: solid;
   gap: 8px;
   grid-template-areas:
         "idItogoCeny1"
         "containerCeny2";
 }
 #idItogoCeny1 {
-  border-style: solid;
-  background-color: red;
   grid-area: idItogoCeny1;
 }
 
 .containerCeny2{
-  background-color: blue;
   grid-area: containerCeny2;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  border-style: solid;
   grid-template-areas:
     "id1idItogoCeny2"
     "id2idItogoCeny2"
@@ -491,15 +458,12 @@ body {
 
 }
 #id1idItogoCeny2 {
-  border-style: solid;
   grid-area: id1idItogoCeny2;
 }
 #id2idItogoCeny2 {
-  border-style: solid;
   grid-area: id2idItogoCeny2;
 }
 #id3idItogoCeny2 {
-  border-style: solid;
   grid-area: id3idItogoCeny2;
 }
 .ceny1{
@@ -524,34 +488,27 @@ body {
   justify-content: space-between;
 }
 #id203tov {
-  border-style: solid;
   grid-area: id203tov;
 }
 #id2302com {
-  border-style: solid;
   grid-area: id2302com;
 }
 #id985com {
-  border-style: solid;
   grid-area: id985com;
 }
 #skidkaWord {
-  border-style: solid;
   grid-area: skidkaWord;
 }
 #dostavkaWord {
-  border-style: solid;
   grid-area: dostavkaWord;
 }
 #besplatno {
-  border-style: solid;
   grid-area: besplatno;
 }
 .containerDostavkaVPunktVydachi{
   grid-area: containerDostavkaVPunktVydachi;
   column-gap: 8px;
   display: grid;
-  border-style: solid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
@@ -572,9 +529,8 @@ body {
   grid-area: containerBesplatDostavka;
   column-gap: 8px;
   display: grid;
-  border-style: solid;
   padding: 8px 8px 12px 8px;
-  grid-template-columns:  22px 335px;
+  grid-template-columns:  auto auto;
   grid-template-rows: 52px;
   grid-template-areas:
   "idIconSber idObratDostav";
@@ -594,7 +550,7 @@ nav {
 }
 #navigationBlock {
   height: 88px;
-  max-width: 1400px;
+
   background-color: rgb(103,37,168);
 }
 #Skruglenie {
@@ -617,14 +573,13 @@ footer {
 }
 #tabbar {
   display: none;
-  border-style: solid;
   grid-area: tabbar;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (width: 1400px) {
   .container {
     display: grid;
     row-gap: 10px;
-    grid-template-columns: 1400px;
+    grid-template-columns: 1fr;
     grid-template-rows: 112px 1825px 88px;
     grid-template-areas:
   "nav"
@@ -635,7 +590,6 @@ footer {
     column-gap: 32px;
     row-gap: 27px;
     display: grid;
-    border-style: solid;
     grid-area: contantContainer;
     padding: 0px 24px 16px 24px;
     grid-template-columns: 891px 429px;
@@ -648,7 +602,6 @@ footer {
     row-gap: 40px;
     display: grid;
     grid-area: container1;
-    border-style: solid;
     grid-template-columns: 891px;
     grid-template-rows: 516px 404px 746px;
     grid-template-areas:
@@ -657,12 +610,21 @@ footer {
   "blockDelivery";
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (width: 1024px) {
+  .container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 112px 1825px 88px;
+    grid-template-areas:
+  "nav"
+  "contantContainer"
+  "footer";
+  }
   .container1{
     row-gap: 40px;
     display: grid;
     grid-area: container1;
-    border-style: solid;
     grid-template-columns: 640px;
     grid-template-rows: 516px 404px 746px;
     grid-template-areas:
@@ -671,26 +633,82 @@ footer {
   "blockDelivery";
   }
   #Itog {
-    border-style: solid;
     height: 604px;
+  }
+  .contantContainer {
+    column-gap: 32px;
+    row-gap: 27px;
+    display: grid;
+    grid-area: contantContainer;
+    padding: 0px 24px 16px 24px;
+    grid-template-columns: 640px 304px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+  "h1 sidebarItog"
+  "container1 sidebarItog";
+  }
+}
+@media only screen and (max-width: 1004px) and (min-width: 991px) {
+  .container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 112px 1825px 88px;
+    grid-template-areas:
+  "nav"
+  "contantContainer"
+  "footer";
+  }
+  .container1{
+    row-gap: 40px;
+    display: grid;
+    grid-area: container1;
+    grid-template-columns: auto;
+    grid-template-rows: 516px 404px 746px;
+    grid-template-areas:
+  "vnalichii"
+  "otsutsv"
+  "blockDelivery";
+  }
+  #Itog {
+    height: 604px;
+  }
+  .contantContainer {
+    column-gap: 32px;
+    row-gap: 27px;
+    display: grid;
+    grid-area: contantContainer;
+    padding: 0px 24px 16px 24px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+  "h1 sidebarItog"
+  "container1 sidebarItog";
   }
 }
 @media only screen and (max-width: 990px) {
+  .container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 112px auto 88px;
+    grid-template-areas:
+  "nav"
+  "contantContainer"
+  "footer";
+  }
   .contantContainer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto ;
     grid-template-areas:
     "h1"
-    "vnalichii"
-    "otsutsv"
-    "blockDelivery"
+    "container1"
     "sidebarItog"
   ;
   }
   #Itog {
     margin-top: 0px;
-    border-style: solid;
     height: 604px;
   }
 }
@@ -708,18 +726,15 @@ footer {
   .contantContainer {
     padding: 0px 16px 0px 16px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 0.4fr 0.4fr 0.6fr 0.2fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
     "h1"
-    "vnalichii"
-    "otsutsv"
-    "blockDelivery"
+    "container1"
     "sidebarItog"
-  ;
+    "tabbar";
   }
   #Itog {
     margin-top: 0px;
-    border-style: solid;
     height: 604px;
   }
 
@@ -740,7 +755,7 @@ footer {
   }
   #navigationBlock {
     height: 56px;
-    max-width: 1400px;
+
     background-color: rgb(103,37,168);
   }
 }

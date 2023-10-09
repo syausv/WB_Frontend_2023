@@ -330,7 +330,7 @@ border-radius: 8px;"> </div>
        
        <div id="idKartaOplata">
          <div>    
-           <div style="  display:flex; justify-content: space-between; border: solid">
+           <div style="display:flex; justify-content: space-between; border: solid">
              <div style="display:inline-block;">Оплата картой</div>
              <div style="display:inline-block;">icon</div>
          </div>
@@ -353,7 +353,18 @@ border-radius: 8px;"> </div>
        
         </div>
       </div>
-      <div id="idKnopkaZakaza"> 1</div>
+      <div id="idKnopkaZakaza" style="display: grid; gap:8px"> 
+      <div id="buttonZakazat"> 
+      <button style="display: block; width: 100%; height: 44px">Заказать</button>
+      </div>
+      
+      <div style="display:flex; justify-content: space-between; border: solid; height: 32px"> 
+       <div>icon </div>
+       <div>Соглашаюсь с правилами пользования торговой площадкой и возврата </div>
+      </div>
+      
+      
+      </div>
 </div>
     </div>
   </div>

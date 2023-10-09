@@ -326,17 +326,30 @@ border-radius: 8px;"> </div>
          </div>
         </div>
        </div>
-      <div id="idOplataKartoy">
+      <div id="idOplataKartoy" style="display:grid; row-gap: 12px">
        
-       <div>
-         <div>  </div>
-         <div>  </div>
-         
+       <div id="idKartaOplata">
+         <div>    
+           <div style="  display:flex; justify-content: space-between; border: solid">
+             <div style="display:inline-block;">Оплата картой</div>
+             <div style="display:inline-block;">icon</div>
          </div>
-       
-       
-       
-       <div>  </div>
+            <div style=" display:flex; border: solid; gap: 8px">
+           <div> icon</div>
+           <div>1234 12•• •••• 1234 </div>
+            </div>
+           </div>
+         <div>  </div>
+         </div>
+       <div id="idSpisatOplatu">
+            <div style=" display:flex; border: solid; gap: 8px">
+           <div> check</div>
+           <div>Списать оплату сразу</div>
+            </div>
+          <div style=" display:flex; border: solid;">
+            Спишем оплату с карты при получении
+            </div>
+        </div>
        
         </div>
       </div>

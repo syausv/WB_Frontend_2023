@@ -291,30 +291,54 @@ border-radius: 8px;"> </div>
 </div>
     <div id="sidebarItog">
       <div id="Itog" class="containerItog">
-      <div id="idStoimodyZakaza"> 
-      <div id="idCena">
-       <div>Итого  2 101 063 сом </div>
-        <div>
-            <div class="ceny"> <div id="203tov">203 товара</div>   <div id="2302com">2 302 048 сом</div> </div>
-            <div class="ceny"> <div id="skidkaWord">Скидка</div>  <div id="985сом">−200985 сом</div></div>
-            <div class="ceny"> <div  id="dostavkaWord">Доставка</div>   <div id="besplatno">Бесплатно</div></div>
-         </div>
+      <div id="idStoimodyZakaza" class="containerRazdelenieZakaz"> 
+      <div id="idCena" class="containerCena">
+           <div class="ceny" id="idItogoCeny1">
+                      <div id="idItogoCeny">Итого</div>  
+                     <div id="id2101063сом">2 101 063 сом</div> 
        </div>
-      <div id="idDostavka">
-       <div> 
-           <div> Доставка в пункт выдачи</div>
-           <div> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
-           <div>5–8 фев </div>
+           <div id="idItogoCeny2" class="containerCeny2">
+             <div class="ceny1" id="id1idItogoCeny2">
+              <div id="id203tov">203 товара</div>   
+              <div id="id2302com">2 302 048 сом</div> 
+             </div>
+            <div class="ceny2"  id="id2idItogoCeny2">
+              <div id="skidkaWord">Скидка</div> 
+              <div id="id985com">−200985 сом</div>
+              </div>
+            <div class="ceny3" id="id3idItogoCeny2">
+              <div  id="dostavkaWord">Доставка</div> 
+              <div id="besplatno">Бесплатно</div>
+              </div>
+          </div>
+       </div>
+      <div id="idDostavka" class="containerDostavka"> 
+      <div class="containerDostavkaVPunktVydachi"> 
+           <div id="idNazvPunkta"> Доставка в пункт выдачи</div>
+           <div id="idGorod"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+           <div id="idDataDost">5–8 фев </div>
           </div>
        <div class="containerBesplatDostavka">
-         <div>icon </div>
-         <div>
+         <div id="idIconSber">icon </div>
+         <div id="idObratDostav">
            <div>Обратная доставка товаров насклад при отказе— </div>
             <div>бесплатно </div>
          </div>
         </div>
        </div>
-      <div id="idOplataKartoy"> </div>
+      <div id="idOplataKartoy">
+       
+       <div>
+         <div>  </div>
+         <div>  </div>
+         
+         </div>
+       
+       
+       
+       <div>  </div>
+       
+        </div>
       </div>
       <div id="idKnopkaZakaza"> 1</div>
 </div>

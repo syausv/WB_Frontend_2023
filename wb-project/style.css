@@ -414,6 +414,7 @@ body {
      "idStoimodyZakaza"
      "idKnopkaZakaza";
 }
+
 #idStoimodyZakaza {
   border-style: solid;
   grid-area: idStoimodyZakaza;
@@ -422,12 +423,167 @@ body {
   border-style: solid;
   grid-area: idKnopkaZakaza;
 }
+.containerRazdelenieZakaz{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-style: solid;
+  gap: 24px;
+  grid-template-areas:
+     "containerCena"
+     "idDostavka"
+     "idOplataKartoy";
+}
+#idDostavka {
+  border-style: solid;
+  grid-area: idDostavka;
+}
+#idOplataKartoy {
+  border-style: solid;
+  grid-area: idOplataKartoy;
+}
+.containerDostavka{
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 381px;
+  grid-template-rows: 65px 52px;
+  grid-template-areas:
+    "containerDostavkaVPunktVydachi"
+    "containerBesplatDostavka";
+
+}
 .ceny{
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  grid-template-areas: '203tov 2302com';
+  grid-template-areas: 'idItogoCeny id2101063сом';
   justify-content: space-between;
+}
+.containerCena{
+  grid-area: containerCena;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 33px 72px;
+  border-style: solid;
+  gap: 8px;
+  grid-template-areas:
+        "idItogoCeny1"
+        "containerCeny2";
+}
+#idItogoCeny1 {
+  border-style: solid;
+  background-color: red;
+  grid-area: idItogoCeny1;
+}
+
+.containerCeny2{
+  background-color: blue;
+  grid-area: containerCeny2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  border-style: solid;
+  grid-template-areas:
+    "id1idItogoCeny2"
+    "id2idItogoCeny2"
+    "id3idItogoCeny2";
+
+}
+#id1idItogoCeny2 {
+  border-style: solid;
+  grid-area: id1idItogoCeny2;
+}
+#id2idItogoCeny2 {
+  border-style: solid;
+  grid-area: id2idItogoCeny2;
+}
+#id3idItogoCeny2 {
+  border-style: solid;
+  grid-area: id3idItogoCeny2;
+}
+.ceny1{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'id203tov id2302com';
+  justify-content: space-between;
+}
+.ceny2{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'skidkaWord id985com';
+  justify-content: space-between;
+}
+.ceny3{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'dostavkaWord besplatno';
+  justify-content: space-between;
+}
+#id203tov {
+  border-style: solid;
+  grid-area: id203tov;
+}
+#id2302com {
+  border-style: solid;
+  grid-area: id2302com;
+}
+#id985com {
+  border-style: solid;
+  grid-area: id985com;
+}
+#skidkaWord {
+  border-style: solid;
+  grid-area: skidkaWord;
+}
+#dostavkaWord {
+  border-style: solid;
+  grid-area: dostavkaWord;
+}
+#besplatno {
+  border-style: solid;
+  grid-area: besplatno;
+}
+.containerDostavkaVPunktVydachi{
+  grid-area: containerDostavkaVPunktVydachi;
+  column-gap: 8px;
+  display: grid;
+  border-style: solid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "idNazvPunkta"
+  "idGorod"
+  "idDataDost";
+}
+#idNazvPunkta{
+  grid-area: idNazvPunkta;
+}
+#idGorod{
+  grid-area: idGorod;
+}
+#idDataDost{
+  grid-area: idDataDost;
+}
+.containerBesplatDostavka {
+  grid-area: containerBesplatDostavka;
+  column-gap: 8px;
+  display: grid;
+  border-style: solid;
+  padding: 8px 8px 12px 8px;
+  grid-template-columns:  22px 335px;
+  grid-template-rows: 52px;
+  grid-template-areas:
+  "idIconSber idObratDostav";
+}
+#idIconSber{
+  font-size: 14px;
+}
+#idObratDostav{
+  font-size: 13px;
 }
 #tabbar{
   display: none;

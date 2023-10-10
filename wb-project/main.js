@@ -301,17 +301,36 @@ border-radius: 8px;"> </div>
       
       <div id="h6ЗoluchatelRound"> Получатель </div>
       <div id="idAnketa" class="classAnketa">
-       <div  id="idNameSurname"> 
-        <input>
-        <input>
+       
+        <div class="text-field text-field_floating-3">
+      <input class="text-field__input" type="name" id="name" name="name" placeholder="Имя">
+      <label class="text-field__label" for="name">Имя</label>
+    </div>
+    
+         <div class="text-field text-field_floating-3">
+      <input class="text-field__input" type="surname" id="surname" name="surname" placeholder="Фамилия">
+      <label class="text-field__label" for="surname">Фамилия</label>
         </div>
-       <div  id="idMailNumInn">
-        <input>
-        <input>
-        <input>
+        
+         <div class="text-field text-field_floating-3">
+      <input class="text-field__input" type="email" id="email" name="email" placeholder="Почта">
+      <label class="text-field__label" for="email">Почта</label>
         </div>
-       </div>
+        
+         <div class="text-field text-field_floating-3">
+      <input class="text-field__input" type="phone" id="phone" name="phone" placeholder="Телефон">
+      <label class="text-field__label" for="phone">Телефон</label>
+        </div>
+        
+         <div class="text-field text-field_floating-3">
+      <input class="text-field__input" type="number" id="innNumb" name="innNumb" placeholder="ИНН">
+      <label class="text-field__label" for="surname">ИНН</label>
+        </div>
+        
+        </div>
+       
 </div>
+
       </div>
 </div>
     <div id="sidebarItog">

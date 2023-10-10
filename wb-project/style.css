@@ -272,7 +272,6 @@ body {
 }
 
 .containerdostavka1Round{
-
   border-radius: 16px;
   background-color: #FFFFFF;
   display: grid;
@@ -291,7 +290,6 @@ body {
   grid-area: idStrokaInfoOtkaz;
 }
 .containerDostavkaTitle{
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 32px 228px;
@@ -352,6 +350,8 @@ body {
 }
 .containerOplata{
   display: grid;
+  border-radius: 16px;
+  background-color: #FFFFFF;
   grid-template-columns: 1fr;
   grid-template-rows: 72px 16px;
   padding: 16px 24px 24px 24px;
@@ -388,6 +388,8 @@ body {
 }
 .containerPoluchatelRound{
   display: grid;
+  border-radius: 16px;
+  background-color: #FFFFFF;
   grid-template-columns: 1fr;
   grid-template-rows: 32px 128px;
   padding: 16px 24px 24px 24px;
@@ -404,11 +406,11 @@ body {
 }
 .classAnketa{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 64px 64px;
   grid-template-areas:
-     "idNameSurname"
-     "idMailNumInn";
+     "name surname "
+     "email phone innNumb";
 }
 #idNameSurname {
   grid-area: idNameSurname;
@@ -416,6 +418,64 @@ body {
 #idMailNumInn {
   grid-area: idMailNumInn;
 }
+.text-field_floating-3 {
+  position: relative;
+}
+
+.text-field_floating-3 .text-field__input {
+  border: none;
+
+  border-bottom: 1px solid #bdbdbd;
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  line-height: 1.25;
+  padding: 1rem 0.75rem;
+  background-color: white;
+}
+
+.text-field_floating-3 .text-field__input:focus {
+  outline: 0;
+  border-bottom: 1px solid #9797AF;
+  box-shadow: none;
+  background-color: #eee;
+}
+
+.text-field_floating-3 .text-field__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: color .15s ease-in-out, transform .15s ease-in-out;
+  color: #9797AF;
+}
+
+.text-field_floating-3 .text-field__input::-moz-placeholder {
+  color: transparent;
+
+}
+
+.text-field_floating-3 .text-field__input::placeholder {
+  color: transparent;
+}
+
+.text-field_floating-3 .text-field__input:focus,
+.text-field_floating-3 .text-field__input:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: .625rem;
+  border-bottom: 1px solid #03a9f4;
+}
+
+.text-field_floating-3 .text-field__input:focus~.text-field__label,
+.text-field_floating-3 .text-field__input:not(:placeholder-shown)~.text-field__label {
+  transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+  color: #03a9f4;
+}
+
 #sidebarItog {
   grid-area: sidebarItog;
 }
@@ -754,7 +814,7 @@ footer {
     height: 604px;
   }
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 670px) {
   .tovar{
     display: grid;
     justify-content: space-between;

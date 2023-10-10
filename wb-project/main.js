@@ -41,7 +41,14 @@ border-radius: 8px;"> </div>
           </div>
           <div id="sumAndCount" class="containerSumAndCount">
             <div class="countFromSumAndCount">
-              <div id="plusFromCountFromSumAndCount">111 </div>
+              <div id="plusFromCountFromSumAndCount">
+              
+        <div class="displayCounter">
+            <button  class="buttons"> - </button>
+            <div class="chisloCount">1</div>
+            <button  class="buttons"> + </button>
+        </div>
+              </div>
               <div id="ostatkiFromCountFromSumAndCount">Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount">
                 <i>1</i>
@@ -84,8 +91,13 @@ border-radius: 8px;"> </div>
           </div>
           <div id="sumAndCount2" class="containerSumAndCount">
             <div class="countFromSumAndCount">
-              <div id="plusFromCountFromSumAndCount2">111 </div>
-              <div id="ostatkiFromCountFromSumAndCount2">Осталось 2 шт.</div>
+              <div id="plusFromCountFromSumAndCount2">
+                 <div class="displayCounter">
+            <button  class="buttons"> - </button>
+            <div class="chisloCount">222</div>
+            <button  class="buttons"> + </button>
+        </div>
+               </div>
               <div id="iconsFromCountFromSumAndCount2">
                 <i>1</i>
                 <i>2</i>
@@ -128,7 +140,13 @@ border-radius: 8px;"> </div>
           </div>
           <div id="sumAndCount3" class="containerSumAndCount">
             <div class="countFromSumAndCount">
-              <div id="plusFromCountFromSumAndCount3">111 </div>
+              <div id="plusFromCountFromSumAndCount3">
+                 <div class="displayCounter">
+            <button  class="buttons"> - </button>
+            <div class="chisloCount">2</div>
+            <button  class="buttons"> + </button>
+                  </div>
+               </div>
               <div id="ostatkiFromCountFromSumAndCount3">Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount3">
                 <i>1</i>
@@ -241,27 +259,34 @@ border-radius: 8px;"> </div>
          </div>
          
          <div id="adressContainerAdressDelivery"> 
-          <div id="idAdressDeliveryOfPost">
+          <div id="idAdressDeliveryOfPost" style="height: 44px">
           <div>Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
-          <div id="idInfoRaitingPost"> 
-          <div>icon </div>
+          <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px"> 
+          <div style="display: flex"><div>icon</div>4.99 </div>
           <div>Ежедневно с 10 до 21 </div>
           </div>
           </div>
           <div> Бесплатно </div>
            <div id="idSmallTovary"> 
              <div id="idContainerSmallTovary6" class="containerSmallTovary6">
-               <div id="picSmall1" style="width: 40px ;height: 56px ;background-color: black"> </div>
-               <div id="picSmall2" style="width: 40px ;height: 56px ;background-color: black"> </div>
-               <div id="picSmall3" style="width: 40px ;height: 56px ;background-color: black"> </div>
+               <div id="picSmall1" style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px"> </div>
+               <div id="picSmall2" style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px"> </div>
+               <div id="picSmall3" style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px"> </div>
              </div>
             </div>
-                <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ;background-color: black" </div> </div>
+                <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px" </div> </div>
             </div>
             </div>
              </div>
              </div>      
-      <div id="idStrokaInfoOtkaz"> hruuuuuu </div>    
+      <div id="idStrokaInfoOtkaz" style="display: flex">
+       <div  style="display: flex"> 
+       <div id="idSber2">icon </div>
+       <div id="idObratDostav2">Обратная доставка товаров на склад при отказе —</div>
+       <div id="idBesplat"> бесплатно</div>
+       </div>
+       
+       </div>    
        </div>
       
       <div id="oplataRound" class="containerOplata"> 

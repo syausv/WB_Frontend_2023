@@ -6,6 +6,7 @@
 body {
   background-color: rgb(246,246,250);
   margin: 0px 0px 0px 0px;
+  font-family: "Segoe UI";
 }
 .container {
   display: grid;
@@ -156,6 +157,35 @@ body {
     "ostatkiFromCountFromSumAndCount"
     "iconsFromCountFromSumAndCount";
 }
+.displayCounter{
+  background-color: #FFFFFF;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 44px;
+  border-radius: 8px;
+}
+.buttons{
+  font-family: "Segoe UI";
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  display:inline-block;
+  background-color: white;
+  border: none;
+
+}
+.buttons:hover {
+  background: rgba(0,0,0,0);
+  color: #3a7999;
+}
+.chisloCount{
+  justify-content: center;
+  display:flex;
+  width: 44px;
+}
 .containerSumFromIdSumFromSumFromSumAndCount{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -242,7 +272,9 @@ body {
 }
 
 .containerdostavka1Round{
-  border-style: solid;
+
+  border-radius: 16px;
+  background-color: #FFFFFF;
   display: grid;
   padding: 16px 0px 24px 0px;
   grid-template-columns: 1fr;
@@ -276,25 +308,30 @@ body {
 }
 .containerAdressDelivery{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
   gap: 32px;
   grid-template-areas:
      "labelContainerAdressDelivery adressContainerAdressDelivery";
 }
 #labelContainerAdressDelivery{
+  display: grid;
+  grid-template-rows: 44px 24px 56px 56px;
   grid-area: labelContainerAdressDelivery;
+  padding: 0px 0px 0px 24px;
+  gap: 16px;
 }
 #adressContainerAdressDelivery{
   grid-area: adressContainerAdressDelivery;
+  display: grid;
+  grid-template-rows: 44px 24px 56px 56px;
+  padding: 0px 24px 0px 0px;
+  gap: 16px;
 }
 .containerSmallTovary6{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  height: 56px;
   gap: 8px;
-  grid-template-areas:
-     "picSmall1 picSmall2 picSmall3";
 }
 #picSmall1{
   grid-area: picSmall1;
@@ -304,6 +341,11 @@ body {
 }
 #picSmall3{
   grid-area: picSmall3;
+}
+#idStrokaInfoOtkaz{
+  display: flex;
+  padding: 0px 24px 0px 24px;
+  gap: 8px;
 }
 #oplataRound {
   grid-area: oplataRound;
@@ -712,7 +754,25 @@ footer {
     height: 604px;
   }
 }
-
+@media only screen and (max-width: 620px) {
+  .tovar{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-templates-areas:
+      "picAndDescription sumAndCount";
+  }
+  .containerSumAndCount{
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 108px;
+    padding: 9px 0px 0px 0px;
+    gap: 16px;
+    grid-templates-areas:
+      "countFromSumAndCount IdSumFromSumAndCount";
+  }
+}
 @media only screen and (max-width: 425px) {
   .container {
     grid-template-columns: 1fr;

@@ -40,7 +40,7 @@ border-radius: 8px;"> </div>
             </div>
           </div>
           <div id="sumAndCount" class="containerSumAndCount">
-            <div class="countFromSumAndCount">
+            <div class="countFromSumAndCount" style="gap: 8px">
               <div id="plusFromCountFromSumAndCount">
               
         <div class="displayCounter">
@@ -49,10 +49,10 @@ border-radius: 8px;"> </div>
             <button  class="buttons"> + </button>
         </div>
               </div>
-              <div id="ostatkiFromCountFromSumAndCount">Осталось 2 шт.</div>
-              <div id="iconsFromCountFromSumAndCount">
-                <i>1</i>
-                <i>2</i>
+              <div id="ostatkiFromCountFromSumAndCount" style="display: inline-flex; font-size: 13px; height: 16px">Осталось 2 шт.</div>
+              <div id="iconsFromCountFromSumAndCount" class="icons">
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount" class="sumFromSumAndCount">
@@ -98,9 +98,9 @@ border-radius: 8px;"> </div>
             <button  class="buttons"> + </button>
         </div>
                </div>
-              <div id="iconsFromCountFromSumAndCount2">
-                <i>1</i>
-                <i>2</i>
+              <div id="iconsFromCountFromSumAndCount2" class="icons">
+                 <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount2" class="sumFromSumAndCount">
@@ -147,10 +147,10 @@ border-radius: 8px;"> </div>
             <button  class="buttons"> + </button>
                   </div>
                </div>
-              <div id="ostatkiFromCountFromSumAndCount3">Осталось 2 шт.</div>
-              <div id="iconsFromCountFromSumAndCount3">
-                <i>1</i>
-                <i>2</i>
+              <div id="ostatkiFromCountFromSumAndCount3" style="display: inline-flex; font-size: 13px; height: 16px">Осталось 2 шт.</div>
+              <div id="iconsFromCountFromSumAndCount3" class="icons">
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount3" class="sumFromSumAndCount">
@@ -167,12 +167,11 @@ border-radius: 8px;"> </div>
       </div>
     </div>
     <div id="otsutsv" class="containerOtsutsv">
-      <div id="otsutsvInto">Отсутсвуют</div>
+      <div id="otsutsvInto" style="font-weight: bolder ">Отсутствуют · 3 товара</div>
       <div id="tovaryOtsutsv" class="containertovaryOtsutsv">
         <div id="otsutsvTovar1" class="tovar" >
-         <div id="picAndDescription4" class="containerPicAndDescription">
-            <div id="IdClickAndPic4" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> </div>
+         <div id="picAndDescription4" class="containerPicAndDescription2">
+            <div id="IdClickAndPic4">
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 border-radius: 8px;"> </div>
@@ -195,9 +194,9 @@ border-radius: 8px;"> </div>
           </div>
      </div>
         <div id="otsutsvTovar2" class="tovar">
-                 <div id="picAndDescription5" class="containerPicAndDescription">
-            <div id="IdClickAndPic5" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> </div>
+                 <div id="picAndDescription5" class="containerPicAndDescription2">
+            <div id="IdClickAndPic5">
+            
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 border-radius: 8px;"> </div>
@@ -220,9 +219,9 @@ border-radius: 8px;"> </div>
           </div>
 </div>
         <div id="otsutsvTovar3" class="tovar">
-        <div id="picAndDescription6" class="containerPicAndDescription">
-            <div id="IdClickAndPic6" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> </div>
+        <div id="picAndDescription6" class="containerPicAndDescription2">
+            <div id="IdClickAndPic6" >
+            
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 border-radius: 8px;"> </div>
@@ -249,7 +248,7 @@ border-radius: 8px;"> </div>
     <div id="blockDelivery" class="containerDelivery">
       <div id="dostavka1Round" class="containerdostavka1Round" >
      <div id="idContainerDostavkaTitle" class="containerDostavkaTitle"> 
-                     <div id="h4">Способ доставки</div>
+                     <div id="h4" style="display: flex; justify-content: space-between; padding: 0px 24px 0px 24px"><div class="zagalovki">Способ доставки</div> <div>Изменить</div></div>
                      <div id="IdContainerAdressDelivery" class="containerAdressDelivery"> 
                      <div id="labelContainerAdressDelivery"> 
                      <div>Пункт выдачи</div>
@@ -292,39 +291,42 @@ border-radius: 8px;"> </div>
       <div id="oplataRound" class="containerOplata"> 
       
        <div id="sposobOplaty" class="containerSposobOplaty"> 
-         <div id="h6SposobOplaty">Способ оплаты </div>
+         <div id="h6SposobOplaty" style="display: flex; justify-content: space-between"><div class="zagalovki">Способ оплаты</div> <div>Изменить</div> </div>
          <div id="cartMir" style="gap: 4px"> мир карта </div>
          </div>
        <div id="spishemOplatu">Спишем оплату с карты при получении </div>
       </div>
       <div id="poluchatelRound" class="containerPoluchatelRound">
       
-      <div id="h6ЗoluchatelRound"> Получатель </div>
+      <div id="h6ЗoluchatelRound" class="zagalovki"> Получатель </div>
       <div id="idAnketa" class="classAnketa">
-       
-        <div class="text-field text-field_floating-3">
+       <div class="nameSurname">
+        <div id="nameClass" class="text-field text-field_floating-3">
       <input class="text-field__input" type="name" id="name" name="name" placeholder="Имя">
       <label class="text-field__label" for="name">Имя</label>
     </div>
     
-         <div class="text-field text-field_floating-3">
+         <div id="surnameClass" class="text-field text-field_floating-3">
       <input class="text-field__input" type="surname" id="surname" name="surname" placeholder="Фамилия">
       <label class="text-field__label" for="surname">Фамилия</label>
         </div>
-        
-         <div class="text-field text-field_floating-3">
+        </div>
+         <div class="emailPhoneInn">
+         <div id="emailClass" class="text-field text-field_floating-3">
       <input class="text-field__input" type="email" id="email" name="email" placeholder="Почта">
       <label class="text-field__label" for="email">Почта</label>
         </div>
         
-         <div class="text-field text-field_floating-3">
+         <div id="phoneClass"  class="text-field text-field_floating-3">
       <input class="text-field__input" type="phone" id="phone" name="phone" placeholder="Телефон">
       <label class="text-field__label" for="phone">Телефон</label>
         </div>
         
-         <div class="text-field text-field_floating-3">
+         <div id="innNumbClass" class="text-field text-field_floating-3">
       <input class="text-field__input" type="number" id="innNumb" name="innNumb" placeholder="ИНН">
       <label class="text-field__label" for="surname">ИНН</label>
+             <div style="display: inline-flex; font-size: 12px ">Для таможенного оформления </div>
+        </div>
         </div>
         
         </div>

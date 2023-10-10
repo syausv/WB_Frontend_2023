@@ -8,7 +8,18 @@ body {
   margin: 0px 0px 0px 0px;
   font-family: "Segoe UI";
 }
-
+@font-face {
+  font-family: 'Segoe UI';
+}
+.zagalovki{
+  font-size: 24px;
+  font-weight: bold;
+}
+.icons{
+  display: inline-flex;
+  gap: 16px;
+  justify-content:end;
+}
 .container {
   display: grid;
   row-gap: 10px;
@@ -254,6 +265,15 @@ body {
 #otsutsvTovar3 {
   grid-area: otsutsvTovar3;
 }
+.containerPicAndDescription2{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 108px;
+  gap: 16px;
+  padding: 12px 0px 0px 0px;
+  grid-templates-areas:
+    "IdClickAndPic IdDescriptionFromPicAndDescription";
+}
 
 #blockDelivery {
   grid-area: blockDelivery;
@@ -405,13 +425,31 @@ body {
 #idAnketa {
   grid-area: idAnketa;
 }
-.classAnketa{
+.nameSurname{
+  grid-area: nameSurname;
   display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nameClass surnameClass";
+}
+.emailPhoneInn{
+  grid-area: emailPhoneInn;
+  display: grid;
+  gap: 24px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 64px 64px;
-  grid-template-areas:
-     "name surname "
-     "email phone innNumb";
+  grid-template-rows: auto;
+  grid-template-areas: "emailClass phoneClass innNumbClass";
+}
+#emailClass {
+  grid-area: emailClass;
+  width:100%;
+}
+#phoneClass {
+  grid-area: phoneClass;
+}
+#innNumbClass {
+  grid-area: innNumbClass;
 }
 #idNameSurname {
   grid-area: idNameSurname;
@@ -425,7 +463,7 @@ body {
 
 .text-field_floating-3 .text-field__input {
   border: none;
-
+  width: 100%;
   border-bottom: 1px solid #bdbdbd;
   border-radius: 0;
   border-top-left-radius: 0.25rem;

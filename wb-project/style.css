@@ -145,10 +145,10 @@ body {
     "idCompany idInfo"
 }
 #nameFromDescriptionFromPicAndDescription2{
-  width:275px;
+  max-width:275px;
 }
 #nameFromDescriptionFromPicAndDescription3{
-  width:275px;
+  max-width:275px;
 }
 
 .containerSumAndCount{
@@ -716,6 +716,16 @@ footer {
   display: none;
   grid-area: tabbar;
 }
+.class13px{
+  font-size: 13px;
+}
+.class20px {
+  font-size: 20px;
+}
+.class16px{
+  font-size: 16px;
+}
+
 @media only screen and (width: 1400px) {
   .container {
     display: grid;
@@ -782,7 +792,7 @@ footer {
     display: grid;
     grid-area: contantContainer;
     padding: 0px 24px 16px 24px;
-    grid-template-columns: 640px 304px;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas:
   "h1 sidebarItog"

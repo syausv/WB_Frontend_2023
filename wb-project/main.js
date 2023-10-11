@@ -6,14 +6,14 @@ document.querySelector('#app').innerHTML = `
   <div>
   <div class="container">
   <nav>
-    <div id="navigationBlock" style="display: flex; padding: 16px 3px 16px 24px; gap: 32px"> 
-      <div style="display: flex; width: 170px; height: 56px; border: solid; gap: 16px; justify-content: center">
-       <div style="display: block; width: 48px; height: 48px; border: 1px solid; border-radius: 8px; border-color: #FFFFFF73;  align-self: center; "> 
+    <div id="navigationBlock"> 
+      <div id="menu">
+       <div  id="menuObj"> 
        <object type="image/svg+xml" data="src/icons/3.svg" id="svg" style="margin: 12px 10px 12px 10px "></object>
        </div>
-        <div style="display: inline-block; width: 106px; height: 48px;  align-self: center; font-size: 22px; text-align: start;  padding-top: 0;">ТОВАРЫ И ТОЧКА </div>
+        <div id="VeshiItochka" >ТОВАРЫ И ТОЧКА </div>
        </div>
-      <div class="searchWB" style="display:flex ; height: 56px; width: 100%; border: solid"> 
+      <div class="searchWB"> 
        
          <form role="search" id="formSearch">
          <input type="search" id="query" name="q"
@@ -24,8 +24,8 @@ document.querySelector('#app').innerHTML = `
               </button>
               </form>
       </div>
-      <div style="display: flex; width: 169px; height: 56px; padding: 0px 17px 0px 0px; gap: 40px"> 
-      <div  style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -2px;">
+      <div id="iconsNav"> 
+      <div style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -2px;">
         <object type="image/svg+xml" data="src/icons/profilicon.svg" id="svg" ></object>
         <div class="class13px" style="color: white"> Профиль </div>
        </div>
@@ -74,7 +74,7 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
           </div>
           <div id="sumAndCount" class="containerSumAndCount">
             <div class="countFromSumAndCount" style="gap: 8px">
-              <div id="plusFromCountFromSumAndCount">
+              <div class="plusFromCountFromSumAndCount">
               
         <div class="displayCounter">
             <button  class="buttons"> - </button>
@@ -82,7 +82,7 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
             <button  class="buttons"> + </button>
         </div>
               </div>
-              <div id="ostatkiFromCountFromSumAndCount" style="display: inline-flex; font-size: 13px; height: 16px">Осталось 2 шт.</div>
+              <div id="ostatkiFromCountFromSumAndCount" >Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount" class="icons">
                 <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
                    <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
@@ -126,13 +126,16 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
           </div>
           <div id="sumAndCount2" class="containerSumAndCount">
             <div class="countFromSumAndCount">
-              <div id="plusFromCountFromSumAndCount2">
+              <div class="plusFromCountFromSumAndCount">
                  <div class="displayCounter">
             <button  class="buttons"> - </button>
             <div class="chisloCount">222</div>
             <button  class="buttons"> + </button>
         </div>
+             
                </div>
+                <div id="spaceForTovar" style="display: none" ></div>
+              
               <div id="iconsFromCountFromSumAndCount2" class="icons">
                  <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
                    <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>

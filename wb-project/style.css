@@ -122,6 +122,8 @@ body {
 }
 #ClickFromClickAndPic{
   grid-area: ClickFromClickAndPic;
+  display: flex;
+  align-items: center;
 }
 #PictureFromClickAndPic{
   grid-area: PictureFromClickAndPic;
@@ -677,9 +679,11 @@ body {
   "idIconSber idObratDostav";
 }
 #idIconSber{
+  grid-area: idIconSber ;
   font-size: 14px;
 }
 #idObratDostav{
+  grid-area: idObratDostav ;
   font-size: 13px;
 }
 #tabbar{

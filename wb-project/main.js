@@ -13,12 +13,17 @@ document.querySelector('#app').innerHTML = `
   <h1>Корзина</h1>
   <div class="container1">
     <div id="vnalichii" class="containerVnalichii">
-      <div id="vyborVse">Выбрать все</div>
+      <div id="vyborVse">
+      <input type="checkbox" checked/>
+    <label for="vyborCheck">Выбрать все</label>
+</div>
       <div id="tovary" class="containerTovary">
         <div id="tovar1" class="tovar">
           <div id="picAndDescription" class="containerPicAndDescription">
             <div id="IdClickAndPic" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> </div>
+              <div class="ClickFromClickAndPic">
+                <input type="checkbox" class="custom-checkbox" id="vyborCheck2" name="interest" value="vyborCheck" checked />
+               </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 border-radius: 8px;"> </div>
@@ -69,7 +74,9 @@ border-radius: 8px;"> </div>
         <div id="tovar2" class="tovar">
           <div id="picAndDescription2" class="containerPicAndDescription">
             <div id="IdClickAndPic2" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> </div>
+              <div class="ClickFromClickAndPic"> 
+               <input type="checkbox" checked/>
+              </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 border-radius: 8px;"> </div>
@@ -79,7 +86,7 @@ border-radius: 8px;"> </div>
               <div id="nameFromDescriptionFromPicAndDescription2"> Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
               <div id="specificationFromDescriptionFromPicAndDescription2"
                    class="containerSpecificationFromDescriptionFromPicAndDescription">
-                <div id="idThingColor2" s class="class13px">Цвет: белый</div>
+                <div id="idThingColor2"  class="class13px">Цвет: белый</div>
               </div>
               <div id="companyFromDescriptionFromPicAndDescription2">
                 <div class="class13px">Коледино WB</div>
@@ -117,7 +124,9 @@ border-radius: 8px;"> </div>
         <div id="tovar3" class="tovar">
           <div id="picAndDescription3" class="containerPicAndDescription">
             <div id="IdClickAndPic3" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> </div>
+              <div class="ClickFromClickAndPic"> 
+              <input type="checkbox" checked/>
+              </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
 border-radius: 8px;"> </div>
@@ -280,7 +289,7 @@ border-radius: 8px;"> </div>
              </div>      
       <div id="idStrokaInfoOtkaz" style="display: flex">
        <div  style="display: flex"> 
-       <div id="idSber2">icon </div>
+       <div id="idSber2"><object type="image/svg+xml" data="src/icons/platSber.svg" id="svg"></object> </div>
        <div id="idObratDostav2" class="class13px">Обратная доставка товаров на склад при отказе —</div>
        <div id="idBesplat" class="class13px"> бесплатно</div>
        </div>
@@ -292,8 +301,14 @@ border-radius: 8px;"> </div>
       
        <div id="sposobOplaty" class="containerSposobOplaty"> 
          <div id="h6SposobOplaty" style="display: flex; justify-content: space-between"><div class="zagalovki">Способ оплаты</div> <div>Изменить</div> </div>
-         <div id="cartMir" style="gap: 4px"> мир карта </div>
+         <div style="display: flex; gap: 8px">
+         <div id="cartMir" style="gap:4px"> <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"> </object> 
          </div>
+         <div style="display: flex; gap: 12px"><div>1234 56•• •••• 1234</div> <div>01/30</div></div>
+         </div>
+         
+         </div>
+         
        <div id="spishemOplatu" class="class13px">Спишем оплату с карты при получении </div>
       </div>
       <div id="poluchatelRound" class="containerPoluchatelRound">
@@ -365,7 +380,9 @@ border-radius: 8px;"> </div>
            <div id="idDataDost" class="class13px">5–8 фев </div>
           </div>
        <div class="containerBesplatDostavka">
-         <div id="idIconSber">icon </div>
+         <div id="idIconSber">
+          <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg3"> </object>
+          </div>
          <div id="idObratDostav">
            <div>Обратная доставка товаров насклад при отказе— </div>
             <div>бесплатно </div>
@@ -378,10 +395,12 @@ border-radius: 8px;"> </div>
          <div>    
            <div style="display:flex; justify-content: space-between; border: solid">
              <div style="display:inline-block; font-weight: bold">Оплата картой</div>
-             <div style="display:inline-block;">icon</div>
+             <div style="display:inline-block;"></div>
          </div>
             <div style=" display:flex; border: solid; gap: 8px" class="class13px">
-           <div> icon</div>
+           <div> 
+           <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg4"> </object>
+           </div>
            <div>1234 12•• •••• 1234 </div>
             </div>
            </div>

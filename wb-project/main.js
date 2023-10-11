@@ -6,7 +6,13 @@ document.querySelector('#app').innerHTML = `
   <div>
   <div class="container">
   <nav>
-    <div id="navigationBlock"> </div>
+    <div id="navigationBlock" style="display: flex; padding: 16px 3px 16px 24px; gap: 32px"> 
+      <div style="display: block; width: 170px; height: 56px; border: solid">
+       <div style="display: block; width: 48px; height: 48px"> </div>
+       </div>
+      <div style="display:flex ; height: 56px; width: 100%; border: solid"> </div>
+      <div style="display: block; width: 169px; height: 56px; border: solid; padding: 0px 17px 0px 0px"> </div>
+    </div>
     <div id="Skruglenie"> </div>
   </nav>
   <div class="contantContainer"> 
@@ -22,7 +28,7 @@ document.querySelector('#app').innerHTML = `
           <div id="picAndDescription" class="containerPicAndDescription">
             <div id="IdClickAndPic" class="ClickAndPic">
               <div class="ClickFromClickAndPic">
-                <input type="checkbox" class="custom-checkbox" id="vyborCheck2" name="interest" value="vyborCheck" checked />
+               <input type="checkbox" checked/>
                </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
@@ -288,8 +294,8 @@ border-radius: 8px;"> </div>
              </div>
              </div>      
       <div id="idStrokaInfoOtkaz" style="display: flex">
-       <div  style="display: flex"> 
-       <div id="idSber2"><object type="image/svg+xml" data="src/icons/platSber.svg" id="svg"></object> </div>
+       <div  style="display: flex; gap: 8px"> 
+       <div id="idSber2"><object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
        <div id="idObratDostav2" class="class13px">Обратная доставка товаров на склад при отказе —</div>
        <div id="idBesplat" class="class13px"> бесплатно</div>
        </div>
@@ -302,7 +308,7 @@ border-radius: 8px;"> </div>
        <div id="sposobOplaty" class="containerSposobOplaty"> 
          <div id="h6SposobOplaty" style="display: flex; justify-content: space-between"><div class="zagalovki">Способ оплаты</div> <div>Изменить</div> </div>
          <div style="display: flex; gap: 8px">
-         <div id="cartMir" style="gap:4px"> <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"> </object> 
+         <div id="cartMir" style="gap:4px"> <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg"> </object> 
          </div>
          <div style="display: flex; gap: 12px"><div>1234 56•• •••• 1234</div> <div>01/30</div></div>
          </div>
@@ -375,17 +381,20 @@ border-radius: 8px;"> </div>
        </div>
       <div id="idDostavka" class="containerDostavka"> 
       <div class="containerDostavkaVPunktVydachi"> 
+      <div style="display: inline-flex; justify-content: space-between">
            <div id="idNazvPunkta" style="font-weight: bold"> Доставка в пункт выдачи</div>
+            
+            <object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg7"> </object> 
+            </div>
            <div id="idGorod" class="class13px"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
            <div id="idDataDost" class="class13px">5–8 фев </div>
           </div>
-       <div class="containerBesplatDostavka">
-         <div id="idIconSber">
-          <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg3"> </object>
+       <div class="containerBesplatDostavka" >
+         <div id="idIconSber" style="display: block; text-align: center;">
+          <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg3""> </object>
           </div>
-         <div id="idObratDostav">
-           <div>Обратная доставка товаров насклад при отказе— </div>
-            <div>бесплатно </div>
+         <div id="idObratDostav" style="display: inline-block">
+           Обратная доставка товаров на склад при отказе — <span> бесплатно </span>
          </div>
         </div>
        </div>
@@ -394,21 +403,22 @@ border-radius: 8px;"> </div>
        <div id="idKartaOplata">
          <div>    
            <div style="display:flex; justify-content: space-between; border: solid">
-             <div style="display:inline-block; font-weight: bold">Оплата картой</div>
-             <div style="display:inline-block;"></div>
+             <div style="display:inline-flex; font-weight: bold">Оплата картой
+             </div>
+             <div><object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg7"> </object> </div>
          </div>
             <div style=" display:flex; border: solid; gap: 8px" class="class13px">
            <div> 
            <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg4"> </object>
            </div>
-           <div>1234 12•• •••• 1234 </div>
+           <div style="display: inline-flex; text-align: center; vertical-align: middle;">1234 12•• •••• 1234 </div>
             </div>
            </div>
          <div>  </div>
          </div>
        <div id="idSpisatOplatu" class="class13px">
             <div style=" display:flex; border: solid; gap: 8px">
-           <div> check</div>
+           <div>  <input type="checkbox" style="width: 22px;height: 22px"/></div>
            <div>Списать оплату сразу</div>
             </div>
           <div style=" display:flex; border: solid;">

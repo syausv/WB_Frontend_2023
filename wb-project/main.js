@@ -7,10 +7,25 @@ document.querySelector('#app').innerHTML = `
   <div class="container">
   <nav>
     <div id="navigationBlock" style="display: flex; padding: 16px 3px 16px 24px; gap: 32px"> 
-      <div style="display: block; width: 170px; height: 56px; border: solid">
-       <div style="display: block; width: 48px; height: 48px"> </div>
+      <div style="display: flex; width: 170px; height: 56px; border: solid; gap: 16px; justify-content: center">
+       <div style="display: block; width: 48px; height: 48px; border: 1px solid; border-radius: 8px; border-color: #FFFFFF73;  align-self: center; "> 
+       <object type="image/svg+xml" data="src/icons/3.svg" id="svg" style="margin: 12px 10px 12px 10px "></object>
        </div>
-      <div style="display:flex ; height: 56px; width: 100%; border: solid"> </div>
+        <div style="display: inline-block; width: 106px; height: 48px;  align-self: center; font-size: 22px; text-align: start;  padding-top: 0;">ТОВАРЫ И ТОЧКА </div>
+       </div>
+      <div class="searchWB" style="display:flex ; height: 56px; width: 100%; border: solid"> 
+       
+   <form role="search" id="formSearch">
+  <input type="search" id="query" name="q"
+   placeholder="Я ищу..."
+   aria-label="Search through site content">
+  <button id="searchBtn">
+    <svg id="idSvgSearch" viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+  </button>
+</form>
+
+       
+      </div>
       <div style="display: block; width: 169px; height: 56px; border: solid; padding: 0px 17px 0px 0px"> </div>
     </div>
     <div id="Skruglenie"> </div>

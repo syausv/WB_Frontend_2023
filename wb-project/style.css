@@ -20,6 +20,42 @@ body {
   gap: 16px;
   justify-content:end;
 }
+#formSearch {
+  height: 56px; width: 100%;
+  background-color: #4654e1;
+  height: 48px;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#query {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+}
+#query::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+#searchBtn {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+#idSvgSearch {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+}
+
 .container {
   display: grid;
   row-gap: 10px;
@@ -66,7 +102,6 @@ body {
      "tovary";
 }
 #tovary {
-
   grid-area: tovary;
 }
 #vyborVse {
@@ -74,7 +109,6 @@ body {
   grid-area: vyborVse;
 }
 #vnalichii {
-
   grid-area: vnalichii;
 }
 .containerTovary{
@@ -918,6 +952,7 @@ footer {
     background-color: rgb(103,37,168);
     height: 80px;
   }
+
   #Skruglenie {
     height: 24px;
     background-color: rgb(246,246,250);

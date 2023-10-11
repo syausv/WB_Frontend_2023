@@ -15,18 +15,25 @@ document.querySelector('#app').innerHTML = `
        </div>
       <div class="searchWB" style="display:flex ; height: 56px; width: 100%; border: solid"> 
        
-   <form role="search" id="formSearch">
-  <input type="search" id="query" name="q"
-   placeholder="Я ищу..."
-   aria-label="Search through site content">
-  <button id="searchBtn">
-    <svg id="idSvgSearch" viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-  </button>
-</form>
-
-       
+         <form role="search" id="formSearch">
+         <input type="search" id="query" name="q"
+          placeholder="Я ищу..."
+           aria-label="Search through site content">
+            <button id="searchBtn">
+              <svg id="idSvgSearch" viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+              </button>
+              </form>
       </div>
-      <div style="display: block; width: 169px; height: 56px; border: solid; padding: 0px 17px 0px 0px"> </div>
+      <div style="display: flex; width: 169px; height: 56px; padding: 0px 17px 0px 0px; gap: 40px"> 
+      <div  style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -2px;">
+        <object type="image/svg+xml" data="src/icons/profilicon.svg" id="svg" ></object>
+        <div class="class13px" style="color: white"> Профиль </div>
+       </div>
+       <div style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -4px;">
+        <object type="image/svg+xml" data="src/icons/korzina.svg" id="svg" style=" "></object>
+        <div class="class13px" style="color: white"> Корзина </div>
+       </div>
+      </div>
     </div>
     <div id="Skruglenie"> </div>
   </nav>
@@ -47,7 +54,7 @@ document.querySelector('#app').innerHTML = `
                </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> </div>
+border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription" class="DescriptionFromPicAndDescription">
@@ -100,7 +107,7 @@ border-radius: 8px;"> </div>
               </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> </div>
+border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription2" class="DescriptionFromPicAndDescription">
@@ -150,7 +157,7 @@ border-radius: 8px;"> </div>
               </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> </div>
+border-radius: 8px;"> <img src="src/img/Frame2771321291.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription3" class="DescriptionFromPicAndDescription">
@@ -204,7 +211,7 @@ border-radius: 8px;"> </div>
             <div id="IdClickAndPic4">
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> </div>
+border-radius: 8px;"> <img src="src/img/Frame38532.png"/></div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription4" class="DescriptionFromPicAndDescription">
@@ -229,7 +236,7 @@ border-radius: 8px;"> </div>
             
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> </div>
+border-radius: 8px;"> <img src="src/img/Frame2771321292.png"/></div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription5" class="DescriptionFromPicAndDescription">
@@ -254,7 +261,7 @@ border-radius: 8px;"> </div>
             
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> </div>
+border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription6" class="DescriptionFromPicAndDescription">
@@ -298,12 +305,20 @@ border-radius: 8px;"> </div>
           <div> Бесплатно </div>
            <div id="idSmallTovary"> 
              <div id="idContainerSmallTovary6" class="containerSmallTovary6">
-               <div id="picSmall1" style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px"> </div>
-               <div id="picSmall2" style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px"> </div>
-               <div id="picSmall3" style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px"> </div>
+               <div id="picSmall1" style="width: 40px ;height: 56px ; border-radius: 8px">
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="src/img/Frame38531.png"/>
+                </div>
+               <div id="picSmall2" style="width: 40px ;height: 56px ; border-radius: 8px">
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="src/img/Frame277132129.png"/>
+                </div>
+               <div id="picSmall3" style="width: 40px ;height: 56px ; border-radius: 8px"> 
+               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="src/img/Frame2771321291.png"/>
+               </div>
              </div>
             </div>
-                <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ;background-color: black; border-radius: 8px" </div> </div>
+                <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ; border-radius: 8px"> 
+                  <img style="width: 40px ;height: 56px ;border-radius: 8px" src="src/img/Frame277132129.png"/>
+                 </div>
             </div>
             </div>
              </div>

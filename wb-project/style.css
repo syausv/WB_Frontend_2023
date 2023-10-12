@@ -541,6 +541,12 @@ body {
 .text-field_floating-3 {
   position: relative;
 }
+.checkedColor:checked{
+  accent-color: #CB11AB;
+}
+.greyText{
+  color:#9797AF;
+}
 
 .text-field_floating-3 .text-field__input {
   border: none;
@@ -551,7 +557,7 @@ body {
   border-top-right-radius: 0.25rem;
   line-height: 1.25;
   padding: 1rem 0.75rem;
-  background-color: #F0ECF4 ;
+  background-color: transparent ;
 }
 
 .text-field_floating-3 .text-field__input:focus {
@@ -770,6 +776,7 @@ body {
   grid-area: idObratDostav ;
   font-size: 13px;
 }
+
 #tabbar{
   display: none;
 }
@@ -1136,6 +1143,7 @@ footer {
      "otsutsvTovar1"
      "otsutsvTovar2"
      "otsutsvTovar3";
+
   }
   .containerDelivery {
     display: grid;

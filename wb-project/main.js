@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
     <div id="navigationBlock"> 
       <div id="menu">
        <div  id="menuObj"> 
-       <object type="image/svg+xml" data="src/icons/3.svg" id="svg" style="margin: 12px 10px 12px 10px "></object>
+       <object type="image/svg+xml" data="src/icons/3.svg" id="svg888" style="margin: 12px 10px 12px 10px "></object>
        </div>
         <div id="VeshiItochka" >ТОВАРЫ И ТОЧКА </div>
        </div>
@@ -26,11 +26,11 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div id="iconsNav"> 
       <div style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -2px;">
-        <object type="image/svg+xml" data="src/icons/profilicon.svg" id="svg" ></object>
+        <object type="image/svg+xml" data="src/icons/profilicon.svg" id="svg44453" ></object>
         <div class="class13px" style="color: white"> Профиль </div>
        </div>
        <div style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -4px;">
-        <object type="image/svg+xml" data="src/icons/korzina.svg" id="svg" style=" "></object>
+        <object type="image/svg+xml" data="src/icons/korzina.svg" id="svg3345" ></object>
         <div class="class13px" style="color: white"> Корзина </div>
        </div>
       </div>
@@ -82,10 +82,10 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
             <button  class="buttons"> + </button>
         </div>
               </div>
-              <div id="ostatkiFromCountFromSumAndCount" >Осталось 2 шт.</div>
+              <div id="ostatkiFromCountFromSumAndCount" style="color: #FF3B30" >Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount" class="icons">
-                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
-                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount" class="sumFromSumAndCount">
@@ -137,8 +137,8 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
                 <div id="spaceForTovar" style="display: none" ></div>
               
               <div id="iconsFromCountFromSumAndCount2" class="icons" style="padding: 10px;">
-                 <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
-                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
+                 <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg333"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg333"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount2" class="sumFromSumAndCount">
@@ -187,10 +187,10 @@ border-radius: 8px;"> <img src="src/img/Frame2771321291.png"/> </div>
             <button  class="buttons"> + </button>
                   </div>
                </div>
-              <div id="ostatkiFromCountFromSumAndCount3" style="display: inline-flex; font-size: 13px; height: 16px;">Осталось 2 шт.</div>
+              <div id="ostatkiFromCountFromSumAndCount3" style="display: inline-flex; font-size: 13px; height: 16px; color: #F55123">Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount3" class="icons">
-                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
-                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg313"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg233"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount3" class="sumFromSumAndCount">
@@ -228,8 +228,8 @@ border-radius: 8px;"> <img src="src/img/Frame38532.png"/></div>
           </div>
           <div id="sumAndCount4" class="containerSumAndCount">
               <div id="iconsFromOtsuts" class="icons">
-                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
-                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg443"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg334"></object> </div>
             </div>
           </div>
      </div>
@@ -253,8 +253,8 @@ border-radius: 8px;"> <img src="src/img/Frame2771321292.png"/></div>
           </div>
           <div id="sumAndCount5" class="containerSumAndCount">
               <div id="iconsFromOtsuts2" class="icons">
-                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
-                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg242"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg167"></object> </div>
             </div>
           </div>
 </div>
@@ -278,8 +278,8 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
           </div>
           <div id="sumAndCount6" class="containerSumAndCount">
               <div id="iconsFromOtsuts3" class="icons">
-                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
-                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg13"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg122"></object> </div>
             </div>
           </div>
 </div>
@@ -300,8 +300,10 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
          <div id="adressContainerAdressDelivery"> 
           <div id="idAdressDeliveryOfPost" style="height: 44px">
           <div>Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
-          <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px"> 
-          <div style="display: flex"><div>icon</div>4.99 </div>
+          <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px; gap: 4px"> 
+          <div style="display: flex"><div>
+          <object type="image/svg+xml" data="src/icons/star.svg" id="svg11"></object>
+</div>4.99 </div>
           <div>Ежедневно с 10 до 21 </div>
           </div>
           </div>
@@ -340,7 +342,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
        <div id="sposobOplaty" class="containerSposobOplaty"> 
          <div id="h6SposobOplaty" style="display: flex; justify-content: space-between"><div class="zagalovki">Способ оплаты</div> <div>Изменить</div> </div>
          <div style="display: flex; gap: 8px">
-         <div id="cartMir" style="gap:4px"> <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg"> </object> 
+         <div id="cartMir" style="gap:4px"> <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg33"> </object> 
          </div>
          <div style="display: flex; gap: 12px"><div>1234 56•• •••• 1234</div> <div>01/30</div></div>
          </div>
@@ -416,14 +418,14 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
       <div style="display: inline-flex; justify-content: space-between">
            <div id="idNazvPunkta" style="font-weight: bold"> Доставка в пункт выдачи</div>
             
-            <object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg7"> </object> 
+            <object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg47"> </object> 
             </div>
            <div id="idGorod" class="class13px"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
            <div id="idDataDost" class="class13px">5–8 фев </div>
           </div>
        <div class="containerBesplatDostavka" >
          <div id="idIconSber" style="display: block; text-align: center;">
-          <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg3""> </object>
+          <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg13""> </object>
           </div>
          <div id="idObratDostav" style="display: inline-block">
            Обратная доставка товаров на склад при отказе — <span> бесплатно </span>
@@ -437,11 +439,11 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
            <div style="display:flex; justify-content: space-between;">
              <div style="display:inline-flex; font-weight: bold">Оплата картой
              </div>
-             <div><object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg7"> </object> </div>
+             <div><object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg27"> </object> </div>
          </div>
             <div style=" display:flex;  gap: 8px" class="class13px">
            <div> 
-           <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg4"> </object>
+           <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg17"> </object>
            </div>
            <div style="display: inline-flex; text-align: center; vertical-align: middle;">1234 12•• •••• 1234 </div>
             </div>
@@ -450,7 +452,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
          </div>
        <div id="idSpisatOplatu" class="class13px">
             <div style=" display:flex;  gap: 8px">
-           <div>  <input type="checkbox" style="width: 22px;height: 22px"/></div>
+           <div>  <input type="checkbox" style="width: 22px;height: 22px; background-color: #F0ECF4 "/></div>
            <div>Списать оплату сразу</div>
             </div>
           <div style=" display:flex;">
@@ -465,8 +467,8 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
       <button style="display: block; width: 100%; height: 44px">Заказать</button>
       </div>
       
-      <div style="display:flex; justify-content: space-between; border: solid; height: 32px" class="class13px"> 
-       <div>icon </div>
+      <div style="display:flex; justify-content: space-between; height: 32px" class="class13px"> 
+       <div> <object type="image/svg+xml" data="src/icons/stroke.svg" id="svg10"> </object> </div>
        <div>Соглашаюсь с правилами пользования торговой площадкой и возврата </div>
       </div>
       
@@ -476,10 +478,24 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
     </div>
   </div>
   <footer>
-    <div id="Skruglenie2"> </div>
+    <div id="Skruglenie2"> 
+    </div>
+    <div class="class13px" style="display: flex; height: 64px; justify-content: center; padding: 20px; color: #FFFFFFB2"><div>© 2022  ООО «Товары и точка»</div>
+    </div>
   </footer>
-  <div id="tabbar"> табар
+  
   </div>
-  </div>
+   <div id="tabbar"> 
+     <object type="image/svg+xml" data="src/icons/main.svg" id="svg96" style="justify-self: center; padding: 12px"></object>
+      <object type="image/svg+xml" data="src/icons/catalog.svg" id="svg97" style="justify-self: center; padding: 12px"></object>
+       <object type="image/svg+xml" data="src/icons/cart.svg" id="svg98" style="justify-self: center; padding: 12px"></object>
+        <object type="image/svg+xml" data="src/icons/favorites.svg" id="svg9" style="justify-self: center; padding: 12px"></object>
+         <object type="image/svg+xml" data="src/icons/profile.svg" id="svg99" style="justify-self: center; padding: 12px"></object>
+   
+  </div> 
+   </div>
+  
 `
+
+
 

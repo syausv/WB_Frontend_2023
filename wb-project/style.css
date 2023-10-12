@@ -113,7 +113,6 @@ body {
   column-gap: 32px;
   row-gap: 27px;
   display: grid;
-  border-style: solid;
   grid-area: contantContainer;
   padding: 0px 24px 16px 24px;
   grid-template-columns:  1fr 0.5fr;
@@ -148,7 +147,6 @@ body {
   grid-area: tovary;
 }
 #vyborVse {
-  border-style: solid;
   grid-area: vyborVse;
 }
 #vnalichii {
@@ -175,11 +173,9 @@ body {
 }
 
 .picAndDescription{
-  border-style: solid;
   grid-area: picAndDescription;
 }
 .sumAndCount{
-  border-style: solid;
   grid-area: sumAndCount;
 }
 .containerPicAndDescription{
@@ -290,27 +286,27 @@ body {
     "sumOfItem valutaOfItem"
 }
 #tovar1 {
-  border-style: solid;
+
   grid-area: tovar1;
 }
 #tovar2 {
-  border-style: solid;
+
   grid-area: tovar2;
 }
 #tovar3 {
-  border-style: solid;
+
   grid-area: tovar3;
 }
 
 #otsutsv {
-  border-style: solid;
+
   grid-area: otsutsv;
 }
 .containerOtsutsv {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 24px 1fr;
-  border-style: solid;
+
   gap: 16px;
   grid-template-areas:
      "otsutsvInto"
@@ -555,7 +551,7 @@ body {
   border-top-right-radius: 0.25rem;
   line-height: 1.25;
   padding: 1rem 0.75rem;
-  background-color: white;
+  background-color: #F0ECF4 ;
 }
 
 .text-field_floating-3 .text-field__input:focus {
@@ -611,7 +607,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 420px 88px;
-  border-style: solid;
   background-color: #FFFFFF;
   border-radius: 16px;
   grid-template-areas:
@@ -947,8 +942,7 @@ footer {
     grid-template-areas:
     "h1"
     "container1"
-    "sidebarItog"
-  ;
+    "sidebarItog";
   }
   #Itog {
     margin-top: 0px;
@@ -958,12 +952,11 @@ footer {
 @media only screen and (max-width: 670px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 80px auto 88px 50px;
+    grid-template-rows: 80px auto 88px;
     grid-template-areas:
   "nav"
   "contantContainer"
-  "footer"
-  "tabbar";
+  "footer";
   }
   #navigationBlock{
     display: grid;
@@ -1129,7 +1122,6 @@ footer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 24px 1fr;
-    border-style: solid;
     gap: 16px;
     grid-template-areas:
      "otsutsvInto"
@@ -1189,27 +1181,48 @@ footer {
       "phoneClass"
       "innNumbClass";
   }
+  #tabbar {
+    bottom: 0px;
+    position: sticky;
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "iconHome iconSearch iconBag iconFav iconProfile";
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 56px;
+    grid-area: tabbar;
+  }
+  .bar{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "iconHome iconSearch iconBag iconFav iconProfile";
+    justify-content: center;
+    background-color: #F6F6FA;
+  }
+
 
 }
 @media only screen and (max-width: 425px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 80px auto 88px 50px;
+    grid-template-rows: 80px auto 88px;
     grid-template-areas:
   "nav"
   "contantContainer"
-  "footer"
-  "tabbar";
+  "footer";
   }
   .contantContainer {
     padding: 0px 16px 0px 16px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto ;
     grid-template-areas:
     "h1"
     "container1"
-    "sidebarItog"
-    "tabbar";
+    "sidebarItog";
   }
   #Itog {
     margin-top: 0px;
@@ -1217,9 +1230,16 @@ footer {
   }
 
   #tabbar {
-    border-style: solid;
-    display: block;
-    height: 40px;
+    bottom: 0px;
+    position: sticky;
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "iconHome iconSearch iconBag iconFav iconProfile";
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 56px;
     grid-area: tabbar;
   }
   nav {
@@ -1234,7 +1254,8 @@ footer {
   }
   #navigationBlock {
     height: 56px;
-
+    position: sticky;
+    top: 0px;
     background-color: rgb(103,37,168);
   }
 }

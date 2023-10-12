@@ -125,7 +125,7 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
             </div>
           </div>
           <div id="sumAndCount2" class="containerSumAndCount">
-            <div class="countFromSumAndCount">
+            <div class="countFromSumAndCount" id="idCountFromSumAndCount2">
               <div class="plusFromCountFromSumAndCount">
                  <div class="displayCounter">
             <button  class="buttons"> - </button>
@@ -136,7 +136,7 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
                </div>
                 <div id="spaceForTovar" style="display: none" ></div>
               
-              <div id="iconsFromCountFromSumAndCount2" class="icons">
+              <div id="iconsFromCountFromSumAndCount2" class="icons" style="padding: 10px;">
                  <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
                    <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
               </div>
@@ -187,7 +187,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321291.png"/> </div>
             <button  class="buttons"> + </button>
                   </div>
                </div>
-              <div id="ostatkiFromCountFromSumAndCount3" style="display: inline-flex; font-size: 13px; height: 16px">Осталось 2 шт.</div>
+              <div id="ostatkiFromCountFromSumAndCount3" style="display: inline-flex; font-size: 13px; height: 16px;">Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount3" class="icons">
                 <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg"></object></div>
                    <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg"></object> </div>
@@ -329,8 +329,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
       <div id="idStrokaInfoOtkaz" style="display: flex">
        <div  style="display: flex; gap: 8px"> 
        <div id="idSber2"><object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
-       <div id="idObratDostav2" class="class13px">Обратная доставка товаров на склад при отказе —</div>
-       <div id="idBesplat" class="class13px"> бесплатно</div>
+       <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat" class="class13px" style="display: inline-block"> бесплатно</div></div>
        </div>
        
        </div>    
@@ -435,12 +434,12 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
        
        <div id="idKartaOplata">
          <div>    
-           <div style="display:flex; justify-content: space-between; border: solid">
+           <div style="display:flex; justify-content: space-between;">
              <div style="display:inline-flex; font-weight: bold">Оплата картой
              </div>
              <div><object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg7"> </object> </div>
          </div>
-            <div style=" display:flex; border: solid; gap: 8px" class="class13px">
+            <div style=" display:flex;  gap: 8px" class="class13px">
            <div> 
            <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg4"> </object>
            </div>
@@ -450,11 +449,11 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
          <div>  </div>
          </div>
        <div id="idSpisatOplatu" class="class13px">
-            <div style=" display:flex; border: solid; gap: 8px">
+            <div style=" display:flex;  gap: 8px">
            <div>  <input type="checkbox" style="width: 22px;height: 22px"/></div>
            <div>Списать оплату сразу</div>
             </div>
-          <div style=" display:flex; border: solid;">
+          <div style=" display:flex;">
             Спишем оплату с карты при получении
             </div>
         </div>

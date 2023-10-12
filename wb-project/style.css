@@ -393,6 +393,7 @@ body {
 }
 #idStrokaInfoOtkaz{
   grid-area: idStrokaInfoOtkaz;
+  display: flex
 }
 .containerDostavkaTitle{
   display: grid;
@@ -640,6 +641,13 @@ body {
 #idOplataKartoy {
   grid-area: idOplataKartoy;
 }
+#idSpisatOplatu{
+  display: grid;
+  border-radius: 8px;
+  padding: 8px 8px 12px 8px;
+  gap: 8px;
+  background-color:#F6F6FA ;
+}
 .containerDostavka{
   display: grid;
   gap: 12px;
@@ -753,6 +761,8 @@ body {
 .containerBesplatDostavka {
   grid-area: containerBesplatDostavka;
   column-gap: 8px;
+  border-radius: 8px;
+  background-color: #F6F6FA;
   display: inline-flex;
   padding: 8px 8px 12px 8px;
   height: 52px;
@@ -1086,6 +1096,23 @@ footer {
     justify-content: end;
     height: 100%;
   }
+  #idCountFromSumAndCount2{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .containerdostavka1Round{
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    display: grid;
+    padding: 16px 0px 24px 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 276px 32px;
+    row-gap: 24px;
+    grid-template-areas:
+     "idContainerDostavkaTitle"
+     "idStrokaInfoOtkaz";
+  }
   .containerPoluchatelRound{
     display: grid;
     border-radius: 16px;
@@ -1097,6 +1124,26 @@ footer {
     grid-template-areas:
      "h6ЗoluchatelRound"
      "idAnketa";
+  }
+  .containerOtsutsv {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 24px 1fr;
+    border-style: solid;
+    gap: 16px;
+    grid-template-areas:
+     "otsutsvInto"
+     "tovaryOtsutsv";
+  }
+  .containertovaryOtsutsv{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    grid-template-areas:
+     "otsutsvTovar1"
+     "otsutsvTovar2"
+     "otsutsvTovar3";
   }
   .containerDelivery {
     display: grid;
@@ -1117,6 +1164,9 @@ footer {
     grid-template-areas:
     "nameSurname"
     "emailPhoneInn";
+  }
+  #h6ЗoluchatelRound{
+    padding-left: 16px;
   }
   .nameSurname{
     grid-area: nameSurname;
@@ -1139,6 +1189,7 @@ footer {
       "phoneClass"
       "innNumbClass";
   }
+
 }
 @media only screen and (max-width: 425px) {
   .container {

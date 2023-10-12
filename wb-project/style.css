@@ -569,7 +569,7 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  padding: 1rem .75rem;
+  padding: 1rem 0.75rem 0rem 0rem;
   pointer-events: none;
   border: 1px solid transparent;
   transform-origin: 0 0;
@@ -1085,6 +1085,59 @@ footer {
     padding: 10px;
     justify-content: end;
     height: 100%;
+  }
+  .containerPoluchatelRound{
+    display: grid;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    grid-template-columns: 1fr;
+    grid-template-rows: 28px auto;
+    padding: 16px 0px 24px 0px;
+    gap: 24px;
+    grid-template-areas:
+     "h6ЗoluchatelRound"
+     "idAnketa";
+  }
+  .containerDelivery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 16px;
+    grid-template-areas:
+     "dostavka1Round"
+     "oplataRound"
+     "poluchatelRound";
+  }
+  #idAnketa{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 16px 16px 24px 16px;
+    gap: 16px;
+    grid-template-areas:
+    "nameSurname"
+    "emailPhoneInn";
+  }
+  .nameSurname{
+    grid-area: nameSurname;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "nameClass"
+    "surnameClass";
+  }
+  .emailPhoneInn{
+    grid-area: emailPhoneInn;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "emailClass"
+      "phoneClass"
+      "innNumbClass";
   }
 }
 @media only screen and (max-width: 425px) {

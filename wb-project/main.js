@@ -152,7 +152,7 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
                   <div id="valutaOfItem2" class="class16px">сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount2" class="class13px">1051 сом</div>
+              <div id="oldSumFromSumFromSumAndCount2" class="class13px"><s style="color: #9797AF ">1051 сом</s></div>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321291.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription3" class="DescriptionFromPicAndDescription">
-              <div id="nameFromDescriptionFromPicAndDescription3"> Футболка UZcotton мужская</div>
+              <div id="nameFromDescriptionFromPicAndDescription3"> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
               <div id="specificationFromDescriptionFromPicAndDescription3"
                    class="containerSpecificationFromDescriptionFromPicAndDescription">
                 <div id="idThingColor3"  class="class13px">Цвет: белый</div>
@@ -206,7 +206,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321291.png"/> </div>
                   <div id="valutaOfItem3" class="class16px">сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount3" class="class13px">1051 сом</div>
+              <div id="oldSumFromSumFromSumAndCount3" class="class13px"><s style="color: #9797AF ">1051 сом</s></div>
             </div>
           </div>
         </div>
@@ -274,12 +274,8 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription6" class="DescriptionFromPicAndDescription">
-              <div id="nameFromDescriptionFromPicAndDescription6"> Футболка UZcotton мужская</div>
-              <div id="specificationFromDescriptionFromPicAndDescription6"
-                   class="containerSpecificationFromDescriptionFromPicAndDescription">
-                <div id="idThingColor6" class="class13px">Цвет: белый</div>
-                <div id="idThingSize6"  class="class13px">Размер: 56</div>
-              </div>
+              <div id="nameFromDescriptionFromPicAndDescription6"> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
+             
             </div>
           </div>
           <div id="sumAndCount6" class="containerSumAndCount">

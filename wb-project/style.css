@@ -648,6 +648,7 @@ font-weight: normal; font-style: normal;
 #idOplataKartoy {
   grid-area: idOplataKartoy;
 }
+
 #idSpisatOplatu{
   display: grid;
   border-radius: 8px;
@@ -1232,6 +1233,22 @@ footer {
   "nav"
   "contantContainer"
   "footer";
+  }
+  .containerRazdelenieZakaz{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  1fr;
+    gap: 24px;
+    grid-template-areas:
+     "containerCena"
+     "idOplataKartoy";
+  }
+  #idDostavka{ display: none; }
+ #containerCena {
+   grid-area: containerCena;
+ }
+  #idOplataKartoy {
+    grid-area: idOplataKartoy;
   }
   .contantContainer {
     padding: 0px 16px 0px 16px;

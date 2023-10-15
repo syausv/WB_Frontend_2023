@@ -11,7 +11,7 @@ document.querySelector('#app').innerHTML = `
        <div  id="menuObj"> 
        <object type="image/svg+xml" data="src/icons/3.svg" id="svg888" style="margin: 12px 10px 12px 10px "></object>
        </div>
-        <div id="VeshiItochka" >ТОВАРЫ И ТОЧКА </div>
+        <div id="VeshiItochka" ><id="textVeshiItochka">товары и точка</id="textVeshiItochka"></div>
        </div>
       <div class="searchWB"> 
        

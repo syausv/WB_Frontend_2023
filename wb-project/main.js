@@ -11,7 +11,7 @@ document.querySelector('#app').innerHTML = `
        <div  id="menuObj"> 
        <object type="image/svg+xml" data="src/icons/3.svg" id="svg888" style="margin: 12px 10px 12px 10px "></object>
        </div>
-        <div id="VeshiItochka" ><id="textVeshiItochka">товары и точка</id="textVeshiItochka"></div>
+        <div id="VeshiItochka" ><id="textVeshiItochkatextVeshiItochka">товары и точка</id="textVeshiItochka"></div>
        </div>
       <div class="searchWB"> 
        
@@ -49,7 +49,7 @@ document.querySelector('#app').innerHTML = `
         <div id="tovar1" class="tovar">
           <div id="picAndDescription" class="containerPicAndDescription">
             <div id="IdClickAndPic" class="ClickAndPic">
-              <div class="ClickFromClickAndPic">
+              <div class="ClickFromClickAndPic" id="idClickFromClickAndPic3">
                <input class="checkedColor" type="checkbox" checked/>
                </div>
               <div class="PictureFromClickAndPic">
@@ -58,7 +58,7 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription" class="DescriptionFromPicAndDescription">
-              <div id="nameFromDescriptionFromPicAndDescription"> Футболка UZcotton мужская</div>
+              <div id="nameFromDescriptionFromPicAndDescription" class="text16px"> Футболка UZcotton мужская</div>
               <div id="specificationFromDescriptionFromPicAndDescription"
                    class="containerSpecificationFromDescriptionFromPicAndDescription">
                 <div id="idThingColor"   class="class13px">Цвет: белый</div>
@@ -104,7 +104,7 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
         <div id="tovar2" class="tovar">
           <div id="picAndDescription2" class="containerPicAndDescription">
             <div id="IdClickAndPic2" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> 
+              <div class="ClickFromClickAndPic" id="idClickFromClickAndPic"> 
                <input class="checkedColor" type="checkbox" checked/>
               </div>
               <div class="PictureFromClickAndPic">
@@ -159,7 +159,7 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
         <div id="tovar3" class="tovar">
           <div id="picAndDescription3" class="containerPicAndDescription">
             <div id="IdClickAndPic3" class="ClickAndPic">
-              <div class="ClickFromClickAndPic"> 
+              <div class="ClickFromClickAndPic" id="idClickFromClickAndPic2"> 
               <input class="checkedColor" type="checkbox" checked/>
               </div>
               <div class="PictureFromClickAndPic">

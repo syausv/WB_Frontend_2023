@@ -96,7 +96,8 @@ body {
   width: 106px;
   height: 56px;
   align-self: center;
-  font-size: 22px;
+  font-size: 28px;
+  line-height: 24px;
   text-align: start;
   padding-top: 0;
 }
@@ -191,6 +192,7 @@ body {
   display: grid;
   grid-template-columns: 106px 1fr;
   grid-template-rows: 108px;
+  column-gap: 16px;
   padding: 12px 0px 0px 0px;
   grid-templates-areas:
     "IdClickAndPic IdDescriptionFromPicAndDescription";
@@ -199,13 +201,33 @@ body {
   display: grid;
   grid-template-columns: 22px 72px;
   grid-template-rows: 108px;
+  gap: 12px;
   grid-templates-areas:
     "ClickFromClickAndPic PictureFromClickAndPic";
 }
 #ClickFromClickAndPic{
-  grid-area: ClickFromClickAndPic;
   display: flex;
+  grid-area: ClickFromClickAndPic;
   align-items: center;
+  justify-content: center;
+  line-height: 96px;
+  align-self: center;
+  vertical-align: middle;
+}
+#idClickFromClickAndPic{
+  display: flex;
+  line-height: 96px;
+  align-self: center;
+}
+#idClickFromClickAndPic2{
+  display: flex;
+  line-height: 96px;
+  align-self: center;
+}
+#idClickFromClickAndPic3{
+  display: flex;
+  line-height: 96px;
+  align-self: center;
 }
 #PictureFromClickAndPic{
   grid-area: PictureFromClickAndPic;
@@ -234,7 +256,9 @@ body {
 #nameFromDescriptionFromPicAndDescription3{
   max-width:275px;
 }
-
+.text16px{
+  font-size: 16px;
+}
 .containerSumAndCount{
   display: grid;
   grid-template-columns: 100px 110px;
@@ -358,7 +382,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 108px;
-  gap: 16px;
+  column-gap: 16px;
   padding: 12px 0px 0px 0px;
   grid-templates-areas:
     "IdClickAndPic IdDescriptionFromPicAndDescription";
@@ -549,6 +573,11 @@ body {
 }
 .text-field_floating-3 {
   position: relative;
+}
+.checkedColor{
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
 }
 .checkedColor:checked{
   accent-color: #CB11AB;

@@ -42,11 +42,14 @@ document.querySelector('#app').innerHTML = `
   <div class="container1">
     <div id="vnalichii" class="containerVnalichii">
       <div id="vyborVse">
-      <input class="checkedColor" type="checkbox" checked/>
+      <input class="checkedColor" id="idVyborCheck" type="checkbox" checked/>
     <label for="vyborCheck">Выбрать все</label>
 </div>
+
       <div id="tovary" class="containerTovary">
+       
         <div id="tovar1" class="tovar">
+        <hr id="hrLine">
           <div id="picAndDescription" class="containerPicAndDescription">
             <div id="IdClickAndPic" class="ClickAndPic">
               <div class="ClickFromClickAndPic" id="idClickFromClickAndPic3">
@@ -58,6 +61,7 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription" class="DescriptionFromPicAndDescription">
+            
               <div id="nameFromDescriptionFromPicAndDescription" class="text16px"> Футболка UZcotton мужская</div>
               <div id="specificationFromDescriptionFromPicAndDescription"
                    class="containerSpecificationFromDescriptionFromPicAndDescription">
@@ -397,7 +401,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
       <div id="idStoimodyZakaza" class="containerRazdelenieZakaz"> 
       <div id="idCena" class="containerCena">
            <div class="ceny" id="idItogoCeny1">
-                      <div id="idItogoCeny" style="font-size: 24px; font-weight: bold">Итого</div>  
+                      <div id="idItogoCeny" style="font-size: 24px;">Итого</div>  
                      <div id="id2101063сом" class="class20px" style="font-weight: bold">2 101 063 сом</div> 
        </div>
            <div id="idItogoCeny2" class="containerCeny2">
@@ -454,7 +458,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
          </div>
        <div id="idSpisatOplatu" class="class13px">
             <div style=" display:flex;  gap: 8px">
-           <div>  <input type="checkbox" style="width: 22px;height: 22px; background-color: #F0ECF4 "/></div>
+           <div>  <input type="checkbox" style="width: 22px;height: 22px; border-radius: 8px; background-color: #F0ECF4 "/></div>
            <div>Списать оплату сразу</div>
             </div>
           <div style=" display:flex;">

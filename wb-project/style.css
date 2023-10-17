@@ -7,16 +7,20 @@
 body {
   background-color: rgb(246,246,250);
   margin: 0px 0px 0px 0px;
-  font-family: "wf_SegoeUILight";
+  font-family: "SegoeUIRegular";
 }
 @font-face{
-  font-family: 'wf_SegoeUILight';
-  src:url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot');
-  src:url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot?#iefix') format('embedded-opentype'),
-  url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.woff') format('woff'),
-  url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.ttf') format('truetype'),
-  url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.svg#web') format('svg');
-  font-weight: 400;
+  font-family: 'SegoeUIRegular';
+  src: url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot');
+  src: url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.eot?#iefix') format('embedded-opentype'), url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.woff') format('woff'), url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.ttf') format('truetype'), url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Normal/latest.svg#web') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUIBold';
+  src: url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.eot');
+  src: url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.eot?#iefix') format('embedded-opentype'), url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.woff') format('woff'), url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.ttf') format('truetype'), url('https://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Bold/latest.svg#web') format('svg');
+  font-weight: normal;
   font-style: normal;
 }
 .zagalovki{
@@ -146,7 +150,7 @@ body {
 .containerVnalichii {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 24px 1fr;
+  grid-template-rows: 24px  1fr;
 
   gap: 16px;
   grid-template-areas:
@@ -165,7 +169,7 @@ body {
 .containerTovary{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 108px 176px 152px;
+  grid-template-rows:  108px 176px 152px;
 
   gap: 20px;
   grid-template-areas:
@@ -177,7 +181,7 @@ body {
   display: grid;
   justify-content: space-between;
   grid-template-columns: auto 226px;
-  grid-template-rows: auto;
+  grid-template-rows:  auto;
   grid-templates-areas:
     "picAndDescription sumAndCount";
 }
@@ -193,6 +197,7 @@ body {
   grid-template-columns: 106px 1fr;
   grid-template-rows: 108px;
   column-gap: 16px;
+
   padding: 12px 0px 0px 0px;
   grid-templates-areas:
     "IdClickAndPic IdDescriptionFromPicAndDescription";
@@ -231,6 +236,10 @@ body {
 }
 #PictureFromClickAndPic{
   grid-area: PictureFromClickAndPic;
+}
+.DescriptionFromPicAndDescription{
+  display: grid;
+  row-gap: 8px;
 }
 .containerSpecificationFromDescriptionFromPicAndDescription{
   display: grid;
@@ -312,6 +321,7 @@ body {
   width: 44px;
 }
 .containerSumFromIdSumFromSumFromSumAndCount{
+  font-weight: bold;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto ;
@@ -574,10 +584,18 @@ body {
 .text-field_floating-3 {
   position: relative;
 }
+input#idVyborCheck{
+  border-radius: 8px;
+  border-style: solid;
+}
 .checkedColor{
+  display: inline-block;
   vertical-align: middle;
   width: 22px;
   height: 22px;
+  border: 1px solid;
+  border-radius: 8px;
+
 }
 .checkedColor:checked{
   accent-color: #CB11AB;
@@ -698,7 +716,12 @@ body {
     "containerBesplatDostavka";
 
 }
+h1{
+  font-family: 'SegoeUIBold';
+  font-size: 28px;
+}
 .ceny{
+  font-family: 'SegoeUIBold';
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
@@ -1090,9 +1113,10 @@ footer {
   .containerTovary{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     gap: 16px;
     grid-template-areas:
+     "hrLine"
      "tovar1"
      "tovar2"
      "tovar3";

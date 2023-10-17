@@ -45,11 +45,13 @@ document.querySelector('#app').innerHTML = `
       <input class="checkedColor" id="idVyborCheck" type="checkbox" checked/>
     <label for="vyborCheck">Выбрать все</label>
 </div>
+   
 
       <div id="tovary" class="containerTovary">
-       
+           
         <div id="tovar1" class="tovar">
-        <hr id="hrLine">
+     
+       
           <div id="picAndDescription" class="containerPicAndDescription">
             <div id="IdClickAndPic" class="ClickAndPic">
               <div class="ClickFromClickAndPic" id="idClickFromClickAndPic3">
@@ -144,7 +146,7 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
                </div>
                 <div id="spaceForTovar" style="display: none" ></div>
               
-              <div id="iconsFromCountFromSumAndCount2" class="icons" style="padding: 10px;">
+              <div id="iconsFromCountFromSumAndCount2" class="icons" style="padding-top: 10px;">
                  <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg333"></object></div>
                    <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg333"></object> </div>
               </div>

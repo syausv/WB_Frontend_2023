@@ -323,7 +323,7 @@ body {
 .containerSumFromIdSumFromSumFromSumAndCount{
   font-weight: bold;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 35px;
   grid-template-rows: auto ;
   grid-templates-areas:
     "sumOfItem valutaOfItem"
@@ -879,6 +879,9 @@ footer {
 }
 .class16px{
   font-size: 16px;
+}
+.cenySize{
+  text-align: end;
 }
 
 @media only screen and (width: 1400px) {

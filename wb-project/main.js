@@ -99,11 +99,11 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
             <div id="IdSumFromSumAndCount" class="sumFromSumAndCount">
               <div id="sumFromSumFromSumAndCount">
                 <div class="containerSumFromIdSumFromSumFromSumAndCount">
-                  <div id="sumOfItem" class="class20px">522</div>
-                  <div id="valutaOfItem" class="class16px">сом</div>
+                  <div id="sumOfItem" style="font-size: 20px" class="cenySize">522</div>
+                  <div id="valutaOfItem" style="font-size: 16px"  class="cenySize" >сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount" class="class13px"><s style="color:#9797AF">1051 сом</s></div>
+              <div id="oldSumFromSumFromSumAndCount" class="cenySize" style="font-size: 13px"><s style="color:#9797AF">1051 сом</s></div>
             </div>
           </div>
         </div>
@@ -151,14 +151,14 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
                    <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg333"></object> </div>
               </div>
             </div>
-            <div id="IdSumFromSumAndCount2" class="sumFromSumAndCount">
+            <div id="IdSumFromSumAndCount2"  class="sumFromSumAndCount">
               <div id="sumFromSumFromSumAndCount2">
                 <div class="containerSumFromIdSumFromSumFromSumAndCount">
-                  <div id="sumOfItem2" class="class16px">2 100 047</div>
-                  <div id="valutaOfItem2" class="class16px">сом</div>
+                  <div id="sumOfItem2"  class="cenySize">2 100 047</div>
+                  <div id="valutaOfItem2" class="cenySize">сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount2" class="class13px"><s style="color: #9797AF ">1051 сом</s></div>
+              <div id="oldSumFromSumFromSumAndCount2" class="cenySize" style="font-size: 13px"><s style="color: #9797AF ">2 300 047 сом</s></div>
             </div>
           </div>
         </div>
@@ -208,11 +208,11 @@ border-radius: 8px;"> <img src="src/img/Frame2771321291.png"/> </div>
             <div id="IdSumFromSumAndCount3" class="sumFromSumAndCount">
               <div id="sumFromSumFromSumAndCount3">
                 <div class="containerSumFromIdSumFromSumFromSumAndCount">
-                  <div id="sumOfItem3" class="class20px">494</div>
-                  <div id="valutaOfItem3" class="class16px">сом</div>
+                  <div id="sumOfItem3" class="cenySize" style="font-size: 20px">494</div>
+                  <div id="valutaOfItem3" class="cenySize" >сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount3" class="class13px"><s style="color: #9797AF ">1051 сом</s></div>
+              <div id="oldSumFromSumFromSumAndCount3" class="cenySize" style="font-size: 13px"><s style="color: #9797AF ">950 сом</s> <hr style="border-style: dotted"></div>
             </div>
           </div>
         </div>

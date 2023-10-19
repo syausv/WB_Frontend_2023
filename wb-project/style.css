@@ -1033,7 +1033,7 @@ footer {
     display: grid;
     gap: 0px;
     padding: 0px;
-    grid-template-columns: auto 45px;
+    grid-template-columns: auto max-content;
     grid-template-rows: 56px;
     grid-template-areas: "menu searchWB";
   }
@@ -1062,10 +1062,20 @@ footer {
   #textVeshiItochka {
 
   }
+  #searchBtn {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items:center;
+  }
   .searchWB{
-    display:flex;
-    height: 48px;
-    width: 48px;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
   }
   #menuObj{
@@ -1096,8 +1106,10 @@ footer {
     background-color: transparent;
     height: 48px;
     border-radius: 36px;
-    display: flex;
     flex-direction: row;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
   }
   .container1{
@@ -1300,6 +1312,31 @@ footer {
   "nav"
   "contantContainer"
   "footer";
+  }
+  .searchWB{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    align-self: start;
+    border: none;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    align-self: center;
+  }
+  #formSearch {
+    height: auto;
+  }
+  #idSvgSearch {
+    color: #fff;
+    fill: currentColor;
+    width: 28px;
+    height: 28px;
+    padding: 1px;
+  }
+  #menu{
+    padding: 0px;
   }
   .containerRazdelenieZakaz{
     display: grid;

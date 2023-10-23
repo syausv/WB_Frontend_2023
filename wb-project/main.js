@@ -11,7 +11,7 @@ document.querySelector('#app').innerHTML = `
        <div  id="menuObj"> 
        <object type="image/svg+xml" data="src/icons/3.svg" id="svg888" style="margin: 12px 10px 12px 10px "></object>
        </div>
-        <div id="VeshiItochka" ><id="textVeshiItochkatextVeshiItochka">ТОВАРЫ И ТОЧКА</id="textVeshiItochka"></div>
+        <div id="VeshiItochka" ><id="textVeshiItochkatextVeshiItochka">товары и точка</id="textVeshiItochka"></div>
        </div>
       <div class="searchWB"> 
        
@@ -296,7 +296,7 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
     <div id="blockDelivery" class="containerDelivery">
       <div id="dostavka1Round" class="containerdostavka1Round" >
      <div id="idContainerDostavkaTitle" class="containerDostavkaTitle"> 
-                     <div id="h4" style="display: flex; justify-content: space-between; padding: 0px 24px 0px 24px"><div class="zagalovki">Способ доставки</div> <div style="color: #CB11AB">Изменить</div></div>
+                     <div id="h4" style="display: flex; justify-content: space-between; padding: 0px 24px 0px 24px"><div class="zagalovki">Способ доставки</div> <div style=" color: #CB11AB">Изменить</div></div>
                      <div id="IdContainerAdressDelivery" class="containerAdressDelivery"> 
                      <div id="labelContainerAdressDelivery"> 
                      <div>Пункт выдачи</div>

@@ -1367,6 +1367,10 @@ footer {
     margin-top: 0px;
     height: 604px;
   }
+  .zagalovki{
+    font-size: 20px;
+    font-weight: bold;
+  }
 
   #tabbar {
     bottom: 0px;

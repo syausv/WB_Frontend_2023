@@ -53,6 +53,7 @@ body {
 #query::placeholder {
   color: #fff;
   opacity: 0.7;
+  font-family: "SegoeUIRegular";
 }
 .searchWB{
   display:flex;
@@ -286,10 +287,12 @@ body {
     "ostatkiFromCountFromSumAndCount"
     "iconsFromCountFromSumAndCount";
 }
-#ostatkiFromCountFromSumAndCount{
+
+.ostatki2sht{
   display: inline-flex;
   font-size: 13px;
-  height: 16px
+  padding: 5px;
+  color: #FF3B30;
 }
 .displayCounter{
   background-color: #FFFFFF;
@@ -1203,7 +1206,6 @@ footer {
   }
   #ostatkiFromCountFromSumAndCount{
     display: flex;
-    padding: 10px;
     justify-content: start;
     height: 100%;
   }

@@ -90,7 +90,7 @@ border-radius: 8px;">  <img src="public/src/img/Frame38531.png"/> </div>
             <button  class="buttons"> + </button>
         </div>
               </div>
-              <div id="ostatkiFromCountFromSumAndCount" style="color: #FF3B30" >Осталось 2 шт.</div>
+              <div id="ostatkiFromCountFromSumAndCount" class="ostatki2sht" >Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount" class="icons">
                 <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg4442"></object></div>
                    <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg3444"></object> </div>
@@ -103,7 +103,7 @@ border-radius: 8px;">  <img src="public/src/img/Frame38531.png"/> </div>
                   <div id="valutaOfItem" style="font-size: 16px"  class="cenySize" >сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount" class="cenySize" style="font-size: 13px"><s style="color:#9797AF">1051 сом</s></div>
+              <div id="oldSumFromSumFromSumAndCount" class="cenySize" style="font-size: 13px"><s style="color:#9797AF; text-decoration: underline dotted">1051 сом</s></div>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame277132129.png"/> </div>
                   <div id="valutaOfItem2" class="cenySize">сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount2" class="cenySize" style="font-size: 13px"><s style="color: #9797AF ">2 300 047 сом</s></div>
+              <div id="oldSumFromSumFromSumAndCount2" class="cenySize" style="font-size: 13px"><s style="color: #9797AF; text-decoration: underline dotted ">2 300 047 сом</s></div>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@ border-radius: 8px;"> <img src="/src/img/Frame2771321291.png" alt=""/> </div>
             <button  class="buttons"> + </button>
                   </div>
                </div>
-              <div id="ostatkiFromCountFromSumAndCount3"  class="ostatki2sht"   style="">Осталось 2 шт.</div>
+              <div id="ostatkiFromCountFromSumAndCount3"  class="ostatki2sht" >Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount3" class="icons">
                 <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg313"></object></div>
                    <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg233"></object> </div>
@@ -212,7 +212,7 @@ border-radius: 8px;"> <img src="/src/img/Frame2771321291.png" alt=""/> </div>
                   <div id="valutaOfItem3" class="cenySize" >сом</div>
                 </div>
               </div>
-              <div id="oldSumFromSumFromSumAndCount3" class="cenySize" style="font-size: 13px"><s style="color: #9797AF ">950 сом</s> <hr style="border-style: dotted"></div>
+              <div id="oldSumFromSumFromSumAndCount3" class="cenySize" style="font-size: 13px width: max-content"><s style="color: #9797AF; text-decoration: underline dotted">950 сом</s> </div>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
       <div id="idStrokaInfoOtkaz" style="display: flex">
        <div  style="display: flex; gap: 8px"> 
        <div id="idSber2"><object type="image/svg+xml" data="public/src/icons/priceshipping.svg" id="svg"></object> </div>
-       <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat" class="class13px" style="display: inline-block; color:#0CB477"> бесплатно</div></div>
+       <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat" class="class13px" style="display: inline-block; color:#0CB477; text-decoration: underline dotted"> бесплатно</div></div>
        </div>
        
        </div>    
@@ -429,14 +429,14 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
             <object type="image/svg+xml" data="public/src/icons/icon-20.svg" id="svg47"> </object> 
             </div>
            <div id="idGorod" class="class13px"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
-           <div id="idDataDost" class="class13px">5–8 фев </div>
+           <div id="idDataDost" class="class13px" style="text-decoration: underline dotted; color: #CB11AB">5–8 фев </div>
           </div>
        <div class="containerBesplatDostavka" >
          <div id="idIconSber" style="display: block; text-align: center;">
           <object type="image/svg+xml" data="public/src/icons/priceshipping.svg" id="svg13""> </object>
           </div>
          <div id="idObratDostav" style="display: inline-block">
-           Обратная доставка товаров на склад при отказе — <span style="color:#0CB477">  бесплатно </span>
+           Обратная доставка товаров на склад при отказе — <span style="color:#0CB477; text-decoration: underline dotted">  бесплатно </span>
          </div>
         </div>
        </div>

@@ -81,8 +81,8 @@ border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
             </div>
           </div>
           <div id="sumAndCount" class="containerSumAndCount">
-            <div class="countFromSumAndCount" style="gap: 8px">
-              <div class="plusFromCountFromSumAndCount">
+            <div class="countFromSumAndCount" id="idCountFromSumAndCount" style="gap: 8px">
+              <div class="plusFromCountFromSumAndCount" >
               
         <div class="displayCounter">
             <button  class="buttons"> - </button>
@@ -170,7 +170,7 @@ border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
               </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> <img src="src/img/Frame2771321291.png"/> </div>
+border-radius: 8px;"> <img src="/src/img/Frame2771321291.png" alt=""/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription3" class="DescriptionFromPicAndDescription">
@@ -319,18 +319,18 @@ border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
            <div id="idSmallTovary"> 
              <div id="idContainerSmallTovary6" class="containerSmallTovary6">
                <div id="picSmall1" style="width: 40px ;height: 56px ; border-radius: 8px">
-                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="src/img/Frame38531.png"/>
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame38531.png" alt=""/>
                 </div>
                <div id="picSmall2" style="width: 40px ;height: 56px ; border-radius: 8px">
-                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="src/img/Frame277132129.png"/>
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame277132129.png" alt=""/>
                 </div>
                <div id="picSmall3" style="width: 40px ;height: 56px ; border-radius: 8px"> 
-               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="src/img/Frame2771321291.png"/>
+               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame2771321291.png" alt=""/>
                </div>
              </div>
             </div>
                 <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ; border-radius: 8px"> 
-                  <img style="width: 40px ;height: 56px ;border-radius: 8px" src="src/img/Frame277132129.png"/>
+                  <img style="width: 40px ;height: 56px ;border-radius: 8px" src="/src/img/Frame277132129.png" alt=""/>
                  </div>
             </div>
             </div>

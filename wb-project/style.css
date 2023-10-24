@@ -1059,8 +1059,25 @@ footer {
     align-self: center;
 
   }
-  #textVeshiItochka {
-
+  #nameFromDescriptionFromPicAndDescription2{
+    max-width:275px;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+  #nameFromDescriptionFromPicAndDescription3{
+    max-width:275px;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
   #searchBtn {
     all: unset;
@@ -1144,6 +1161,16 @@ footer {
     grid-template-rows: auto;
     grid-templates-areas:
       "containerPicAndDescription";
+  }
+  .containerPicAndDescription{
+    display: grid;
+    grid-template-columns: 106px 1fr;
+    grid-template-rows: 120px;
+    column-gap: 16px;
+
+    padding: 12px 0px 0px 0px;
+    grid-templates-areas:
+      "IdClickAndPic IdDescriptionFromPicAndDescription";
   }
   .containerSumAndCount{
     display: grid;
@@ -1347,7 +1374,10 @@ footer {
      "containerCena"
      "idOplataKartoy";
   }
-  #idDostavka{ display: none; }
+
+  #idDostavka{
+    display: none;
+  }
  #containerCena {
    grid-area: containerCena;
  }

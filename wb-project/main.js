@@ -296,28 +296,29 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
     <div id="blockDelivery" class="containerDelivery">
       <div id="dostavka1Round" class="containerdostavka1Round" >
      <div id="idContainerDostavkaTitle" class="containerDostavkaTitle"> 
-                     <div id="h4" style="display: flex; justify-content: space-between; padding: 0px 24px 0px 24px"><div class="zagalovki">Способ доставки</div> <div style=" color: #CB11AB">Изменить</div></div>
-                     <div id="IdContainerAdressDelivery" class="containerAdressDelivery"> 
-                     <div id="labelContainerAdressDelivery"> 
-                     <div>Пункт выдачи</div>
-                      <div> Стоимость доставки </div>
-                      <div> 5—6 февраля </div>
-                      <div> 7—8 февраля</div>
-         </div>
-         
-         <div id="adressContainerAdressDelivery"> 
-          <div id="idAdressDeliveryOfPost" style="height: 44px">
+                     <div id="h4" >
+                     <div class="zagalovki">Способ доставки</div> <div style=" color: #CB11AB">Изменить</div></div>
+                    <div id="IdContainerAdressDelivery" class="containerAdressDelivery"> 
+  
+ <div id="punktV">Пункт выдачи</div>
+  
+ <div id="idAdressDeliveryOfPost" style="height: 44px">
           <div>Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
           <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px; gap: 4px"> 
-          <div style="display: flex"><div>
-          <object type="image/svg+xml" data="public/src/icons/star.svg" id="svg11"></object>
+<div style="display: flex"><div>
+<object type="image/svg+xml" data="public/src/icons/star.svg" id="svg11"></object>
 </div>4.99 </div>
-          <div>Ежедневно с 10 до 21 </div>
-          </div>
-          </div>
-          <div> Бесплатно </div>
-           <div id="idSmallTovary"> 
-             <div id="idContainerSmallTovary6" class="containerSmallTovary6">
+<div>Ежедневно с 10 до 21 </div>
+</div>
+</div>
+ <div id="stoimost"> Стоимость доставки </div>
+  
+ <div id="besplatno"> Бесплатно </div>
+  
+<div id="date1"> 5—6 февраля </div>
+  
+<div id="idSmallTovary"> 
+<div id="idContainerSmallTovary6" class="containerSmallTovary6">
                <div id="picSmall1" style="width: 40px ;height: 56px ; border-radius: 8px">
                 <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame38531.png" alt=""/>
                 </div>
@@ -329,12 +330,14 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
                </div>
              </div>
             </div>
-                <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ; border-radius: 8px"> 
+ 
+<div id="date2"> 7—8 февраля</div>
+  
+  <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ; border-radius: 8px"> 
                   <img style="width: 40px ;height: 56px ;border-radius: 8px" src="/src/img/Frame277132129.png" alt=""/>
-                 </div>
             </div>
             </div>
-             </div>
+     </div>
              </div>      
       <div id="idStrokaInfoOtkaz" style="display: flex">
        <div  style="display: flex; gap: 8px"> 
@@ -431,7 +434,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
            <div id="idGorod" class="class13px"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
            <div id="idDataDost" class="class13px" style="text-decoration: underline dotted; color: #CB11AB">5–8 фев </div>
           </div>
-       <div class="containerBesplatDostavka" >
+       <div class="containerBesplatDostavka" id="idContainerBesplatDostavka" >
          <div id="idIconSber" style="display: block; text-align: center;">
           <object type="image/svg+xml" data="public/src/icons/priceshipping.svg" id="svg13""> </object>
           </div>
@@ -440,7 +443,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
          </div>
         </div>
        </div>
-      <div id="idOplataKartoy" style="display:grid; row-gap: 12px">
+      <div id="idOplataKartoy" class="OplataKartoy" >
        
        <div id="idKartaOplata">
          <div>    

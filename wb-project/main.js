@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
     <div id="navigationBlock"> 
       <div id="menu">
        <div  id="menuObj"> 
-       <object type="image/svg+xml" data="public/src/icons/3.svg" id="svg888" style="margin: 12px 10px 12px 10px "></object>
+       <object type="image/svg+xml" data="src/icons/3.svg" id="svg888" style="margin: 12px 10px 12px 10px "></object>
        </div>
         <div id="VeshiItochka" ><id="textVeshiItochkatextVeshiItochka">товары и точка</id="textVeshiItochka"></div>
        </div>
@@ -26,11 +26,11 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div id="iconsNav"> 
       <div style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -2px;">
-        <object type="image/svg+xml" data="public/src/icons/profilicon.svg" id="svg44453" ></object>
+        <object type="image/svg+xml" data="src/icons/profilicon.svg" id="svg44453" ></object>
         <div class="class13px" style="color: white"> Профиль </div>
        </div>
        <div style="width: 56px; height: 56px; gap: 6px; padding: 0px 0px 3px 0px; margin-top: -4px;">
-        <object type="image/svg+xml" data="public/src/icons/korzina.svg" id="svg3345" ></object>
+        <object type="image/svg+xml" data="src/icons/korzina.svg" id="svg3345" ></object>
         <div class="class13px" style="color: white"> Корзина </div>
        </div>
       </div>
@@ -59,7 +59,7 @@ document.querySelector('#app').innerHTML = `
                </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;">  <img src="public/src/img/Frame38531.png"/> </div>
+border-radius: 8px;">  <img src="src/img/Frame38531.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription" class="DescriptionFromPicAndDescription">
@@ -74,7 +74,7 @@ border-radius: 8px;">  <img src="public/src/img/Frame38531.png"/> </div>
                 <div class="class13px" style="color:#9797AF">Коледино WB</div>
                 <div class="containercompanyFromDescriptionFromPicAndDescription"> <div  style="color:#9797AF" id="idCompany" class="class13px"> OOO Вайлдберриз </div>
                   <div id="idInfo">
-                  <object type="image/svg+xml" data="public/src/icons/info.svg" id="svg123info.svg0"> </object> 
+                  <object type="image/svg+xml" data="src/icons/info.svg" id="svg123info.svg0"> </object> 
 </div>
                 </div>
               </div>
@@ -92,8 +92,8 @@ border-radius: 8px;">  <img src="public/src/img/Frame38531.png"/> </div>
               </div>
               <div id="ostatkiFromCountFromSumAndCount" class="ostatki2sht" >Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount" class="icons">
-                <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg4442"></object></div>
-                   <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg3444"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount" class="sumFromSumAndCount">
@@ -115,7 +115,7 @@ border-radius: 8px;">  <img src="public/src/img/Frame38531.png"/> </div>
               </div>
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> <img src="public/src/img/Frame277132129.png"/> </div>
+border-radius: 8px;"> <img src="src/img/Frame277132129.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription2" class="DescriptionFromPicAndDescription">
@@ -128,7 +128,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame277132129.png"/> </div>
                 <div class="class13px" style="color:#9797AF">Коледино WB</div>
                 <div class="containercompanyFromDescriptionFromPicAndDescription"> <div id="idCompany2" style="color:#9797AF" class="class13px"> OOO Мегапрофстиль </div>
                   <div id="idInfo2">
-                  <object type="image/svg+xml" data="public/src/icons/info2.svg" id="svg344e4"></object>
+                  <object type="image/svg+xml" data="src/icons/info2.svg" id="svg344e4"></object>
                   </div>
                 </div>
               </div>
@@ -147,8 +147,8 @@ border-radius: 8px;"> <img src="public/src/img/Frame277132129.png"/> </div>
                 <div id="spaceForTovar" style="display: none" ></div>
               
               <div id="iconsFromCountFromSumAndCount2" class="icons" style="padding-top: 10px;">
-                 <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg333"></object></div>
-                   <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg333"></object> </div>
+                 <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg333"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg333"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount2"  class="sumFromSumAndCount">
@@ -184,7 +184,7 @@ border-radius: 8px;"> <img src="/src/img/Frame2771321291.png" alt=""/> </div>
                 <div class="class13px" style="color:#9797AF">Коледино WB</div>
                 <div class="containercompanyFromDescriptionFromPicAndDescription"> <div  style="color:#9797AF" id="idCompany3" class="class13px"> OOO Вайлдберриз </div>
                   <div id="idInfo3">
-                  <object type="image/svg+xml" data="public/src/icons/info3.svg" id="svg3416444"></object>
+                  <object type="image/svg+xml" data="src/icons/info3.svg" id="svg3416444"></object>
 </div>
                 </div>
               </div>
@@ -201,8 +201,8 @@ border-radius: 8px;"> <img src="/src/img/Frame2771321291.png" alt=""/> </div>
                </div>
               <div id="ostatkiFromCountFromSumAndCount3"  class="ostatki2sht" >Осталось 2 шт.</div>
               <div id="iconsFromCountFromSumAndCount3" class="icons">
-                <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg313"></object></div>
-                   <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg233"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg313"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg233"></object> </div>
               </div>
             </div>
             <div id="IdSumFromSumAndCount3" class="sumFromSumAndCount">
@@ -226,7 +226,7 @@ border-radius: 8px;"> <img src="/src/img/Frame2771321291.png" alt=""/> </div>
             <div id="IdClickAndPic4">
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> <img src="public/src/img/Frame38532.png"/></div>
+border-radius: 8px;"> <img src="src/img/Frame38532.png"/></div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription4" class="DescriptionFromPicAndDescription">
@@ -240,8 +240,8 @@ border-radius: 8px;"> <img src="public/src/img/Frame38532.png"/></div>
           </div>
           <div id="sumAndCount4" class="containerSumAndCount">
               <div id="iconsFromOtsuts" class="icons">
-                <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg443"></object></div>
-                   <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg334"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg443"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg334"></object> </div>
             </div>
           </div>
      </div>
@@ -251,7 +251,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame38532.png"/></div>
             
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> <img src="public/src/img/Frame2771321292.png"/></div>
+border-radius: 8px;"> <img src="src/img/Frame2771321292.png"/></div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription5" class="DescriptionFromPicAndDescription">
@@ -265,8 +265,8 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321292.png"/></div>
           </div>
           <div id="sumAndCount5" class="containerSumAndCount">
               <div id="iconsFromOtsuts2" class="icons">
-                <div><object type="image/svg+xml" data="/public/src/icons/favorite.svg" id="svg242"></object></div>
-                   <div>  <object type="image/svg+xml" data="/public/src/icons/delete.svg" id="svg167"></object> </div>
+                <div><object type="image/svg+xml" data="src/icons/favorite.svg" id="svg242"></object></div>
+                   <div>  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg167"></object> </div>
             </div>
           </div>
 </div>
@@ -276,7 +276,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321292.png"/></div>
             
               <div class="PictureFromClickAndPic">
                 <div style="width: 72px; height: 96px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
+border-radius: 8px;"> <img src="src/img/Frame2771321293.png"/> </div>
               </div>
             </div>
             <div id="IdDescriptionFromPicAndDescription6" class="DescriptionFromPicAndDescription">
@@ -286,8 +286,8 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
           </div>
           <div id="sumAndCount6" class="containerSumAndCount">
               <div id="iconsFromOtsuts3" class="icons">
-                <div><object type="image/svg+xml" data="/public/src/icons/favorite.svg" id="svg13"></object></div>
-                   <div>  <object type="image/svg+xml" data="/public/src/icons/delete.svg" id="svg122"></object> </div>
+                <div><object type="image/svg+xml" data="/src/icons/favorite.svg" id="svg13"></object></div>
+                   <div>  <object type="image/svg+xml" data="/src/icons/delete.svg" id="svg122"></object> </div>
             </div>
           </div>
 </div>
@@ -306,7 +306,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
           <div>Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
           <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px; gap: 4px"> 
 <div style="display: flex"><div>
-<object type="image/svg+xml" data="/public/src/icons/star.svg" id="svg11"></object>
+<object type="image/svg+xml" data="src/icons/star.svg" id="svg11"></object>
 </div>4.99 </div>
 <div>Ежедневно с 10 до 21 </div>
 </div>
@@ -320,13 +320,13 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
 <div id="idSmallTovary"> 
 <div id="idContainerSmallTovary6" class="containerSmallTovary6">
                <div id="picSmall1" style="width: 40px ;height: 56px ; border-radius: 8px">
-                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/public/src/img/Frame38531.png" alt=""/>
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame38531.png" alt=""/>
                 </div>
                <div id="picSmall2" style="width: 40px ;height: 56px ; border-radius: 8px">
-                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/public/src/img/Frame277132129.png" alt=""/>
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame277132129.png" alt=""/>
                 </div>
                <div id="picSmall3" style="width: 40px ;height: 56px ; border-radius: 8px"> 
-               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/public/src/img/Frame2771321291.png" alt=""/>
+               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame2771321291.png" alt=""/>
                </div>
              </div>
             </div>
@@ -341,7 +341,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
              </div>      
       <div id="idStrokaInfoOtkaz" style="display: flex">
        <div  style="display: flex; gap: 8px"> 
-       <div id="idSber2"><object type="image/svg+xml" data="/public/src/icons/priceshipping.svg" id="svg"></object> </div>
+       <div id="idSber2"><object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
        <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat" class="class13px" style="display: inline-block; color:#0CB477; text-decoration: underline dotted"> бесплатно</div></div>
        </div>
        
@@ -353,7 +353,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
        <div id="sposobOplaty" class="containerSposobOplaty"> 
          <div id="h6SposobOplaty" style="display: flex; justify-content: space-between"><div class="zagalovki">Способ оплаты</div> <div style="color: #CB11AB">Изменить</div> </div>
          <div style="display: flex; gap: 8px">
-         <div id="cartMir" style="gap:4px"> <object type="image/svg+xml" data="public/src/icons/platSber.svg" id="svg33"> </object> 
+         <div id="cartMir" style="gap:4px"> <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg33"> </object> 
          </div>
          <div style="display: flex; gap: 12px"><div>1234 56•• •••• 1234</div> <div>01/30</div></div>
          </div>
@@ -429,14 +429,14 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
       <div style="display: inline-flex; justify-content: space-between">
            <div id="idNazvPunkta" style="font-weight: bold"> Доставка в пункт выдачи</div>
             
-            <object type="image/svg+xml" data="public/src/icons/icon-20.svg" id="svg47"> </object> 
+            <object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg47"> </object> 
             </div>
            <div id="idGorod" class="class13px"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
            <div id="idDataDost" class="class13px" style="text-decoration: underline dotted; color: #CB11AB">5–8 фев </div>
           </div>
        <div class="containerBesplatDostavka" id="idContainerBesplatDostavka" >
          <div id="idIconSber" style="display: block; text-align: center;">
-          <object type="image/svg+xml" data="public/src/icons/priceshipping.svg" id="svg13""> </object>
+          <object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg13""> </object>
           </div>
          <div id="idObratDostav" style="display: inline-block">
            Обратная доставка товаров на склад при отказе — <span style="color:#0CB477; text-decoration: underline dotted">  бесплатно </span>
@@ -450,11 +450,11 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
            <div style="display:flex; justify-content: space-between;">
              <div style="display:inline-flex; font-weight: bold">Оплата картой
              </div>
-             <div><object type="image/svg+xml" data="public/src/icons/icon-20.svg" id="svg27"> </object> </div>
+             <div><object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg27"> </object> </div>
          </div>
             <div style=" display:flex;  gap: 8px" class="class13px">
            <div> 
-           <object type="image/svg+xml" data="public/src/icons/platSber.svg" id="svg17"> </object>
+           <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg17"> </object>
            </div>
            <div style="display: inline-flex; text-align: center; vertical-align: middle;">1234 12•• •••• 1234 </div>
             </div>
@@ -482,7 +482,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
       </div>
       
       <div style="display:flex; justify-content: space-between; height: 32px" class="class13px"> 
-       <div> <object type="image/svg+xml" data="public/src/icons/stroke.svg" id="svg10"> </object> </div>
+       <div> <object type="image/svg+xml" data="src/icons/stroke.svg" id="svg10"> </object> </div>
        <div>Соглашаюсь с правилами пользования торговой площадкой и возврата </div>
       </div>
       
@@ -500,11 +500,11 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
   
   </div>
    <div id="tabbar"> 
-     <object type="image/svg+xml" data="public/src/icons/main.svg" id="svg96" style="justify-self: center; padding: 12px"></object>
-      <object type="image/svg+xml" data="public/src/icons/catalog.svg" id="svg97" style="justify-self: center; padding: 12px"></object>
-       <object type="image/svg+xml" data="public/src/icons/cart.svg" id="svg98" style="justify-self: center; padding: 12px"></object>
-        <object type="image/svg+xml" data="public/src/icons/favorites.svg" id="svg9" style="justify-self: center; padding: 12px"></object>
-         <object type="image/svg+xml" data="public/src/icons/profile.svg" id="svg99" style="justify-self: center; padding: 12px"></object>
+     <object type="image/svg+xml" data="src/icons/main.svg" id="svg96" style="justify-self: center; padding: 12px"></object>
+      <object type="image/svg+xml" data="src/icons/catalog.svg" id="svg97" style="justify-self: center; padding: 12px"></object>
+       <object type="image/svg+xml" data="src/icons/cart.svg" id="svg98" style="justify-self: center; padding: 12px"></object>
+        <object type="image/svg+xml" data="src/icons/favorites.svg" id="svg9" style="justify-self: center; padding: 12px"></object>
+         <object type="image/svg+xml" data="src/icons/profile.svg" id="svg99" style="justify-self: center; padding: 12px"></object>
    
   </div> 
    </div>

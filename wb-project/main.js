@@ -265,8 +265,8 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321292.png"/></div>
           </div>
           <div id="sumAndCount5" class="containerSumAndCount">
               <div id="iconsFromOtsuts2" class="icons">
-                <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg242"></object></div>
-                   <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg167"></object> </div>
+                <div><object type="image/svg+xml" data="/public/src/icons/favorite.svg" id="svg242"></object></div>
+                   <div>  <object type="image/svg+xml" data="/public/src/icons/delete.svg" id="svg167"></object> </div>
             </div>
           </div>
 </div>
@@ -286,8 +286,8 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
           </div>
           <div id="sumAndCount6" class="containerSumAndCount">
               <div id="iconsFromOtsuts3" class="icons">
-                <div><object type="image/svg+xml" data="public/src/icons/favorite.svg" id="svg13"></object></div>
-                   <div>  <object type="image/svg+xml" data="public/src/icons/delete.svg" id="svg122"></object> </div>
+                <div><object type="image/svg+xml" data="/public/src/icons/favorite.svg" id="svg13"></object></div>
+                   <div>  <object type="image/svg+xml" data="/public/src/icons/delete.svg" id="svg122"></object> </div>
             </div>
           </div>
 </div>
@@ -306,7 +306,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
           <div>Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
           <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px; gap: 4px"> 
 <div style="display: flex"><div>
-<object type="image/svg+xml" data="public/src/icons/star.svg" id="svg11"></object>
+<object type="image/svg+xml" data="/public/src/icons/star.svg" id="svg11"></object>
 </div>4.99 </div>
 <div>Ежедневно с 10 до 21 </div>
 </div>
@@ -320,13 +320,13 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
 <div id="idSmallTovary"> 
 <div id="idContainerSmallTovary6" class="containerSmallTovary6">
                <div id="picSmall1" style="width: 40px ;height: 56px ; border-radius: 8px">
-                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame38531.png" alt=""/>
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/public/src/img/Frame38531.png" alt=""/>
                 </div>
                <div id="picSmall2" style="width: 40px ;height: 56px ; border-radius: 8px">
-                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame277132129.png" alt=""/>
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/public/src/img/Frame277132129.png" alt=""/>
                 </div>
                <div id="picSmall3" style="width: 40px ;height: 56px ; border-radius: 8px"> 
-               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame2771321291.png" alt=""/>
+               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/public/src/img/Frame2771321291.png" alt=""/>
                </div>
              </div>
             </div>
@@ -341,7 +341,7 @@ border-radius: 8px;"> <img src="public/src/img/Frame2771321293.png"/> </div>
              </div>      
       <div id="idStrokaInfoOtkaz" style="display: flex">
        <div  style="display: flex; gap: 8px"> 
-       <div id="idSber2"><object type="image/svg+xml" data="public/src/icons/priceshipping.svg" id="svg"></object> </div>
+       <div id="idSber2"><object type="image/svg+xml" data="/public/src/icons/priceshipping.svg" id="svg"></object> </div>
        <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat" class="class13px" style="display: inline-block; color:#0CB477; text-decoration: underline dotted"> бесплатно</div></div>
        </div>
        

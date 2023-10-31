@@ -23,1546 +23,233 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-.zagalovki{
-  font-size: 24px;
-  font-weight: bold;
-}
-.icons{
-  display: inline-flex;
-  gap: 16px;
-  justify-content:end;
-}
-#formSearch {
-  height: 56px; width: 100%;
-  background-color: #FFFFFF33;
-  height: 48px;
-  border-radius: 36px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#query {
-  display: flex;
-  all: unset;
-  font: 16px system-ui;
-  color: #fff;
-  height: 100%;
-  width: 100%;
-  padding: 0px 20px 0px 20px;
-}
-#query::placeholder {
-  color: #fff;
-  opacity: 0.7;
-  font-family: "SegoeUIRegular";
-}
-.searchWB{
-  display:flex;
-  height: 56px;
-  width: 100%;
 
-}
-#iconsNav{
-  display: flex;
-  width: 169px;
-  height: 56px;
-  padding: 0px 17px 0px 0px;
-  gap: 40px
-}
-#menu{
-  display: flex;
-  width: 170px;
-  height: 56px;
-  gap: 16px;
-  justify-content: center;
-}
-#menuObj{
-  display: block;
-  width: 48px;
-  height: 48px;
-  border: 1px solid;
-  border-radius: 8px;
-  border-color: #FFFFFF73;
-  align-self: center;
-}
-#searchBtn {
-  all: unset;
-  cursor: pointer;
-  width: 44px;
-  height: 44px;
-}
-#navigationBlock {
-  display: flex;
-  padding: 16px 3px 16px 24px;
-  gap: 32px
-}
-#VeshiItochka {
-  color: #FFFFFF;
-  display: inline-block;
-  width: 106px;
-  height: 56px;
-  align-self: center;
-  font-size: 28px;
-  line-height: 24px;
-  text-align: start;
-  padding-top: 0;
-}
-#idSvgSearch {
-  color: #fff;
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-  padding: 1px;
-}
-
-.container {
-  display: grid;
-  row-gap: 10px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 112px 1825px 88px;
-  grid-template-areas:
-  "nav"
-  "contantContainer"
-  "footer";
-}
-.contantContainer {
-  column-gap: 32px;
-  row-gap: 27px;
-  display: grid;
-  grid-area: contantContainer;
-  padding: 0px 24px 16px 24px;
-  grid-template-columns:  1fr 0.5fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-  "h1  sidebarItog"
-  "container1 sidebarItog";
-}
-.container1{
-  row-gap: 40px;
-  display: grid;
-  grid-area: container1;
-
-  grid-template-columns: 1fr;
-  grid-template-rows: 516px 404px 746px;
-  grid-template-areas:
-  "vnalichii"
-  "otsutsv"
-  "blockDelivery";
-}
-.containerVnalichii {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 24px  1fr;
-
-  gap: 16px;
-  grid-template-areas:
-     "vyborVse"
-     "tovary";
-}
-#tovary {
-  grid-area: tovary;
-}
-#vyborVse {
-  grid-area: vyborVse;
-}
-#vnalichii {
-  grid-area: vnalichii;
-}
-.containerTovary{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:  108px 176px 152px;
-
-  gap: 20px;
-  grid-template-areas:
-     "tovar1"
-     "tovar2"
-     "tovar3";
-}
-.tovar{
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: auto 226px;
-  grid-template-rows:  auto;
-  grid-templates-areas:
-    "picAndDescription sumAndCount";
-}
-
-.picAndDescription{
-  grid-area: picAndDescription;
-}
-.sumAndCount{
-  grid-area: sumAndCount;
-}
-.containerPicAndDescription{
-  display: grid;
-  grid-template-columns: 106px 1fr;
-  grid-template-rows: 108px;
-  column-gap: 16px;
-
-  padding: 12px 0px 0px 0px;
-  grid-templates-areas:
-    "IdClickAndPic IdDescriptionFromPicAndDescription";
-}
-.ClickAndPic {
-  display: grid;
-  grid-template-columns: 22px 72px;
-  grid-template-rows: 108px;
-  gap: 12px;
-  grid-templates-areas:
-    "ClickFromClickAndPic PictureFromClickAndPic";
-}
-#ClickFromClickAndPic{
-  display: flex;
-  grid-area: ClickFromClickAndPic;
-  align-items: center;
-  justify-content: center;
-  line-height: 96px;
-  align-self: center;
-  vertical-align: middle;
-}
-#idClickFromClickAndPic{
-  display: flex;
-  line-height: 96px;
-  align-self: center;
-}
-#idClickFromClickAndPic2{
-  display: flex;
-  line-height: 96px;
-  align-self: center;
-}
-#idClickFromClickAndPic3{
-  display: flex;
-  line-height: 96px;
-  align-self: center;
-}
-#PictureFromClickAndPic{
-  grid-area: PictureFromClickAndPic;
-}
-.DescriptionFromPicAndDescription{
-  display: grid;
-  row-gap: 8px;
-}
-.containerSpecificationFromDescriptionFromPicAndDescription{
-  display: grid;
-  gap: 6px;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto ;
-  justify-content: start;
-  grid-templates-areas:
-    "idThingColor idThingSize"
-}
-.containercompanyFromDescriptionFromPicAndDescription{
-  display: grid;
-  gap: 6px;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  justify-content: start;
-  grid-templates-areas:
-    "idCompany idInfo"
-}
-#nameFromDescriptionFromPicAndDescription2{
-  max-width:275px;
-}
-#nameFromDescriptionFromPicAndDescription3{
-  max-width:275px;
-}
-.text16px{
-  font-size: 16px;
-}
-.containerSumAndCount{
-  display: grid;
-  grid-template-columns: 100px 110px;
-  grid-template-rows: 108px;
-  padding: 9px 0px 0px 0px;
-  gap: 16px;
-  grid-templates-areas:
-    "countFromSumAndCount IdSumFromSumAndCount";
-}
-.countFromSumAndCount {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-templates-areas:
-    "plusFromCountFromSumAndCount"
-    "ostatkiFromCountFromSumAndCount"
-    "iconsFromCountFromSumAndCount";
-}
-
-.ostatki2sht{
-  display: inline-flex;
-  font-size: 13px;
-  padding: 5px;
-  color: #FF3B30;
-}
-.displayCounter{
-  background-color: #FFFFFF;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 44px;
-  border-radius: 8px;
-}
-.buttons{
-  font-family: "Segoe UI";
-  font-size: 20px;
-  width: 24px;
-  height: 24px;
-  display:inline-block;
-  background-color: white;
-  border: none;
-
-}
-.buttons:hover {
-  background: rgba(0,0,0,0);
-  color: #3a7999;
-}
-.chisloCount{
-  justify-content: center;
-  display:flex;
-  width: 44px;
-}
-.containerSumFromIdSumFromSumFromSumAndCount{
-  font-weight: bold;
-  display: grid;
-  grid-template-columns: auto 35px;
-  grid-template-rows: auto ;
-  grid-templates-areas:
-    "sumOfItem valutaOfItem"
-}
-#tovar1 {
-  grid-area: tovar1;
-}
-#tovar2 {
-
-  grid-area: tovar2;
-}
-#tovar3 {
-
-  grid-area: tovar3;
-}
-
-#otsutsv {
-
-  grid-area: otsutsv;
-}
-.containerOtsutsv {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 24px 1fr;
-
-  gap: 16px;
-  grid-template-areas:
-     "otsutsvInto"
-     "tovaryOtsutsv";
-}
-#otsutsvInto {
-  grid-area: otsutsvInto;
-}
-#tovaryOtsutsv {
-  grid-area: tovaryOtsutsv;
-}
-.containertovaryOtsutsv{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 108px 108px 108px;
-  gap: 20px;
-  grid-template-areas:
-     "otsutsvTovar1"
-     "otsutsvTovar2"
-     "otsutsvTovar3";
-}
-.tovarOtsutsvuyut{
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: auto 226px;
-  grid-template-rows: auto;
-  grid-templates-areas:
-    "picAndDescription sumAndCount";
-}
-#otsutsvTovar1 {
-  grid-area: otsutsvTovar1;
-}
-#otsutsvTovar2 {
-  grid-area: otsutsvTovar2;
-}
-#otsutsvTovar3 {
-  grid-area: otsutsvTovar3;
-}
-.containerPicAndDescription2{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 108px;
-  column-gap: 16px;
-  padding: 12px 0px 0px 0px;
-  grid-templates-areas:
-    "IdClickAndPic IdDescriptionFromPicAndDescription";
-}
-
-#blockDelivery {
-  grid-area: blockDelivery;
-}
-.containerDelivery {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 362px 136px 216px;
-  gap: 16px;
-  grid-template-areas:
-     "dostavka1Round"
-     "oplataRound"
-     "poluchatelRound";
-}
-#dostavka1Round {
-  grid-area: dostavka1Round;
-}
-
-.containerdostavka1Round{
-  border-radius: 16px;
-  background-color: #FFFFFF;
-  display: grid;
-  padding: 16px 0px 24px 0px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 276px 22px;
-  row-gap: 24px;
-  grid-template-areas:
-     "idContainerDostavkaTitle"
-     "idStrokaInfoOtkaz";
-}
-#idContainerDostavkaTitle{
-  grid-area: idContainerDostavkaTitle;
-}
-#idStrokaInfoOtkaz{
-  grid-area: idStrokaInfoOtkaz;
-  display: flex
-}
-
-.containerDostavkaTitle{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 32px 228px;
-  gap: 16px;
-  grid-template-areas:
-     "h4"
-     "IdContainerAdressDelivery";
-}
-#h4 {
-  grid-area: h4;
-  padding: 0px 16px 0px 16px;
-  display: flex;
-  justify-content: space-between;
-}
-#IdContainerAdressDelivery {
-  grid-area: IdContainerAdressDelivery;
-}
-.containerAdressDelivery{
-  display: grid;
-  padding: 0px 24px 0px 24px;
-  row-gap: 16px;
-  column-gap: 32px;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "punktV idAdressDeliveryOfPost"
-    "stoimost besplatno"
-    "date1 idSmallTovary"
-    "date2 idContainerSmallTovary8";
-}
-#punktV{
-  grid-area: punktV;
-  font-weight: 600;
-}
-#idAdressDeliveryOfPost{
-  grid-area: idAdressDeliveryOfPost;
-}
-#stoimost{
-  grid-area: stoimost;
-  font-weight: 600;
-}
-#besplatno{
-  grid-area: besplatno;
-}
-#date1{
-  grid-area: date1;
-  font-weight: 600;
-}
-#idSmallTovary{
-  grid-area: idSmallTovary;
-}
-#date2{
-  grid-area: date2;
-  font-weight: 600;
-}
-#idContainerSmallTovary8{
-  grid-area: idContainerSmallTovary8;
-}
-.containerSmallTovary6{
-  display: flex;
-  height: 56px;
-  gap: 8px;
-}
-#picSmall1{
-  grid-area: picSmall1;
-}
-#picSmall2{
-  grid-area: picSmall2;
-}
-#picSmall3{
-  grid-area: picSmall3;
-}
-#idStrokaInfoOtkaz{
-  display: flex;
-  padding: 0px 24px 0px 24px;
-  gap: 8px;
-}
-#oplataRound {
-  grid-area: oplataRound;
-}
-.containerOplata{
-  display: grid;
-  border-radius: 16px;
-  background-color: #FFFFFF;
-  grid-template-columns: 1fr;
-  grid-template-rows: 72px 16px;
-  padding: 16px 24px 24px 24px;
-  gap: 8px;
-  grid-template-areas:
-     "sposobOplaty"
-     "spishemOplatu";
-}
-#sposobOplaty {
-  grid-area: sposobOplaty;
-}
-.containerSposobOplaty{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 32px 24px;
-  gap: 16px;
-  grid-template-areas:
-     "h6SposobOplaty"
-     "cartMir";
-}
-#h6SposobOplaty {
-
-  grid-area: h6SposobOplaty;
-}
-#cartMir {
-
-  grid-area: cartMir;
-}
-#spishemOplatu {
-  grid-area: spishemOplatu;
-}
-#poluchatelRound {
-  grid-area: poluchatelRound;
-}
-.containerPoluchatelRound{
-  display: grid;
-  border-radius: 16px;
-  background-color: #FFFFFF;
-  grid-template-columns: 1fr;
-  grid-template-rows: 32px 128px;
-  padding: 16px 24px 24px 24px;
-  gap: 16px;
-  grid-template-areas:
-     "h6ЗoluchatelRound"
-     "idAnketa";
-}
-.OplataKartoy{
-  display:grid;
-  row-gap: 12px;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "idKartaOplata"
-    "idSpisatOplatu";
-}
-#h6ЗoluchatelRound {
-  grid-area: h6ЗoluchatelRound;
-}
-#idAnketa {
-  grid-area: idAnketa;
-}
-.nameSurname{
-  grid-area: nameSurname;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "nameClass surnameClass";
-}
-.emailPhoneInn{
-  grid-area: emailPhoneInn;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "emailClass phoneClass innNumbClass";
-}
-#emailClass {
-  grid-area: emailClass;
-  width:100%;
-}
-#phoneClass {
-  grid-area: phoneClass;
-}
-#innNumbClass {
-  grid-area: innNumbClass;
-}
-#idNameSurname {
-  grid-area: idNameSurname;
-}
-#idMailNumInn {
-  grid-area: idMailNumInn;
-}
-.text-field_floating-3 {
-  position: relative;
-}
-input#idVyborCheck{
-  border-radius: 8px;
-  border-style: solid;
-}
-.checkedColor{
-  display: inline-block;
-  vertical-align: middle;
-  width: 22px;
-  height: 22px;
-  border: 1px solid;
-  border-radius: 8px;
-
-}
-.checkedColor:checked{
-  accent-color: #CB11AB;
-}
-.greyText{
-  color:#9797AF;
-}
-
-.text-field_floating-3 .text-field__input {
-  border: none;
-  width: 100%;
-  border-bottom: 1px solid #bdbdbd;
-  border-radius: 0;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  line-height: 1.25;
-  padding: 1rem 0.75rem;
-  background-color: transparent ;
-}
-
-.text-field_floating-3 .text-field__input:focus {
-  outline: 0;
-  border-bottom: 1px solid #9797AF;
-  box-shadow: none;
-  background-color: #eee;
-}
-
-.text-field_floating-3 .text-field__label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 1rem 0.75rem 0rem 0rem;
-  pointer-events: none;
-  border: 1px solid transparent;
-  transform-origin: 0 0;
-  transition: color .15s ease-in-out, transform .15s ease-in-out;
-  color: #9797AF;
-}
-
-.text-field_floating-3 .text-field__input::-moz-placeholder {
-  color: transparent;
-
-}
-
-.text-field_floating-3 .text-field__input::placeholder {
-  color: transparent;
-}
-
-.text-field_floating-3 .text-field__input:focus,
-.text-field_floating-3 .text-field__input:not(:placeholder-shown) {
-  padding-top: 1.625rem;
-  padding-bottom: .625rem;
-  border-bottom: 1px solid #03a9f4;
-}
-
-.text-field_floating-3 .text-field__input:focus~.text-field__label,
-.text-field_floating-3 .text-field__input:not(:placeholder-shown)~.text-field__label {
-  transform: scale(.85) translateY(-.75rem) translateX(.15rem);
-  color: #03a9f4;
-}
-
-#sidebarItog {
-  grid-area: sidebarItog;
-}
-
-.containerItog{
-  margin-top: -12px;
-  gap: 24px;
-  padding: 16px 24px 24px 24px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 420px 88px;
-  background-color: #FFFFFF;
-  border-radius: 16px;
-  grid-template-areas:
-     "idStoimodyZakaza"
-     "idKnopkaZakaza";
-}
-
-#idStoimodyZakaza {
-  grid-area: idStoimodyZakaza;
-}
-#idKnopkaZakaza {
-  grid-area: idKnopkaZakaza;
-}
-.containerRazdelenieZakaz{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 24px;
-  grid-template-areas:
-     "containerCena"
-     "idDostavka"
-     "idOplataKartoy";
-}
-#idDostavka {
-  grid-area: idDostavka;
-}
-#idOplataKartoy {
-  grid-area: idOplataKartoy;
-}
-
-#idSpisatOplatu{
-  display: grid;
-  border-radius: 8px;
-  padding: 8px 8px 12px 8px;
-  gap: 8px;
-  background-color:#F6F6FA ;
-}
-.containerDostavka{
-  display: grid;
-  gap: 12px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 65px 52px;
-  grid-template-areas:
-    "containerDostavkaVPunktVydachi"
-    "containerBesplatDostavka";
-
-}
-h1{
-  font-family: 'SegoeUIBold';
-  font-size: 28px;
-}
-.ceny{
-  font-family: 'SegoeUIBold';
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: 'idItogoCeny id2101063сом';
-  justify-content: space-between;
-}
-.containerCena{
-  grid-area: containerCena;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 33px 72px;
-  gap: 8px;
-  grid-template-areas:
-        "idItogoCeny1"
-        "containerCeny2";
-}
-#idItogoCeny1 {
-  grid-area: idItogoCeny1;
-}
-
-.containerCeny2{
-  grid-area: containerCeny2;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "id1idItogoCeny2"
-    "id2idItogoCeny2"
-    "id3idItogoCeny2";
-
-}
-#id1idItogoCeny2 {
-  grid-area: id1idItogoCeny2;
-}
-#id2idItogoCeny2 {
-  grid-area: id2idItogoCeny2;
-}
-#id3idItogoCeny2 {
-  grid-area: id3idItogoCeny2;
-}
-.ceny1{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: 'id203tov id2302com';
-  justify-content: space-between;
-}
-.ceny2{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: 'skidkaWord id985com';
-  justify-content: space-between;
-}
-.ceny3{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: 'dostavkaWord besplatno';
-  justify-content: space-between;
-}
-#id203tov {
-  grid-area: id203tov;
-}
-#id2302com {
-  grid-area: id2302com;
-}
-#id985com {
-  grid-area: id985com;
-}
-#skidkaWord {
-  grid-area: skidkaWord;
-}
-#dostavkaWord {
-  grid-area: dostavkaWord;
-}
-#besplatno {
-  grid-area: besplatno;
-}
-.containerDostavkaVPunktVydachi{
-  grid-area: containerDostavkaVPunktVydachi;
-  column-gap: 8px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-  "idNazvPunkta"
-  "idGorod"
-  "idDataDost";
-}
-#idNazvPunkta{
-  grid-area: idNazvPunkta;
-}
-#idGorod{
-  grid-area: idGorod;
-}
-#idDataDost{
-  grid-area: idDataDost;
-}
-.containerBesplatDostavka {
-  grid-area: containerBesplatDostavka;
-  column-gap: 8px;
-  border-radius: 8px;
-  background-color: #F6F6FA;
-  display: inline-flex;
-  padding: 8px 8px 12px 8px;
-  height: 52px;
-}
-#idIconSber{
-  grid-area: idIconSber ;
-  font-size: 14px;
-}
-#idObratDostav{
-  grid-area: idObratDostav ;
-  font-size: 13px;
-}
-
-#tabbar{
-  display: none;
-}
-nav {
-  background-color: rgb(103,37,168);
-  grid-area: nav;
-}
-#navigationBlock {
-  height: 88px;
-  background-color: rgb(103,37,168);
-}
-#Skruglenie {
-  height: 24px;
-  background-color: rgb(246,246,250);
-  border-radius: 24px 24px 0px 0px;
-}
-main{
-  grid-area: main;
-}
-#Skruglenie2 {
-  height: 24px;
-  background-color: rgb(246, 246, 250);
-  border-radius: 0px 0px 24px 24px;
-}
-footer {
-  height: 88px;
-  background-color: rgb(103,37,168);
-  grid-area: footer;
-}
-#tabbar {
-  display: none;
-  grid-area: tabbar;
-}
-.class13px{
-  font-size: 13px;
-}
-.class20px {
-  font-size: 20px;
-}
-.class16px{
-  font-size: 16px;
-}
-.cenySize{
-  text-align: end;
-}
-
-@media only screen and (width: 1400px) {
-  .container {
+@media screen and (max-width: 320px){
+  .container{
     display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 112px 1825px 88px;
+    grid-template-columns: 320px;
+    grid-template-rows: 80px 2717.33px 88px 56px;
     grid-template-areas:
-  "nav"
-  "contantContainer"
-  "footer";
+    "nav"
+    "content"
+    "footer"
+    "tabbar";
   }
-  .contantContainer {
-    column-gap: 32px;
-    row-gap: 27px;
-    display: grid;
-    grid-area: contantContainer;
-    padding: 0px 24px 16px 24px;
-    grid-template-columns: 891px 429px;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-  "h1 sidebarItog"
-  "container1 sidebarItog";
-  }
-  .container1{
-    row-gap: 40px;
-    display: grid;
-    grid-area: container1;
-    grid-template-columns: 891px;
-    grid-template-rows: 516px 404px 746px;
-    grid-template-areas:
-  "vnalichii"
-  "otsutsv"
-  "blockDelivery";
-  }
-}
-@media only screen and (width: 1024px) {
-  .container {
-    display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 112px 1825px 88px;
-    grid-template-areas:
-  "nav"
-  "contantContainer"
-  "footer";
-  }
-  .container1{
-    row-gap: 40px;
-    display: grid;
-    grid-area: container1;
-    grid-template-columns: 640px;
-    grid-template-rows: 516px 404px 746px;
-    grid-template-areas:
-  "vnalichii"
-  "otsutsv"
-  "blockDelivery";
-  }
-  #Itog {
-    height: 604px;
-  }
-  .contantContainer {
-    column-gap: 32px;
-    row-gap: 27px;
-    display: grid;
-    grid-area: contantContainer;
-    padding: 0px 24px 16px 24px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-  "h1 sidebarItog"
-  "container1 sidebarItog";
-  }
-}
-@media only screen and (max-width: 1004px) and (min-width: 991px) {
-  .container {
-    display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 112px 1825px 88px;
-    grid-template-areas:
-  "nav"
-  "contantContainer"
-  "footer";
-  }
-  .container1{
-    row-gap: 40px;
-    display: grid;
-    grid-area: container1;
-    grid-template-columns: auto;
-    grid-template-rows: 516px 404px 746px;
-    grid-template-areas:
-  "vnalichii"
-  "otsutsv"
-  "blockDelivery";
-  }
-  #Itog {
-    height: 604px;
-  }
-  .contantContainer {
-    column-gap: 32px;
-    row-gap: 27px;
-    display: grid;
-    grid-area: contantContainer;
-    padding: 0px 24px 16px 24px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-  "h1 sidebarItog"
-  "container1 sidebarItog";
-  }
-}
-@media only screen and (max-width: 990px) {
-  .container {
-    display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 112px auto 88px;
-    grid-template-areas:
-  "nav"
-  "contantContainer"
-  "footer";
-  }
-  .contantContainer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto ;
-    grid-template-areas:
-    "h1"
-    "container1"
-    "sidebarItog";
-  }
-  #Itog {
-    margin-top: 0px;
-    height: 604px;
-  }
-}
-@media only screen and (max-width: 670px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px auto 88px;
-    grid-template-areas:
-  "nav"
-  "contantContainer"
-  "footer";
-  }
-  #navigationBlock{
-    display: grid;
-    gap: 0px;
-    padding: 0px;
-    grid-template-columns: auto max-content;
-    grid-template-rows: 56px;
-    grid-template-areas: "menu searchWB";
-  }
-  #menu{
-    display: flex;
-    gap: 0px;
-    width: 100%;
-    height: 56px;
-    padding: 0px 0px 0px 13px;
-    justify-content: start;
-  }
-  #VeshiItochka {
-    font-size: 26px;
-    padding-top: 11px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    vertical-align: 11px;
-    width: 100%;
-    height: 48px;
-    top: 10px;
-    color: #FFFFFF;
-    align-self: center;
+  nav{
+    grid-area: nav;
 
+    background-color: #6725A8;
   }
-  #nameFromDescriptionFromPicAndDescription2{
-    max-width:275px;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -ms-line-clamp: 2;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-  }
-  #nameFromDescriptionFromPicAndDescription3{
-    max-width:275px;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -ms-line-clamp: 2;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-  }
-  #searchBtn {
-    all: unset;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items:center;
-  }
-  .searchWB{
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  #menuObj{
-    text-align: center;
-    vertical-align: middle;
-    line-height: 48px;
-    align-self: start;
-    border: none;
-    display: block;
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-    align-self: center;
-  }
-  #Skruglenie2 {
-    height: 24px;
-    background-color: rgb(246, 246, 250);
-    border-radius: 0px 0px 24px 24px;
-  }
-  #iconsNav{
-    display: none;
-  }
-  #query {
-    display: none;
-  }
-  #formSearch {
-    width: min-content;
-    background-color: transparent;
-    height: 48px;
-    border-radius: 36px;
-    flex-direction: row;
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .container1{
-    row-gap: 40px;
+  .content{
     display: grid;
-    grid-area: container1;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-area: content;
+    top: -10px;
+    position: relative;
+
+    border-radius: 24px 24px 0px 0px;
+    grid-template-columns: 320px;
+    grid-template-rows: 28px 16px 567.67px 48px 535.67px 32px 512px 12px 124px 12px 420px 16px 378px;
     grid-template-areas:
-  "vnalichii"
-  "otsutsv"
-  "blockDelivery";
+    "h_korzina"
+    "."
+    "vnalichii"
+    "."
+    "otsutsv"
+    "."
+    "sposob_dostavki"
+    "."
+    "sposob_oplaty"
+    "."
+    "poluchatel"
+    "."
+    "itog";
   }
-  .containerVnalichii{
+  .h_korzina{
     padding: 0px 16px 0px 16px;
+    grid-area: h_korzina;
+    line-height: 28px;
+    letter-spacing: 1%;
   }
-  .containerTovary{
+  .vnalichii{
+    padding: 0px 16px 0px 16px;
+    grid-area: vnalichii;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
     gap: 16px;
+    grid-template-rows: 24px auto;
     grid-template-areas:
-     "tovar1"
-     "tovar2"
-     "tovar3";
+      "vyborVse"
+      "tovary";
   }
-  #hrLine{
-    grid-area: hrLine;
+  .vyborVse{
+    grid-area: vyborVse;
+    display: flex;
+    justify-content: space-between;
+  }
+  .vyborVseInput{
+    display: flex;
+  }
+  .checked_vybor_vse{
+    width: 22px;
+    height: 22px;
+  }
+  .vyborVseInput label{
+    margin-left: 16px;
+  }
+  .tovary{
+    grid-area: tovary;
+    display: grid;
+    gap: 16px;
   }
   .tovar{
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-templates-areas:
-      "containerPicAndDescription";
+    grid-template-columns: 80px 16px auto;
+    grid-template-rows: 1px 12px 24px auto 12px 32px;
+    grid-template-areas:
+    "hr hr hr"
+    ". . ."
+    "img . sumFromSumAndCount"
+    "img . description_tovar"
+    ". . ."
+    "kolvo_tovar kolvo_tovar kolvo_tovar";
   }
-  .containerPicAndDescription{
-    display: grid;
-    grid-template-columns: 106px 1fr;
-    grid-template-rows: 120px;
-    column-gap: 16px;
-
-    padding: 12px 0px 0px 0px;
-    grid-templates-areas:
-      "IdClickAndPic IdDescriptionFromPicAndDescription";
+  .hr{
+    grid-area: hr;
   }
-  .containerSumAndCount{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    padding: 9px 0px 0px 0px;
-    gap: 16px;
-    grid-templates-areas:
-      "sumFromSumAndCount"
-      "countFromSumAndCount";
-  }
-  .countFromSumAndCount {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: space-between;
-    grid-templates-areas:
-      "plusFromCountFromSumAndCount ostatkiFromCountFromSumAndCount iconsFromCountFromSumAndCount";
-  }
-  #plusFromCountFromSumAndCount{
-    display: flex;
-    justify-content: start;
-    height: 100%;
-  }
-  #spaceForTovar{
-    display: inline-flex;
-    font-size: 13px;
-    height: 16px
+  .img_vnalichii{
+    grid-area: img;
 
   }
-  #ostatkiFromCountFromSumAndCount{
+
+  .sumFromSumAndCount{
+    grid-area: sumFromSumAndCount;
+
     display: flex;
-    justify-content: start;
-    height: 100%;
   }
-  #iconsFromCountFromSumAndCount{
-    display: flex;
-    padding: 10px;
-    justify-content: end;
-    height: 100%;
+  .description_tovar{
+    grid-area: description_tovar;
+
+    font-size: 14px;
   }
-  #idCountFromSumAndCount2{
+  .kolvo_tovar{
+    grid-area: kolvo_tovar;
+
     display: flex;
     justify-content: space-between;
-
-  }
-  .containerdostavka1Round{
-    border-radius: 16px;
-    background-color: #FFFFFF;
-    display: grid;
-    padding: 16px 0px 24px 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 32px;
-    row-gap: 24px;
-    grid-template-areas:
-     "idContainerDostavkaTitle"
-     "idStrokaInfoOtkaz";
-  }
-
-
-  .containerDostavkaTitle{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 32px auto;
     gap: 16px;
-    grid-template-areas:
-     "h4"
-     "IdContainerAdressDelivery";
   }
-  #h4{
-    padding: 0px 16px 0px 16px;
+  .icons{
+    width: 88px;
     display: flex;
-    justify-content: space-between;
   }
-  .containerPoluchatelRound{
-    display: grid;
-    border-radius: 16px;
-    background-color: #FFFFFF;
-    grid-template-columns: 1fr;
-    grid-template-rows: 28px auto;
-    padding: 16px 16px 24px 16px;
-    gap: 24px;
-    grid-template-areas:
-     "h6ЗoluchatelRound"
-     "idAnketa";
+  .action_icon{
+    width: 44px;
+    padding-left: 10px;
   }
-  .containerOtsutsv {
-    padding: 0px 16px 0px 16px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 24px 1fr;
-    gap: 16px;
-    grid-template-areas:
-     "otsutsvInto"
-     "tovaryOtsutsv";
-  }
-  .containertovaryOtsutsv{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 20px;
-    grid-template-areas:
-     "otsutsvTovar1"
-     "otsutsvTovar2"
-     "otsutsvTovar3";
-
-  }
-  .containerDelivery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 16px;
-    grid-template-areas:
-     "dostavka1Round"
-     "oplataRound"
-     "poluchatelRound";
-  }
-  .containerAdressDelivery{
-    display: grid;
-    padding: 0px 16px 0px 16px;
-    row-gap: 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 16px auto auto 16px auto  12px auto 24px auto 12px auto;
-    grid-template-areas:
-   "punktV"
-   "idAdressDeliveryOfPost"
-   "."
-   "stoimost"
-   "besplatno"
-    "."
-   "date1"
-    "."
-   "idSmallTovary"
-    "."
-   "date2"
-    "."
-  "idContainerSmallTovary8";
-  }
-  #idAnketa{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 16px;
-    grid-template-areas:
-    "nameSurname"
-    "emailPhoneInn";
-  }
-  .nameSurname{
-    grid-area: nameSurname;
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "nameClass"
-    "surnameClass";
-  }
-  .emailPhoneInn{
-    grid-area: emailPhoneInn;
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "emailClass"
-      "phoneClass"
-      "innNumbClass";
-  }
-  #tabbar {
-    bottom: 0px;
-    position: sticky;
-    display:grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "iconHome iconSearch iconBag iconFav iconProfile";
-    justify-content: center;
-    background-color: #FFFFFF;
-    height: 56px;
-    grid-area: tabbar;
-  }
-  .bar{
-    display:grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "iconHome iconSearch iconBag iconFav iconProfile";
-    justify-content: center;
-    background-color: #F6F6FA;
+  .button-card-wrapper{
+    height: 32px;
+    width: 80px;
+    display: flex;
   }
 
-
-}
-@media only screen and (max-width: 425px) {
-  .containerDostavka{
-    display: grid;
-    gap: 12px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "containerBesplatDostavka";
-
+  .button-card-wrapper .subtract{
+    width: 24px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
   }
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px auto 88px;
-    grid-template-areas:
-  "nav"
-  "contantContainer"
-  "footer";
+
+  .button-card-wrapper .add{
+    width: 24px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
-  .searchWB{
-    text-align: center;
-    vertical-align: middle;
-    line-height: 48px;
-    align-self: start;
+
+  .button-card-wrapper .subtract,
+  .button-card-wrapper .add{
     border: none;
-    display: block;
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-    align-self: center;
-  }
-  #formSearch {
-    height: auto;
-  }
-  #idSvgSearch {
-    color: #fff;
-    fill: currentColor;
-    width: 28px;
-    height: 28px;
-    padding: 1px;
-  }
-  #menu{
-    padding: 0px;
-  }
-  .containerRazdelenieZakaz{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content min-content;
-    gap: 24px;
-    grid-template-areas:
-     "containerCena"
-     "idDostavka"
-     "idOplataKartoy";
-  }
-  .containerItog{
-    margin-top: -12px;
-    gap: 24px;
-    padding: 8px 16px 0px 16px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 88px;
-    background-color: transparent;
-    border-radius: 16px;
-    grid-template-areas:
-     "idStoimodyZakaza"
-     "idKnopkaZakaza";
-  }
-  #idSpisatOplatu{
-    background-color: #F0ECF4;
-  }
-  #idContainerBesplatDostavka{
-    background-color: #F0ECF4;
-  }
-  h1{
-    padding: 0px 16px 0px 16px;
-  }
- #containerCena {
-   grid-area: containerCena;
- }
-  #idOplataKartoy {
-    grid-area: idOplataKartoy;
-  }
-  .OplataKartoy{
-    display:grid;
-    row-gap: 12px;
-    grid-template-columns: auto;
-    grid-template-rows: 66px ;
-    grid-template-areas:
-    "idSpisatOplatu";
-  }
-  .containerOplata{
-    padding: 16px 16px 24px 16px;
-  }
-  #idKartaOplata{
-    display: none;
-  }
-  .containerAdressDelivery{
-    display: grid;
-    row-gap: 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto max-content 16px auto auto 16px auto  12px auto 24px auto 12px auto;
-    grid-template-areas:
-   "punktV"
-   "idAdressDeliveryOfPost"
-   "."
-   "stoimost"
-   "besplatno"
-    "."
-   "date1"
-    "."
-   "idSmallTovary"
-    "."
-   "date2"
-    "."
-  "idContainerSmallTovary8";
-  }
-  .containerDostavkaVPunktVydachi{
-    display: none;
-  }
-  .contantContainer {
-    padding: 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto ;
-    grid-template-areas:
-    "h1"
-    "container1"
-    "sidebarItog";
-  }
-  #Itog {
-    margin-top: 0px;
-    height: auto;
-  }
-  .zagalovki{
+    padding: 6px;
     font-size: 20px;
-    font-weight: bold;
+    transition: .2s linear;
   }
 
-  #tabbar {
-    bottom: 0px;
-    position: sticky;
-    display:grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+  .js-number{
+    width: 32px;
+    text-align: center;
+    background-color: #EFEFEF;
+    border: none;
+    font-size: 14px;
+  }
+
+  .button-card-wrapper .subtract:hover,
+  .button-card-wrapper .add:hover{
+    cursor: pointer;
+    transition: .2s linear;
+    background-color: #d3d3d3;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  .img_vnalichii{
+    width: 80px;
+    height: 106px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+    border-radius: 8px;
+  }
+  .otsutsv{
+    grid-area: otsutsv;
+    display: grid;
+    padding: 0px 16px 0px 16px;
+    gap: 16px;
+    grid-template-rows: 24px auto;
     grid-template-areas:
-      "iconHome iconSearch iconBag iconFav iconProfile";
-    justify-content: center;
-    background-color: #FFFFFF;
-    height: 56px;
-    grid-area: tabbar;
+      "otsutsv_text"
+      "tovary";
   }
-  nav {
-    background-color: rgb(103,37,168);
-    height: 80px;
+  .otsutsv_text {
+    display: flex;
+    justify-content: space-between;
   }
+  .sposob_dostavki{
+    grid-area: sposob_dostavki;
 
-  #Skruglenie {
-    height: 24px;
-    background-color: rgb(246,246,250);
-    border-radius: 24px 24px 0px 0px;
   }
-  #navigationBlock {
+  .sposob_oplaty{
+    grid-area: sposob_oplaty;
+
+  }
+  .poluchatel{
+    grid-area: poluchatel;
+
+  }
+  .itog{
+    grid-area: itog;
+
+  }
+  footer{
+    background-color: #6725A8;
+    grid-area: footer;
+
+  }
+  .tabbar{
+    grid-area: tabbar;
+
+  }
+  .menu{
     height: 56px;
-    position: sticky;
-    top: 0px;
-    background-color: rgb(103,37,168);
+    width: 320px;
+    padding: 0px 13px 0px 13px;
+
+  }
+  .scruglenie{
+    height: 24px;
+    border-radius: 24px 24px 0px 0px;
+    background-color: white;
+  }
+  .scruglenie2{
+    height: 24px;
+    border-radius: 0px 0px 24px 24px;
+    background-color: white;
   }
 }

@@ -129,105 +129,53 @@ document.querySelector('#app').innerHTML = `
    Отсутствуют · 3 товара 
 <div>icon</div>
 </div>
-  <div class="tovary">
-  <div class="tovar">
+  <div class="otsutsv_tovary">
+    <div class="otsutsv_tovar">
   <div class="hr"> 
   <hr>
   </div>
   <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
-  <div class="sumFromSumAndCount">
-                  <div>522</div>
-                  <div>сом</div> 
-              <div><s>1051 сом</s></div>
-            </div>
   <div class="description_tovar">
    <div> Футболка UZcotton мужская</div>
-              <div>
-                <div id="idThingColor">Цвет: белый</div>
-                <div id="idThingSize">Размер: 56</div>
-              </div>
-<div>Коледино WB</div>
+   <div>Цвет: белый</div>
     </div>
-  <div class="kolvo_tovar">
-  <div class="col-md-3">
-                            <div class="button-card-wrapper">
-                                <input type="button" value="-" class="subtract ">
-                                <input type="number" step="1" min="0" max="120" value="1" class="js-number"
-                                    autocomplete="off" placeholder="" inputmode="numeric">
-                                <input type="button" value="+" class="add">
-                            </div>
-                        </div>
-    <div>Осталось 2 шт. </div>
+  <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
-                <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+      <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
                    <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
- <div class="tovar">
+       <div class="otsutsv_tovar">
   <div class="hr"> 
   <hr>
   </div>
   <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
-  <div class="sumFromSumAndCount">
-                  <div>522</div>
-                  <div>сом</div> 
-              <div><s>1051 сом</s></div>
-            </div>
+
   <div class="description_tovar">
    <div> Футболка UZcotton мужская</div>
-              <div>
-                <div id="idThingColor">Цвет: белый</div>
-                <div id="idThingSize">Размер: 56</div>
-              </div>
-<div>Коледино WB</div>
+   <div>Цвет: белый</div>
     </div>
-  <div class="kolvo_tovar">
-  <div class="col-md-3">
-                            <div class="button-card-wrapper">
-                                <input type="button" value="-" class="subtract ">
-                                <input type="number" step="1" min="0" max="120" value="1" class="js-number"
-                                    autocomplete="off" placeholder="" inputmode="numeric">
-                                <input type="button" value="+" class="add">
-                            </div>
-                        </div>
-    <div>Осталось 2 шт. </div>
+  <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
-                <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+      <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
                    <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
-<div class="tovar">
+          <div class="otsutsv_tovar">
   <div class="hr"> 
   <hr>
   </div>
   <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
-  <div class="sumFromSumAndCount">
-                  <div>522</div>
-                  <div>сом</div> 
-              <div><s>1051 сом</s></div>
-            </div>
+
   <div class="description_tovar">
    <div> Футболка UZcotton мужская</div>
-              <div>
-                <div id="idThingColor">Цвет: белый</div>
-                <div id="idThingSize">Размер: 56</div>
-              </div>
-<div>Коледино WB</div>
+   <div>Цвет: белый</div>
     </div>
-  <div class="kolvo_tovar">
-  <div class="col-md-3">
-                            <div class="button-card-wrapper">
-                                <input type="button" value="-" class="subtract ">
-                                <input type="number" step="1" min="0" max="120" value="1" class="js-number"
-                                    autocomplete="off" placeholder="" inputmode="numeric">
-                                <input type="button" value="+" class="add">
-                            </div>
-                        </div>
-    <div>Осталось 2 шт. </div>
+  <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
-                <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+      <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
                    <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>

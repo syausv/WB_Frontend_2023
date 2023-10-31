@@ -68,7 +68,6 @@ body {
     padding: 0px 16px 0px 16px;
     grid-area: h_korzina;
     line-height: 28px;
-    letter-spacing: 1%;
   }
   .vnalichii{
     padding: 0px 16px 0px 16px;
@@ -107,8 +106,8 @@ body {
     grid-template-areas:
     "hr hr hr"
     ". . ."
-    "img . sumFromSumAndCount"
-    "img . description_tovar"
+    "img_vnalichii . sumFromSumAndCount"
+    "img_vnalichii . description_tovar"
     ". . ."
     "kolvo_tovar kolvo_tovar kolvo_tovar";
   }
@@ -116,13 +115,12 @@ body {
     grid-area: hr;
   }
   .img_vnalichii{
-    grid-area: img;
+    grid-area: img_vnalichii;
 
   }
 
   .sumFromSumAndCount{
     grid-area: sumFromSumAndCount;
-
     display: flex;
   }
   .description_tovar{
@@ -199,17 +197,39 @@ body {
   }
   .otsutsv{
     grid-area: otsutsv;
-    display: grid;
     padding: 0px 16px 0px 16px;
+    display: grid;
     gap: 16px;
     grid-template-rows: 24px auto;
     grid-template-areas:
       "otsutsv_text"
-      "tovary";
+      "otsutsv_tovary";
   }
   .otsutsv_text {
     display: flex;
+    grid-area: otsutsv_text;
     justify-content: space-between;
+  }
+  .otsutsv_tovary{
+    grid-area: otsutsv_tovary;
+    display: grid;
+    gap: 16px;
+  }
+  .otsutsv_tovar{
+    display: grid;
+    grid-template-columns: 80px 16px 192px;
+    grid-template-rows: 1px 12px 130px 12px 24px;
+    grid-template-areas:
+    "hr hr hr"
+    ". . ."
+    "img_vnalichii . description_tovar"
+    ". . ."
+    "otsutsv_kolvo_tovar otsutsv_kolvo_tovar otsutsv_kolvo_tovar";
+  }
+  .otsutsv_kolvo_tovar {
+    grid-area: otsutsv_kolvo_tovar;
+    display: flex;
+    justify-content: flex-end;
   }
   .sposob_dostavki{
     grid-area: sposob_dostavki;

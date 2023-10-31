@@ -182,7 +182,64 @@ document.querySelector('#app').innerHTML = `
 </div>
 </div>
 </div>
-  <div class="sposob_dostavki"></div>
+  <div class="sposob_dostavki">
+
+      
+     <div class="sposob_dostavki_title"> 
+                     <div class="zagalovki">Способ доставки</div> <div>Изменить</div>
+                     </div>
+                     
+   <div class="sposob_dostavki_delivery">  
+                   
+  
+ <div id="punktV" class="line_height_dostavka">Пункт выдачи</div>
+  
+ <div id="idAdressDeliveryOfPost">
+          <div class="line_height_dostavka">Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
+          <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px; gap: 4px"> 
+<div style="display: flex"><div>
+<object type="image/svg+xml" data="src/icons/star.svg" id="svg11"></object>
+</div>4.99 </div>
+<div>Ежедневно с 10 до 21 </div>
+</div>
+</div>
+ <div id="stoimost" class="line_height_dostavka"> Стоимость доставки </div>
+  
+ <div id="besplatno" class="line_height_dostavka"> Бесплатно </div>
+  
+<div id="date1"> 5—6 февраля </div>
+  
+<div id="idSmallTovary"> 
+<div id="idContainerSmallTovary6" class="containerSmallTovary6">
+               <div id="picSmall1" style="width: 40px ;height: 56px ; border-radius: 8px">
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame38531.png" alt=""/>
+                </div>
+               <div id="picSmall2" style="width: 40px ;height: 56px ; border-radius: 8px">
+                <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame277132129.png" alt=""/>
+                </div>
+               <div id="picSmall3" style="width: 40px ;height: 56px ; border-radius: 8px"> 
+               <img style="width: 40px ;height: 56px ; border-radius: 8px" src="/src/img/Frame2771321291.png" alt=""/>
+               </div>
+             </div>
+            </div>
+ 
+<div id="date2"> 7—8 февраля</div>
+  
+  <div id="idContainerSmallTovary8"> <div style="width: 40px ;height: 56px ; border-radius: 8px"> 
+                  <img style="width: 40px ;height: 56px ;border-radius: 8px" src="/src/img/Frame277132129.png" alt=""/>
+            </div>
+            </div>
+     </div>
+               
+      <div class="strokaInfoOtkaz">
+       <div  style="display: flex; gap: 8px"> 
+       <div id="idSber2"><object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
+       <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat"> бесплатно</div></div>
+       </div>
+       </div>    
+       </div>
+  
+</div>
   <div class="sposob_oplaty"></div>
   <div class="poluchatel"></div>
   <div class="itog"></div>

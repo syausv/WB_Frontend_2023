@@ -232,9 +232,11 @@ body {
     justify-content: flex-end;
   }
   .sposob_dostavki{
+    background-color: #ffffff;
+    border-radius: 16px;
     grid-area: sposob_dostavki;
     display: grid;
-    padding: 16px 16px 24px 16px;
+    padding: 16px 0px 24px 0px;
     grid-template-rows: 28px 8px auto 24px auto;
     grid-template-areas:
     "sposob_dostavki_title"
@@ -244,14 +246,31 @@ body {
    "strokaInfoOtkaz";
   }
   .sposob_dostavki_title {
+    padding: 0px 16px 0px 16px;
     grid-area: sposob_dostavki_title;
     display: flex;
     justify-content: space-between;
+  }
+  .zagalovki{
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #containerForIzmenit{
+    padding: 5px 0px 0px 0px;
+    gap: 8px;
+  }
+  .izmenit{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
   }
   .sposob_dostavki_delivery{
     grid-area: sposob_dostavki_delivery;
     display: grid;
     row-gap: 0px;
+    padding: 0px 16px 0px 16px;
     grid-template-columns: 1fr;
     grid-template-rows: auto max-content 16px auto auto 16px auto  12px auto 24px auto 12px auto;
     grid-template-areas:
@@ -276,6 +295,15 @@ body {
   #idAdressDeliveryOfPost{
     grid-area: idAdressDeliveryOfPost;
     display: grid;
+    gap: 4px;
+  }
+  #idInfoRaitingPost{
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+  }
+  .rating{
+    display: flex;
     gap: 4px;
   }
   .line_height_dostavka{
@@ -324,9 +352,20 @@ body {
   .strokaInfoOtkaz{
     display: flex;
     grid-area: strokaInfoOtkaz;
+    gap: 8px;
+    padding: 0px 24px 0px 24px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+  #idSber2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .sposob_oplaty{
+    border-style: solid;
     grid-area: sposob_oplaty;
+
 
   }
   .poluchatel{

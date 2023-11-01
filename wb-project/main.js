@@ -186,7 +186,7 @@ document.querySelector('#app').innerHTML = `
 
       
      <div class="sposob_dostavki_title"> 
-                     <div class="zagalovki">Способ доставки</div> <div>Изменить</div>
+                     <div class="zagalovki">Способ доставки</div> <div id="containerForIzmenit"><div class="izmenit">Изменить</div></div>
                      </div>
                      
    <div class="sposob_dostavki_delivery">  
@@ -196,10 +196,8 @@ document.querySelector('#app').innerHTML = `
   
  <div id="idAdressDeliveryOfPost">
           <div class="line_height_dostavka">Бишкек, улица Ахматбека Суюмбаева, 12/1 </div>
-          <div id="idInfoRaitingPost" style="display: flex; gap: 8px; font-size: 13px; gap: 4px"> 
-<div style="display: flex"><div>
-<object type="image/svg+xml" data="src/icons/star.svg" id="svg11"></object>
-</div>4.99 </div>
+          <div id="idInfoRaitingPost"> 
+<div class="rating"> <object type="image/svg+xml" data="src/icons/star.svg" id="svg11"></object>  <div>4.99 </div></div>
 <div>Ежедневно с 10 до 21 </div>
 </div>
 </div>
@@ -232,15 +230,16 @@ document.querySelector('#app').innerHTML = `
      </div>
                
       <div class="strokaInfoOtkaz">
-       <div  style="display: flex; gap: 8px"> 
-       <div id="idSber2"><object type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
+       
+       <div id="idSber2"><object class="idSber2" type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
        <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat"> бесплатно</div></div>
-       </div>
+    
        </div>    
        </div>
+
+  <div class="sposob_oplaty">
   
 </div>
-  <div class="sposob_oplaty"></div>
   <div class="poluchatel"></div>
   <div class="itog"></div>
 </div>

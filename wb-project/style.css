@@ -512,10 +512,71 @@ body {
     font-size: 12px;
     line-height: 14px;
   }
-  .itog{
+
+  .itog {
     grid-area: itog;
+    display: grid;
+    padding: 8px 16px 0px 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "itog_cena"
+      "itog_rasschet"
+      "itog_dostavka"
+      "strokaInfoOtkaz"
+      "itog_oplata"
+      "itog_spisatOplatu"
+      "buttonZakazat";
 
   }
+  .itog_cena{
+    grid-area: itog_cena;
+    display: flex;
+    justify-content: space-between;
+  }
+  .itog_rasschet{
+    grid-area: itog_rasschet;
+  }
+  .itog_rasschet_sum{
+    display: flex;
+    justify-content: space-between;
+  }
+  .itog_dostavka{
+    grid-area: itog_dostavka;
+  }
+  .strokaInfoOtkaz{
+    grid-area: strokaInfoOtkaz;
+  }
+  .itog_oplata{
+    grid-area: itog_oplata;
+  }
+  .itog_spisatOplatu{
+    display: grid;
+    grid-area: itog_spisatOplatu;
+  }
+  .itog_srazy{
+    display: flex;
+    gap: 8px;
+  }
+  #button_zakaz{
+    color: #FFFFFF;
+    width: 100%;
+    height: 44px;
+    background: #CB11AB;
+    padding: 10px 32px 10px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .itog_soglashenie{
+    display: flex;
+    justify-content: space-between;         height: 32px;
+  }
+
   footer{
     background-color: #6725A8;
     grid-area: footer;
@@ -534,11 +595,11 @@ body {
   .scruglenie{
     height: 24px;
     border-radius: 24px 24px 0px 0px;
-    background-color: white;
+    background-color: #F6F6FA;
   }
   .scruglenie2{
     height: 24px;
     border-radius: 0px 0px 24px 24px;
-    background-color: white;
+    background-color: #F6F6FA;
   }
 }

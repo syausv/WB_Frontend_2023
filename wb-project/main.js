@@ -238,9 +238,53 @@ document.querySelector('#app').innerHTML = `
        </div>
 
   <div class="sposob_oplaty">
-  
+    <div class="sposob_oplaty_title"> 
+                     <div class="zagalovki">Способ оплаты</div> <div class="containerForIzmenit"><div class="izmenit">Изменить</div></div>
+                     </div>
+                     
+                     
+         <div class="cartMir">
+         <div class="cartMir_icon"> 
+           <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg33"> </object> 
+         </div>
+    <div class="cartMir_numbers">  <div>1234 56•• •••• 1234</div> <div>01/30</div> </div>
+         </div>  
+       <div class="cartMir_text">Спишем оплату с карты при получении </div>
+
 </div>
-  <div class="poluchatel"></div>
+  <div class="poluchatel">
+   <div class="zagalovki">Получатель</div> 
+     <div id="idAnketa" class="classAnketa">
+      
+        <div id="name_input" class="text-field text-field_floating-3">
+      <input class="text-field__input" type="name" id="name" name="name" placeholder="Имя">
+      <label class="text-field__label" for="name">Имя</label>
+    </div>
+    
+         <div id="surname_input" class="text-field text-field_floating-3">
+      <input class="text-field__input" type="surname" id="surname" name="surname" placeholder="Фамилия">
+      <label class="text-field__label" for="surname">Фамилия</label>
+        </div>
+       
+        
+         <div id="email_input" class="text-field text-field_floating-3">
+      <input class="text-field__input" type="email" id="email" name="email" placeholder="Почта">
+      <label class="text-field__label" for="email">Электронная почта</label>
+        </div>
+        
+         <div id="phone_input"  class="text-field text-field_floating-3">
+      <input class="text-field__input" type="phone" id="phone" name="phone" value="+7 988 123-45-67" placeholder="Телефон">
+      <label class="text-field__label" for="phone">Телефон</label>
+        </div>
+        
+         <div id="innNumb_input" class="text-field text-field_floating-3">
+      <input class="text-field__input" type="number" id="innNumb" name="innNumb" placeholder="ИНН">
+      <label class="text-field__label" for="surname">ИНН</label>
+             <div style="display: inline-flex; font-size: 12px ">Для таможенного оформления </div>
+        </div>
+        
+        </div>
+</div>
   <div class="itog"></div>
 </div>
   <footer>

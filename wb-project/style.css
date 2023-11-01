@@ -256,7 +256,7 @@ body {
     font-size: 20px;
     font-weight: 700;
   }
-  #containerForIzmenit{
+  .containerForIzmenit{
     padding: 5px 0px 0px 0px;
     gap: 8px;
   }
@@ -363,14 +363,154 @@ body {
     justify-content: center;
   }
   .sposob_oplaty{
-    border-style: solid;
     grid-area: sposob_oplaty;
-
-
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: grid;
+    padding: 16px 16px 24px 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 28px 8px 24px 8px 16px;
+    grid-template-areas:
+   "sposob_oplaty_title"
+    "."
+    "cartMir"
+    "."
+    "cartMir_text";
+  }
+  .sposob_oplaty_title{
+    grid-area: sposob_oplaty_title;
+    justify-content: space-between;
+    display: flex;
+  }
+  .cartMir{
+    grid-area: cartMir;
+    display: flex;
+    gap: 4px;
+  }
+  .cartMir_numbers{
+    grid-area: cartMir_numbers;
+    display: flex;
+    gap: 12px;
+    line-height: 24px;
+  }
+  .cartMir_text{
+    grid-area: cartMir_text;
+    display: flex;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
   }
   .poluchatel{
     grid-area: poluchatel;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 16px 24px 16px;
+    display: grid;
+  }
+  .classAnketa{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56px 56px 56px 56px 56px;
+    grid-template-areas:
+    "name_input"
+    "surname_input"
+    "email_input"
+    "phone_input"
+    "innNumb_input";
+  }
+  #name_input {
+    grid-area: name_input;
+  }
+  #innNumb_input {
+    grid-area: innNumb_input;
+  }
+  #email_input {
+    grid-area: email_input;
+  }
+  #phone_input {
+    grid-area: phone_input;
+  }
+  #innNumb_input {
+    grid-area: innNumb_input;
+  }
 
+  .text-field_floating-3 {
+    position: relative;
+  }
+  input#idVyborCheck{
+    border-radius: 8px;
+    border-style: solid;
+  }
+  .checkedColor{
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 8px;
+
+  }
+  .checkedColor:checked{
+    accent-color: #CB11AB;
+  }
+  .greyText{
+    color:#9797AF;
+  }
+
+  .text-field_floating-3 .text-field__input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+    border-radius: 0;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    line-height: 1.25;
+    padding: 1rem 0rem;
+    background-color: transparent ;
+  }
+
+  .text-field_floating-3 .text-field__input:focus {
+    outline: 0;
+    border-bottom: 1px solid #9797AF;
+    box-shadow: none;
+    background-color: #eee;
+  }
+
+  .text-field_floating-3 .text-field__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem 0.75rem 0rem 0rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: color .15s ease-in-out, transform .15s ease-in-out;
+    color: #9797AF;
+  }
+
+  .text-field_floating-3 .text-field__input::-moz-placeholder {
+    color: transparent;
+
+  }
+
+  .text-field_floating-3 .text-field__input::placeholder {
+    color: transparent;
+  }
+
+  .text-field_floating-3 .text-field__input:focus,
+  .text-field_floating-3 .text-field__input:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: .625rem;
+    border-bottom: 1px solid #03a9f4;
+  }
+
+  .text-field_floating-3 .text-field__input:focus~.text-field__label,
+  .text-field_floating-3 .text-field__input:not(:placeholder-shown)~.text-field__label {
+    transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+    font-size: 12px;
+    line-height: 14px;
   }
   .itog{
     grid-area: itog;

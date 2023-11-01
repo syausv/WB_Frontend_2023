@@ -229,7 +229,7 @@ document.querySelector('#app').innerHTML = `
             </div>
      </div>
                
-      <div class="strokaInfoOtkaz">
+      <div class="strokaInfoOtkaz" >
        
        <div id="idSber2"><object class="idSber2" type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
        <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat"> бесплатно</div></div>
@@ -290,10 +290,10 @@ document.querySelector('#app').innerHTML = `
       
       <div class="itog_cena">
           
-<div>Итого</div> 
-             <div>2 101 063 сом</div> 
-      </div> 
-   <div class="itog_rasschet"> 
+<div id="itog_cena_zagalovki" class="zagalovki">
+       <div>Итого</div> 
+           <div>2 101 063 сом</div> </div>
+              <div class="itog_rasschet"> 
              <div class="itog_rasschet_sum">
               <div>203 товара</div>   
               <div>2 302 048 сом</div> 
@@ -307,6 +307,7 @@ document.querySelector('#app').innerHTML = `
               <div>Бесплатно</div>
               </div>
           </div>
+      </div>  
    <div class="itog_dostavka">
          <div class="itog_dostavka_title">
            <div> Доставка в пункт выдачи</div>
@@ -316,7 +317,7 @@ document.querySelector('#app').innerHTML = `
            <div id="idGorod" class="class13px"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
            <div id="idDataDost" class="class13px" style="text-decoration: underline dotted; color: #CB11AB">5–8 фев </div>
           </div>
-     <div class="strokaInfoOtkaz">
+     <div class="strokaInfoOtkaz" id="dostavka_strokaInfoOtkaz">
        
        <div id="idSber2"><object class="idSber2" type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
        <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat"> бесплатно</div></div>
@@ -335,14 +336,14 @@ document.querySelector('#app').innerHTML = `
     </div>
       <div class="itog_spisatOplatu">
             <div class="itog_srazy">
-           <div>  <input type="checkbox"/></div>
-           <div>Списать оплату сразу</div>
+           <div>  <input id="itog_srazy_checkbox" type="checkbox"/></div>
+           <div id="itog_spisatOplatu_label">Списать оплату сразу</div>
             </div>
           <div>
 Спишем оплату с карты при получении
             </div>
         </div>
-      <button id="button_zakaz" style=""> Заказать</button>
+      <button id="button_zakaz"> Заказать</button>
           <div class="itog_soglashenie"> 
        <div> <object type="image/svg+xml" data="src/icons/stroke.svg" id="svg10"> </object> </div>
        <div>Соглашаюсь с правилами пользования торговой площадкой и возврата </div>

@@ -6,7 +6,20 @@ document.querySelector('#app').innerHTML = `
   <div>
   <div class="container">
   <nav>
-  <div class="menu"></div>
+  <div class="menu">
+  
+  <div class="menu_icon">
+  <object class="menu_action_icon"  type="image/svg+xml" data="src/icons/bar.svg" id="svg4442"></object>
+</div>
+  <div class="logo_icon">
+  Товары и точка
+</div>
+  <div class="menu_search">
+  <object class="action_icon"  type="image/svg+xml" data="src/icons/search.svg" id="svg4442"></object>
+</div>
+
+  
+</div>
   <div class="scruglenie"></div>
 </nav>
   <div class="content">
@@ -23,19 +36,19 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
   <div class="sumFromSumAndCount">
                   <div>522</div>
                   <div>сом</div> 
               <div><s>1051 сом</s></div>
             </div>
   <div class="description_tovar">
-   <div> Футболка UZcotton мужская</div>
-              <div>
+   <div  class="description_tovar_title"> Футболка UZcotton мужская</div>
+              <div  class="description_tovar_spec">
                 <div id="idThingColor">Цвет: белый</div>
                 <div id="idThingSize">Размер: 56</div>
               </div>
-<div>Коледино WB</div>
+<div class="description_tovar_spec_punkt">Коледино WB</div>
     </div>
   <div class="kolvo_tovar">
   <div class="col-md-3">
@@ -46,10 +59,10 @@ document.querySelector('#app').innerHTML = `
                                 <input type="button" value="+" class="add">
                             </div>
                         </div>
-    <div>Осталось 2 шт. </div>
+    <div class="tovar_ostatki">Осталось 2 шт. </div>
     <div class="icons"> 
-                <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
-                   <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
+                <div class="action_icon_container"><object class="action_icon"  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div class="action_icon_container">  <object class="action_icon" type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
@@ -57,19 +70,19 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
   <div class="sumFromSumAndCount">
                   <div>522</div>
                   <div>сом</div> 
               <div><s>1051 сом</s></div>
             </div>
   <div class="description_tovar">
-   <div> Футболка UZcotton мужская</div>
-              <div>
+   <div  class="description_tovar_title"> Футболка UZcotton мужская</div>
+              <div  class="description_tovar_spec">
                 <div id="idThingColor">Цвет: белый</div>
                 <div id="idThingSize">Размер: 56</div>
               </div>
-<div>Коледино WB</div>
+<div class="description_tovar_spec_punkt">Коледино WB</div>
     </div>
   <div class="kolvo_tovar">
   <div class="col-md-3">
@@ -80,10 +93,10 @@ document.querySelector('#app').innerHTML = `
                                 <input type="button" value="+" class="add">
                             </div>
                         </div>
-    <div>Осталось 2 шт. </div>
+    <div style="display: none">Осталось 2 шт. </div>
     <div class="icons"> 
-                <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
-                   <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
+                <div class="action_icon_container"><object class="action_icon" type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div class="action_icon_container">  <object class="action_icon" type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
@@ -91,19 +104,19 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
   <div class="sumFromSumAndCount">
                   <div>522</div>
                   <div>сом</div> 
               <div><s>1051 сом</s></div>
             </div>
   <div class="description_tovar">
-   <div> Футболка UZcotton мужская</div>
-              <div>
+   <div class="description_tovar_title"> Футболка UZcotton мужская</div>
+              <div class="description_tovar_spec">
                 <div id="idThingColor">Цвет: белый</div>
                 <div id="idThingSize">Размер: 56</div>
               </div>
-<div>Коледино WB</div>
+<div class="description_tovar_spec_punkt">Коледино WB</div>
     </div>
   <div class="kolvo_tovar">
   <div class="col-md-3">
@@ -114,10 +127,10 @@ document.querySelector('#app').innerHTML = `
                                 <input type="button" value="+" class="add">
                             </div>
                         </div>
-    <div>Осталось 2 шт. </div>
+    <div class="tovar_ostatki" >Осталось 2 шт. </div>
     <div class="icons"> 
-                <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
-                   <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
+                <div class="action_icon_container"><object class="action_icon" type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div class="action_icon_container">  <object class="action_icon" type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
@@ -134,15 +147,15 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
   <div class="description_tovar">
-   <div> Футболка UZcotton мужская</div>
-   <div>Цвет: белый</div>
+   <div class="description_tovar_title"> Футболка UZcotton мужская</div>
+   <div class="description_tovar_spec">Цвет: белый</div>
     </div>
   <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
-      <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
-                   <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
+      <div class="action_icon_container"><object class="action_icon"  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div class="action_icon_container">  <object class="action_icon" type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
@@ -150,16 +163,16 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
 
   <div class="description_tovar">
-   <div> Футболка UZcotton мужская</div>
-   <div>Цвет: белый</div>
+   <div  class="description_tovar_title"> Футболка UZcotton мужская</div>
+   <div class="description_tovar_spec" >Цвет: белый</div>
     </div>
   <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
-      <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
-                   <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
+      <div class="action_icon_container"><object class="action_icon" type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div class="action_icon_container">  <object class="action_icon" type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
@@ -167,16 +180,16 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
 
   <div class="description_tovar">
-   <div> Футболка UZcotton мужская</div>
-   <div>Цвет: белый</div>
+   <div class="description_tovar_title"> Футболка UZcotton мужская</div>
+   <div class="description_tovar_spec">Цвет: белый</div>
     </div>
   <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
-      <div class="action_icon"><object  type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
-                   <div class="action_icon">  <object type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
+      <div class="action_icon_container"><object class="action_icon" type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>
+                   <div class="action_icon_container">  <object class="action_icon" type="image/svg+xml" data="src/icons/delete.svg" id="svg3444"></object> </div>
               </div>
   </div>
 </div>
@@ -354,8 +367,16 @@ document.querySelector('#app').innerHTML = `
 </div>
   <footer>
   <div class="scruglenie2"></div>
+   <div class="footer_description" style=""><div>© 2022  ООО «Товары и точка»</div>
 </footer>
-  <div class="tabbar"></div>
+  <div class="tabbar">
+   <object type="image/svg+xml" data="src/icons/main.svg" id="svg96" style="justify-self: center; padding: 12px"></object>
+      <object type="image/svg+xml" data="src/icons/catalog.svg" id="svg97" style="justify-self: center; padding: 12px"></object>
+       <object type="image/svg+xml" data="src/icons/cart.svg" id="svg98" style="justify-self: center; padding: 12px"></object>
+        <object type="image/svg+xml" data="src/icons/favorites.svg" id="svg9" style="justify-self: center; padding: 12px"></object>
+         <object type="image/svg+xml" data="src/icons/profile.svg" id="svg99" style="justify-self: center; padding: 12px"></object>
+  
+</div>
 </div>
    </div>
   

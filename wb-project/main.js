@@ -36,7 +36,11 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii"> 
+  <input class="checkedColor" type="checkbox" checked/>
+   <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> 
+   
+   </div>
   <div class="sumFromSumAndCount">
                   <div>522</div>
                   <div>сом</div> 
@@ -70,19 +74,26 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii"> 
+   <input class="checkedColor" type="checkbox" checked/>
+   <img class="img_vnalichii_image" src="src/img/Frame38531.png"/>
+   
+    </div>
   <div class="sumFromSumAndCount">
                   <div>522</div>
                   <div>сом</div> 
               <div><s>1051 сом</s></div>
             </div>
   <div class="description_tovar">
-   <div  class="description_tovar_title"> Футболка UZcotton мужская</div>
+   <div  class="description_tovar_title"> Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
               <div  class="description_tovar_spec">
-                <div id="idThingColor">Цвет: белый</div>
-                <div id="idThingSize">Размер: 56</div>
+                <div id="idThingColor">Цвет: прозрачный</div>
+            
               </div>
-<div class="description_tovar_spec_punkt">Коледино WB</div>
+<div class="description_tovar_spec_punkt">
+   <div>Коледино WB</div>
+   <div>OOO Мегапрофстиль</div>
+   </div>
     </div>
   <div class="kolvo_tovar">
   <div class="col-md-3">
@@ -104,7 +115,11 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">
+  <input class="checkedColor" type="checkbox" checked/>
+    <img class="img_vnalichii_image" src="src/img/Frame38531.png"/>  
+  
+  </div>
   <div class="sumFromSumAndCount">
                   <div>522</div>
                   <div>сом</div> 
@@ -147,7 +162,7 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
   <div class="description_tovar">
    <div class="description_tovar_title"> Футболка UZcotton мужская</div>
    <div class="description_tovar_spec">Цвет: белый</div>
@@ -163,7 +178,7 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
 
   <div class="description_tovar">
    <div  class="description_tovar_title"> Футболка UZcotton мужская</div>
@@ -180,7 +195,7 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii" src="src/img/Frame38531.png"/> </div>
+  <div class="img_vnalichii">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
 
   <div class="description_tovar">
    <div class="description_tovar_title"> Футболка UZcotton мужская</div>

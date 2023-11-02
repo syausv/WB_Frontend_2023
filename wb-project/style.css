@@ -26,8 +26,9 @@ body {
 @media screen and (max-width: 1024px) {
   .container{
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 2717.33px 88px 56px;
+    grid-template-rows: 112px auto 88px 56px;
     grid-template-areas:
     "nav"
     "content"
@@ -36,13 +37,15 @@ body {
   }
   nav{
     grid-area: nav;
+    display: grid;
     background-color: #6725A8;
   }
   .menu{
+    padding: 0px 13px 0px 13px;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
-    grid-template-rows: 1fr;
+    grid-template-rows: 88px;
     grid-template-areas:
     "menu_icon logo_icon menu_search";
   }
@@ -78,18 +81,18 @@ body {
   .content{
     display: grid;
     grid-area: content;
-    top: -10px;
+    column-gap: 32px;
     position: relative;
-
+    padding: 0px 24px 16px 24px;
     border-radius: 24px 24px 0px 0px;
     grid-template-columns: 1fr 0.5fr;
-    grid-template-rows: 28px 16px 567.67px 48px 535.67px 32px 512px 12px 124px 12px 420px;
+    grid-template-rows: 28px 36px 516px 48px 535.67px 32px 512px 12px 124px 12px 420px;
     grid-template-areas:
     "h_korzina itog"
     ". itog"
     "vnalichii itog"
     ". itog"
-    "otsutsv itog"
+    "otsutsv ."
     ". ."
     "sposob_dostavki ."
     ". ."
@@ -98,14 +101,12 @@ body {
     "poluchatel .";
   }
   .h_korzina{
-    padding: 0px 16px 0px 16px;
     grid-area: h_korzina;
-    line-height: 28px;
-    font-size: 20px;
+    line-height: 36px;
+    font-size: 28px;
     font-weight: 700;
   }
   .vnalichii{
-    padding: 0px 16px 0px 16px;
     grid-area: vnalichii;
     display: grid;
     gap: 16px;
@@ -136,22 +137,25 @@ body {
   }
   .tovar{
     display: grid;
-    grid-template-columns: 80px 16px auto;
-    grid-template-rows: 1px 12px 24px auto 12px 32px;
+    grid-template-columns: 106px 16px auto auto 100px 16px 110px;
+    grid-template-rows: 1px 12px max-content;
     grid-template-areas:
-    "hr hr hr"
-    ". . ."
-    "img_vnalichii . sumFromSumAndCount"
-    "img_vnalichii . description_tovar"
-    ". . ."
-    "kolvo_tovar kolvo_tovar kolvo_tovar";
+    "hr hr hr hr hr hr hr"
+    ". . . . . . ."
+    "img_vnalichii . description_tovar . kolvo_tovar . sumFromSumAndCount";
   }
   .hr{
     grid-area: hr;
   }
   .img_vnalichii{
     grid-area: img_vnalichii;
-
+    align-items: center;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 22px 72px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "checkedColor img_vnalichii";
   }
 
   .sumFromSumAndCount{
@@ -250,15 +254,14 @@ body {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
   }
-  .img_vnalichii{
-    width: 80px;
-    height: 106px;
+  .img_vnalichii_image{
+    width: 72px;
+    height: 96px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
     border-radius: 8px;
   }
   .otsutsv{
     grid-area: otsutsv;
-    padding: 0px 16px 0px 16px;
     display: grid;
     gap: 16px;
     grid-template-columns: 1fr;
@@ -511,13 +514,14 @@ body {
     border-style: solid;
   }
   .checkedColor{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     vertical-align: middle;
     width: 22px;
     height: 22px;
     border: 1px solid;
     border-radius: 8px;
-
+    position: static;
   }
   .checkedColor:checked{
     accent-color: #CB11AB;
@@ -583,9 +587,12 @@ body {
 
   .itog {
     grid-area: itog;
+    padding: 0px 24px 16px 24px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
     display: grid;
-
-    padding: 8px 16px 0px 16px;
+    margin-top: -12px;
+    width: 304px;
     grid-template-columns: 1fr;
     grid-template-rows: auto 16px 52px 16px 66px 24px 44px auto 12px auto ;
     grid-template-areas:
@@ -712,8 +719,7 @@ body {
     grid-area: tabbar;
   }
   .menu{
-    height: 56px;
-    padding: 0px 13px 0px 13px;
+
 
   }
   .scruglenie{
@@ -1224,7 +1230,9 @@ body {
     height: 22px;
     border: 1px solid;
     border-radius: 8px;
-
+    position: absolute;
+    top: 4px;
+    left: 4px;
   }
   .checkedColor:checked{
     accent-color: #CB11AB;
@@ -1492,6 +1500,7 @@ body {
     grid-area: content;
     top: -10px;
     position: relative;
+    padding: 0px;
 
     border-radius: 24px 24px 0px 0px;
     grid-template-columns: 320px;
@@ -1546,6 +1555,7 @@ body {
   .tovary{
     grid-area: tovary;
     display: grid;
+    grid-template-rows: min-content min-content min-content;
     gap: 16px;
   }
   .tovar{
@@ -1565,7 +1575,7 @@ body {
   }
   .img_vnalichii{
     grid-area: img_vnalichii;
-
+    position: relative;
   }
 
   .sumFromSumAndCount{

@@ -31,8 +31,8 @@ document.querySelector('#app').innerHTML = `
 </div>
 <div>icon</div>
 </div>
-  <div class="tovary">
-  <div class="tovar">
+  <div class="tovary" >
+  <div class="tovar" id="tovar1">
   <div class="hr"> 
   <hr>
   </div>
@@ -70,7 +70,7 @@ document.querySelector('#app').innerHTML = `
               </div>
   </div>
 </div>
- <div class="tovar">
+ <div class="tovar" id="tovar2">
   <div class="hr"> 
   <hr>
   </div>
@@ -111,7 +111,7 @@ document.querySelector('#app').innerHTML = `
               </div>
   </div>
 </div>
-<div class="tovar">
+<div class="tovar" id="tovar3">
   <div class="hr"> 
   <hr>
   </div>
@@ -126,7 +126,7 @@ document.querySelector('#app').innerHTML = `
               <div><s>1051 сом</s></div>
             </div>
   <div class="description_tovar">
-   <div class="description_tovar_title"> Футболка UZcotton мужская</div>
+   <div class="description_tovar_title"> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
               <div class="description_tovar_spec">
                 <div id="idThingColor">Цвет: белый</div>
                 <div id="idThingSize">Размер: 56</div>

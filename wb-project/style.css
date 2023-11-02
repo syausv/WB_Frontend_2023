@@ -85,7 +85,7 @@ body {
     position: relative;
     padding: 0px 24px 16px 24px;
     border-radius: 24px 24px 0px 0px;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 28px 36px 516px 48px 535.67px 32px 512px 12px 124px 12px 420px;
     grid-template-areas:
     "h_korzina itog"
@@ -133,7 +133,22 @@ body {
   .tovary{
     grid-area: tovary;
     display: grid;
-    gap: 16px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    "tovar1"
+    "tovar2"
+    "tovar3";
+  }
+  #tovar1{
+    grid-area: tovar1;
+  }
+  #tovar2{
+    grid-area: tovar2;
+  }
+  #tovar3{
+    grid-area: tovar3;
   }
   .tovar{
     display: grid;
@@ -147,13 +162,16 @@ body {
   .hr{
     grid-area: hr;
   }
+  #tovar2 .hr, #tovar3 .hr{
+    display: none;
+  }
   .img_vnalichii{
     grid-area: img_vnalichii;
     align-items: center;
     gap: 12px;
     display: grid;
     grid-template-columns: 22px 72px;
-    grid-template-rows: 1fr;
+    grid-template-rows: min-content;
     grid-template-areas:
     "checkedColor img_vnalichii";
   }
@@ -167,13 +185,24 @@ body {
     display: grid;
     font-size: 14px;
     gap: 8px;
+    grid-template-rows: min-content min-content min-content;
   }
-  .description_tovar_spec,.description_tovar_spec_punkt{
+  .description_tovar_spec{
+    display: flex;
     line-height: 16px;
     font-size: 13px;
+    gap: 4px;
+  }
+  .description_tovar_spec_punkt{
+    display: grid;
+    line-height: 16px;
+    font-size: 13px;
+    gap: 4px;
   }
   .description_tovar_title{
-
+    max-width: 275px;
+   line-height: 24px;
+    font-size: 16px;
   }
   .description_tovar_spec_punkt {
     color: #9797AF;
@@ -181,26 +210,24 @@ body {
 
   .kolvo_tovar{
     grid-area: kolvo_tovar;
-
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    gap: 16px;
+    gap: 8px;
+    grid-template-rows: min-content min-content min-content;
   }
   .tovar_ostatki{
     display: flex;
-    height: 32px;
     font-size: 13px;
+    line-height: 16px;
     color: #F55123;
     align-items: center;
   }
   .icons{
-    width: 88px;
     display: flex;
-    justify-content: space-between;
+    gap: 16px;
+    justify-content: end;
   }
   .action_icon_container{
-    height: 44px;
-    width: 44px;
     display: flex;
     justify-items: center;
     justify-content: center;
@@ -209,19 +236,19 @@ body {
     height: 20px;
   }
   .button-card-wrapper{
-    height: 32px;
-    width: 80px;
+    height: 44px;
+    width: 100px;
     display: flex;
   }
 
   .button-card-wrapper .subtract{
-    width: 24px;
+    width: 100%;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
   }
 
   .button-card-wrapper .add{
-    width: 24px;
+    width: 100%;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -594,11 +621,15 @@ body {
     margin-top: -12px;
     width: 304px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 16px 52px 16px 66px 24px 44px auto 12px auto ;
+    grid-template-rows: auto 16px auto 16px 52px 16px auto 16px 66px 24px 44px auto 12px auto ;
     grid-template-areas:
       "itog_cena"
       "."
+      "itog_dostavka"
+      "."
       "strokaInfoOtkaz"
+      "."
+      "itog_oplata"
       "."
       "itog_spisatOplatu"
       "."
@@ -628,7 +659,7 @@ body {
   }
   .itog_dostavka{
     grid-area: itog_dostavka;
-    display: none;
+    display: block;
   }
   .itog_dostavka_title{
     display: flex;
@@ -639,7 +670,7 @@ body {
   }
   .itog_oplata{
     grid-area: itog_oplata;
-    display: none;
+    display: block;
   }
   .itog_spisatOplatu{
     border-radius: 8px;

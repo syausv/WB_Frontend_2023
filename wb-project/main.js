@@ -162,7 +162,7 @@ document.querySelector('#app').innerHTML = `
   <div class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
+  <div class="img_otsutsv">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
   <div class="description_tovar">
    <div class="description_tovar_title"> Футболка UZcotton мужская</div>
    <div class="description_tovar_spec">Цвет: белый</div>
@@ -175,14 +175,14 @@ document.querySelector('#app').innerHTML = `
   </div>
 </div>
        <div class="otsutsv_tovar">
-  <div class="hr"> 
+  <div style="display: none" class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
+  <div class="img_otsutsv">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
 
   <div class="description_tovar">
-   <div  class="description_tovar_title"> Футболка UZcotton мужская</div>
-   <div class="description_tovar_spec" >Цвет: белый</div>
+   <div  class="description_tovar_title"> Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
+   <div class="description_tovar_spec" >Цвет: прозрачный</div>
     </div>
   <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
@@ -192,15 +192,14 @@ document.querySelector('#app').innerHTML = `
   </div>
 </div>
           <div class="otsutsv_tovar">
-  <div class="hr"> 
+  <div style="display: none" class="hr"> 
   <hr>
   </div>
-  <div class="img_vnalichii">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
+  <div class="img_otsutsv">  <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> </div>
 
   <div class="description_tovar">
-   <div class="description_tovar_title"> Футболка UZcotton мужская</div>
-   <div class="description_tovar_spec">Цвет: белый</div>
-    </div>
+   <div class="description_tovar_title"> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
+     </div>
   <div class="otsutsv_kolvo_tovar">
     <div class="icons"> 
       <div class="action_icon_container"><object class="action_icon" type="image/svg+xml" data="src/icons/favorite.svg" id="svg4442"></object></div>

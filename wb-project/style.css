@@ -86,7 +86,7 @@ body {
     padding: 0px 24px 16px 24px;
     border-radius: 24px 24px 0px 0px;
     grid-template-columns: 1fr auto;
-    grid-template-rows: 28px 36px 516px 48px 535.67px 32px 512px 12px 124px 12px 420px;
+    grid-template-rows: 28px 36px 516px 40px auto 32px auto 12px 136px 12px 420px;
     grid-template-areas:
     "h_korzina itog"
     ". itog"
@@ -306,17 +306,29 @@ body {
     grid-area: otsutsv_tovary;
     display: grid;
     gap: 16px;
+    grid-template-rows: min-content min-content min-content;
   }
   .otsutsv_tovar{
     display: grid;
-    grid-template-columns: 80px 16px auto;
-    grid-template-rows: 1px 12px max-content 12px 24px;
+    grid-template-columns: 72px 16px 309px auto 100px auto 110px;
+    grid-template-rows: 1px 12px max-content;
     grid-template-areas:
-    "hr hr hr"
-    ". . ."
-    "img_vnalichii . description_tovar"
-    ". . ."
-    "otsutsv_kolvo_tovar otsutsv_kolvo_tovar otsutsv_kolvo_tovar";
+    "hr hr hr hr hr hr hr"
+    ". . . . . . . "
+    "img_vnalichii . description_tovar . otsutsv_kolvo_tovar . . ";
+  }
+  .otsutsv_tovar .description_tovar_title{
+    max-width: 300px;
+  }
+  .img_otsutsv{
+    grid-area: img_vnalichii;
+    align-items: center;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 72px;
+    grid-template-rows: min-content;
+    grid-template-areas:
+     "img_vnalichii";
   }
   .otsutsv_kolvo_tovar {
     grid-area: otsutsv_kolvo_tovar;
@@ -328,9 +340,9 @@ body {
     border-radius: 16px;
     grid-area: sposob_dostavki;
     display: grid;
-    padding: 16px 16px 24px 16px;
+    padding: 24px 24px 24px 24px;
     grid-template-columns: auto;
-    grid-template-rows: 28px 8px auto 24px auto;
+    grid-template-rows: 28px 16px min-content 24px min-content;
     grid-template-areas:
     "sposob_dostavki_title"
     "."
@@ -353,33 +365,30 @@ body {
   .containerForIzmenit{
     padding: 5px 0px 0px 0px;
     gap: 8px;
+    padding: 7px 0px 0px 0px;
   }
   .izmenit{
     line-height: 24px;
     font-size: 16px;
     font-weight: 700;
     text-align: right;
+
   }
   .sposob_dostavki_delivery{
     grid-area: sposob_dostavki_delivery;
     display: grid;
     row-gap: 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto max-content 16px auto auto 16px auto  12px auto 24px auto 12px auto;
+    column-gap: 32px;
+    grid-template-columns: 153px auto;
+    grid-template-rows: min-content 16px min-content 16px min-content 16px min-content;
     grid-template-areas:
-   "punktV"
-   "idAdressDeliveryOfPost"
-   "."
-   "stoimost"
-   "besplatno"
-    "."
-   "date1"
-    "."
-   "idSmallTovary"
-    "."
-   "date2"
-    "."
-  "idContainerSmallTovary8";
+   "punktV idAdressDeliveryOfPost"
+    ". ."
+   "stoimost besplatno"
+    ". ."
+   "date1 idSmallTovary"
+    ". ."
+   "date2 idContainerSmallTovary8";
   }
   #punktV{
     grid-area: punktV;
@@ -444,7 +453,6 @@ body {
   }
   .strokaInfoOtkaz{
     border-radius: 8px;
-    padding: 8px 8px 12px 8px;
     display: flex;
     grid-area: strokaInfoOtkaz;
     gap: 8px;
@@ -465,9 +473,9 @@ body {
     background-color: #ffffff;
     border-radius: 16px;
     display: grid;
-    padding: 16px 16px 24px 16px;
+    padding: 16px 24px 24px 24px;
     grid-template-columns: 1fr;
-    grid-template-rows: 28px 8px 24px 8px 16px;
+    grid-template-rows: 28px 16px 24px 8px 16px;
     grid-template-areas:
    "sposob_oplaty_title"
     "."
@@ -479,6 +487,11 @@ body {
     grid-area: sposob_oplaty_title;
     justify-content: space-between;
     display: flex;
+
+  }
+  .sposob_oplaty_title .zagalovki{
+    line-height: 32px;
+    font-size: 24px;
   }
   .cartMir{
     grid-area: cartMir;

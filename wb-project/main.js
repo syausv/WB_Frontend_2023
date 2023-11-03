@@ -9,13 +9,34 @@ document.querySelector('#app').innerHTML = `
   <div class="menu">
   
   <div class="menu_icon">
-  <object class="menu_action_icon"  type="image/svg+xml" data="src/icons/bar.svg" id="svg4442"></object>
+  <object style="display: none" class="menu_action_icon"  type="image/svg+xml" data="src/icons/bar.svg" id="svg4442"></object>
+   <object  class="menu_action_icon"  type="image/svg+xml" data="src/icons/3.svg" id="svg4442"></object>
 </div>
   <div class="logo_icon">
-  Товары и точка
+  товары и точка
 </div>
-  <div class="menu_search">
-  <object class="action_icon"  type="image/svg+xml" data="src/icons/search.svg" id="svg4442"></object>
+ <form role="search" id="formSearch">
+         <input type="search" id="query" name="q"
+          placeholder="Я ищу..."
+           aria-label="Search through site content">
+            <button id="searchBtn">
+              <svg id="idSvgSearch" viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+              </button>
+              </form>
+  <div class="menu_search" >
+  <object   type="image/svg+xml" data="src/icons/search.svg" id="svg4442"></object>
+</div>
+
+<div class="menu_profile_cart">
+ <div id="menu_profile">
+  <object class="menu_icons"  type="image/svg+xml" data="src/icons/profilicon.svg" id="svg4442"></object>
+  <div class="label_menu">Профиль</div>
+</div>
+ <div id="menu_cart">
+  <object class="menu_icons"  type="image/svg+xml" data="src/icons/korzina.svg" id="svg4442"></object>
+  <div class="label_menu">Корзина</div>
+</div>
+
 </div>
 
   
@@ -26,7 +47,7 @@ document.querySelector('#app').innerHTML = `
   <div class="h_korzina">Корзина</div>
   <div class="vnalichii">
       <div class="vyborVse"><div class="vyborVseInput">
-      <input class="checked_vybor_vse" id="vyborCheck" type="checkbox" />
+      <input class="checked_vybor_vse" id="vyborCheck" type="checkbox" checked/>
     <label for="vyborCheck">Выбрать все</label>
 </div>
 <div>icon</div>

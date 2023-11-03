@@ -42,9 +42,9 @@ document.querySelector('#app').innerHTML = `
    
    </div>
   <div class="sumFromSumAndCount">
-                  <div>522</div>
-                  <div>сом</div> 
-              <div><s>1051 сом</s></div>
+                  <div class="cena_sumFromSumAndCount">522</div>
+                  <div class="val_sumFromSumAndCount">сом</div> 
+              <div class="old_sumFromSumAndCount"><s>1051 сом</s></div>
             </div>
   <div class="description_tovar">
    <div  class="description_tovar_title"> Футболка UZcotton мужская</div>
@@ -80,9 +80,9 @@ document.querySelector('#app').innerHTML = `
    
     </div>
   <div class="sumFromSumAndCount">
-                  <div>522</div>
-                  <div>сом</div> 
-              <div><s>1051 сом</s></div>
+                  <div id="id_cena_sumFromSumAndCount1" class="cena_sumFromSumAndCount">2 100 047</div>
+                  <div class="val_sumFromSumAndCount">сом</div> 
+              <div class="old_sumFromSumAndCount"><s>2 300 047 сом</s></div>
             </div>
   <div class="description_tovar">
    <div  class="description_tovar_title"> Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
@@ -121,9 +121,9 @@ document.querySelector('#app').innerHTML = `
   
   </div>
   <div class="sumFromSumAndCount">
-                  <div>522</div>
-                  <div>сом</div> 
-              <div><s>1051 сом</s></div>
+                  <div class="cena_sumFromSumAndCount">494</div>
+                  <div class="val_sumFromSumAndCount">сом</div> 
+              <div class="old_sumFromSumAndCount"><s>950 сом</s></div>
             </div>
   <div class="description_tovar">
    <div class="description_tovar_title"> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
@@ -341,8 +341,8 @@ document.querySelector('#app').innerHTML = `
             
    <object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg47"> </object> 
             </div>
-           <div id="idGorod" class="class13px"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
-           <div id="idDataDost" class="class13px" style="text-decoration: underline dotted; color: #CB11AB">5–8 фев </div>
+           <div id="idGorod"> Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+           <div id="idDataDost">5–8 фев </div>
           </div>
      <div class="strokaInfoOtkaz" id="dostavka_strokaInfoOtkaz">
        
@@ -352,7 +352,7 @@ document.querySelector('#app').innerHTML = `
        </div>   
    <div class="itog_oplata"> 
       <div class="itog_oplata_title">
-           <div> Оплата картой</div>
+           <div id="itog_oplata_title"> Оплата картой</div>
    <div class="cartMir">
          <div class="cartMir_icon"> 
            <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg33"> </object> 

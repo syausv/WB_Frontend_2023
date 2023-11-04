@@ -23,7 +23,902 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1920px) {
+
+  .container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 112px auto 88px;
+    grid-template-areas:
+    "nav"
+    "content"
+    "footer";
+  }
+  nav{
+    grid-area: nav;
+    display: grid;
+    background-color: #6725A8;
+  }
+  .menu{
+    padding: 0px 3px 0px 24px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 48px 16px 106px 32px auto 32px 170px;
+    grid-template-rows: 88px;
+    grid-template-areas:
+    "menu_icon . logo_icon . formSearch . menu_profile_cart";
+  }
+  .menu_icon{
+    grid-area: menu_icon;
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 8px;
+    border: solid 1px;
+    border-color: #FFFFFF73;
+    width: 48px;
+    height: 48px;
+  }
+  .menu_action_icon{
+    display: inline-block;
+
+  }
+  .logo_icon{
+    grid-area: logo_icon;
+    display: grid;
+    justify-content: center;
+    vertical-align: center;
+    text-align: start;
+    line-height: 24px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+  }
+  .menu_profile_cart{
+    grid-area: menu_profile_cart;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 17px 0px 0px;
+  }
+  #menu_profile{
+    width: 56px;
+    height: 56px;
+    display: grid;
+    gap: 4px;
+    color: #FFFFFF;
+  }
+  #menu_cart{
+    width: 56px;
+    height: 56px;
+    display: grid;
+    gap: 4px;
+    margin-top: -5px;
+    color: #FFFFFF;
+  }
+  .label_menu{
+    line-height: 16px;
+  }
+  .menu_icons{
+    display: flex;
+    justify-self: center;
+  }
+  #searchBtn {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  .menu_search{
+    display: none;
+  }
+  #formSearch {
+    grid-area: formSearch;
+    height: 56px; width: 100%;
+    background-color: #FFFFFF33;
+    height: 48px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #query {
+    display: flex;
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+  #query::placeholder {
+    color: #fff;
+    opacity: 0.7;
+    font-family: "SegoeUIRegular";
+  }
+  #idSvgSearch {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+  }
+
+  .content{
+    display: grid;
+    grid-area: content;
+    column-gap: 32px;
+    position: relative;
+    padding: 0px 24px 16px 24px;
+    border-radius: 24px 24px 0px 0px;
+    grid-template-columns: 1fr 429px;
+    grid-template-rows: 28px 36px 516px 40px auto 32px auto 16px 136px 16px 216px;
+    grid-template-areas:
+    "h_korzina itog"
+    ". itog"
+    "vnalichii itog"
+    ". ."
+    "otsutsv ."
+    ". ."
+    "sposob_dostavki ."
+    ". ."
+    "sposob_oplaty ."
+    ". ."
+    "poluchatel .";
+  }
+  .h_korzina{
+    grid-area: h_korzina;
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .vnalichii{
+    grid-area: vnalichii;
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 24px auto;
+    grid-template-areas:
+      "vyborVse"
+      "tovary";
+  }
+  .vyborVse{
+    grid-area: vyborVse;
+    display: flex;
+    justify-content: space-between;
+  }
+  .vyborVseInput{
+    display: flex;
+  }
+  .checked_vybor_vse{
+    width: 22px;
+    height: 22px;
+  }
+  .vyborVseInput label{
+    margin-left: 11px;
+  }
+  .tovary{
+    grid-area: tovary;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    "tovar1"
+    "tovar2"
+    "tovar3";
+  }
+  #tovar1{
+    grid-area: tovar1;
+  }
+  #tovar2{
+    grid-area: tovar2;
+  }
+  #tovar3{
+    grid-area: tovar3;
+  }
+  .tovar{
+    display: grid;
+    grid-template-columns: 106px 16px auto auto 100px 16px 110px;
+    grid-template-rows: 1px 12px max-content;
+    grid-template-areas:
+    "hr hr hr hr hr hr hr"
+    ". . . . . . ."
+    "img_vnalichii . description_tovar . kolvo_tovar . sumFromSumAndCount";
+  }
+  .hr{
+    grid-area: hr;
+  }
+  #tovar2 .hr, #tovar3 .hr{
+    display: none;
+  }
+  .img_vnalichii{
+    grid-area: img_vnalichii;
+    align-items: center;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 22px 72px;
+    grid-template-rows: min-content;
+    grid-template-areas:
+    "checkedColor img_vnalichii";
+  }
+
+  .sumFromSumAndCount{
+    grid-area: sumFromSumAndCount;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 24px;
+    grid-template-rows:  min-content min-content;
+    grid-template-areas:
+    "cena_sumFromSumAndCount val_sumFromSumAndCount"
+    "old_sumFromSumAndCount old_sumFromSumAndCount";
+  }
+  .cena_sumFromSumAndCount{
+    grid-area: cena_sumFromSumAndCount;
+    display: flex;
+    justify-content: end;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #id_cena_sumFromSumAndCount1{
+    font-size: 16px;
+  }
+  .val_sumFromSumAndCount{
+    grid-area: val_sumFromSumAndCount;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .old_sumFromSumAndCount{
+    grid-area: old_sumFromSumAndCount;
+    display: flex;
+    justify-content: end;
+    font-size: 13px;
+    color: #9797AF;
+  }
+  .description_tovar{
+    grid-area: description_tovar;
+    display: grid;
+    font-size: 14px;
+    gap: 8px;
+    grid-template-rows: min-content min-content min-content;
+  }
+  .description_tovar_spec{
+    display: flex;
+    line-height: 16px;
+    font-size: 13px;
+    gap: 4px;
+  }
+  .description_tovar_spec_punkt{
+    display: grid;
+    line-height: 16px;
+    font-size: 13px;
+    gap: 4px;
+  }
+  .description_tovar_title{
+    max-width: 275px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .description_tovar_spec_punkt {
+    color: #9797AF;
+  }
+
+  .kolvo_tovar{
+    grid-area: kolvo_tovar;
+    display: grid;
+    justify-content: space-between;
+    gap: 8px;
+    grid-template-rows: min-content min-content min-content;
+  }
+  .tovar_ostatki{
+    display: flex;
+    font-size: 13px;
+    line-height: 16px;
+    color: #F55123;
+    align-items: center;
+  }
+  .icons{
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+  }
+  .action_icon_container{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+  .action_icon{
+    height: 20px;
+  }
+  .button-card-wrapper{
+    height: 44px;
+    width: 100px;
+    display: flex;
+  }
+
+  .button-card-wrapper .subtract{
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .button-card-wrapper .add{
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .button-card-wrapper .subtract,
+  .button-card-wrapper .add{
+    border: none;
+    padding: 6px;
+    font-size: 20px;
+    transition: .2s linear;
+  }
+
+  .js-number{
+    width: 32px;
+    text-align: center;
+    background-color: #EFEFEF;
+    border: none;
+    font-size: 14px;
+  }
+
+  .button-card-wrapper .subtract:hover,
+  .button-card-wrapper .add:hover{
+    cursor: pointer;
+    transition: .2s linear;
+    background-color: #d3d3d3;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  .img_vnalichii_image{
+    width: 72px;
+    height: 96px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+    border-radius: 8px;
+  }
+  .otsutsv{
+    grid-area: otsutsv;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 24px auto;
+    grid-template-areas:
+      "otsutsv_text"
+      "otsutsv_tovary";
+  }
+  .otsutsv_text {
+    display: flex;
+    grid-area: otsutsv_text;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+  .otsutsv_tovary{
+    grid-area: otsutsv_tovary;
+    display: grid;
+    gap: 16px;
+    grid-template-rows: min-content min-content min-content;
+  }
+  .otsutsv_tovar{
+    display: grid;
+    grid-template-columns: 72px 16px 309px auto 100px auto 110px;
+    grid-template-rows: 1px 12px max-content;
+    grid-template-areas:
+    "hr hr hr hr hr hr hr"
+    ". . . . . . . "
+    "img_vnalichii . description_tovar . otsutsv_kolvo_tovar . . ";
+  }
+  .otsutsv_tovar .description_tovar_title{
+    max-width: 300px;
+  }
+  .img_otsutsv{
+    grid-area: img_vnalichii;
+    align-items: center;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 72px;
+    grid-template-rows: min-content;
+    grid-template-areas:
+     "img_vnalichii";
+  }
+  .otsutsv_kolvo_tovar {
+    grid-area: otsutsv_kolvo_tovar;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .sposob_dostavki{
+    background-color: #ffffff;
+    border-radius: 16px;
+    grid-area: sposob_dostavki;
+    display: grid;
+    padding: 24px 24px 24px 24px;
+    grid-template-columns: auto;
+    grid-template-rows: 28px 16px min-content 24px min-content;
+    grid-template-areas:
+    "sposob_dostavki_title"
+    "."
+    "sposob_dostavki_delivery"
+    "."
+   "strokaInfoOtkaz";
+  }
+  .sposob_dostavki_title {
+    grid-area: sposob_dostavki_title;
+    display: flex;
+    justify-content: space-between;
+  }
+  .zagalovki{
+    display: flex;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: space-between;
+  }
+  .containerForIzmenit{
+    padding: 5px 0px 0px 0px;
+    gap: 8px;
+    padding: 7px 0px 0px 0px;
+  }
+  .izmenit{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    color: #CB11AB;
+
+  }
+  .sposob_dostavki_delivery{
+    grid-area: sposob_dostavki_delivery;
+    display: grid;
+    row-gap: 0px;
+    column-gap: 32px;
+    grid-template-columns: 153px auto;
+    grid-template-rows: min-content 16px min-content 16px min-content 16px min-content;
+    grid-template-areas:
+   "punktV idAdressDeliveryOfPost"
+    ". ."
+   "stoimost besplatno"
+    ". ."
+   "date1 idSmallTovary"
+    ". ."
+   "date2 idContainerSmallTovary8";
+  }
+  #punktV{
+    grid-area: punktV;
+    font-weight: 600;
+  }
+  #idAdressDeliveryOfPost{
+    grid-area: idAdressDeliveryOfPost;
+    display: grid;
+    gap: 4px;
+  }
+  #idInfoRaitingPost{
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+  }
+  .rating{
+    display: flex;
+    gap: 4px;
+  }
+  .line_height_dostavka{
+    line-height: 24px;
+  }
+  #stoimost{
+    grid-area: stoimost;
+    font-weight: 600;
+  }
+  #besplatno{
+    grid-area: besplatno;
+  }
+  #date1{
+    grid-area: date1;
+    font-weight: 600;
+  }
+  #idSmallTovary{
+    grid-area: idSmallTovary;
+  }
+  #date2{
+    grid-area: date2;
+    font-weight: 600;
+  }
+  #idContainerSmallTovary8{
+    grid-area: idContainerSmallTovary8;
+  }
+  .containerSmallTovary6{
+    display: flex;
+    height: 56px;
+    gap: 8px;
+  }
+  #picSmall1{
+    grid-area: picSmall1;
+  }
+  #picSmall2{
+    grid-area: picSmall2;
+  }
+  #picSmall3{
+    grid-area: picSmall3;
+  }
+  #idBesplat{
+    display: inline-block;
+    color:#0CB477;
+    text-decoration: underline dotted;
+  }
+  .strokaInfoOtkaz{
+    border-radius: 8px;
+    display: flex;
+    grid-area: strokaInfoOtkaz;
+    gap: 8px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+  #dostavka_strokaInfoOtkaz{
+    background-color: #F0ECF4;
+    padding: 8px 8px 12px 8px;
+  }
+  #idSber2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sposob_oplaty{
+    grid-area: sposob_oplaty;
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: grid;
+    padding: 16px 24px 24px 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 32px 16px 24px 8px 16px;
+    grid-template-areas:
+   "sposob_oplaty_title"
+    "."
+    "cartMir"
+    "."
+    "cartMir_text";
+  }
+  .sposob_oplaty_title{
+    grid-area: sposob_oplaty_title;
+    justify-content: space-between;
+    display: flex;
+
+  }
+  .sposob_oplaty_title .zagalovki{
+    line-height: 32px;
+    font-size: 24px;
+  }
+  .cartMir{
+    grid-area: cartMir;
+    display: flex;
+    gap: 8px;
+  }
+  .cartMir_numbers{
+    grid-area: cartMir_numbers;
+    display: flex;
+    font-size: 13px;
+    gap: 12px;
+    line-height: 24px;
+  }
+  .cartMir_text{
+    grid-area: cartMir_text;
+    display: flex;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .poluchatel{
+    grid-area: poluchatel;
+    background-color: #ffffff;
+    border-radius: 16px;
+    row-gap: 16px;
+    padding: 16px 24px 24px 24px;
+    display: grid;
+  }
+  .poluchatel .zagalovki{
+    line-height: 32px;
+    font-size: 24px;
+  }
+  .classAnketa{
+    display: grid;
+    column-gap: 16px;
+    width: 700px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 64px 64px;
+    grid-template-areas:
+    "name_input name_input name_input surname_input surname_input surname_input"
+    "email_input email_input phone_input phone_input innNumb_input innNumb_input";
+  }
+  #name_input {
+    grid-area: name_input;
+  }
+  #surname_input {
+    grid-area: surname_input;
+  }
+  #innNumb_input {
+    grid-area: innNumb_input;
+  }
+  #email_input {
+    grid-area: email_input;
+  }
+  #phone_input {
+    grid-area: phone_input;
+  }
+  #innNumb_input {
+    grid-area: innNumb_input;
+  }
+
+  .text-field_floating-3 {
+    position: relative;
+  }
+  input#idVyborCheck{
+    border-radius: 8px;
+    border-style: solid;
+  }
+  .checkedColor{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 8px;
+    position: static;
+  }
+  .checkedColor:checked{
+    accent-color: #CB11AB;
+  }
+  .greyText{
+    color:#9797AF;
+  }
+
+  .text-field_floating-3 .text-field__input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+    border-radius: 0;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+    padding: 1rem 0rem 0.5rem;
+    background-color: transparent ;
+  }
+
+  .text-field_floating-3 .text-field__input:focus {
+    outline: 0;
+    border-bottom: 1px solid #9797AF;
+    box-shadow: none;
+    background-color: #eee;
+  }
+
+  .text-field_floating-3 .text-field__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem 0.75rem 0rem 0rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: color .15s ease-in-out, transform .15s ease-in-out;
+    color: #9797AF;
+  }
+
+  .text-field_floating-3 .text-field__input::-moz-placeholder {
+    color: transparent;
+
+  }
+
+  .text-field_floating-3 .text-field__input::placeholder {
+    color: transparent;
+  }
+
+  .text-field_floating-3 .text-field__input:focus,
+  .text-field_floating-3 .text-field__input:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0rem;
+    border-bottom: 1px solid #03a9f4;
+    font-size: 16px;
+  }
+
+  .text-field_floating-3 .text-field__input:focus~.text-field__label,
+  .text-field_floating-3 .text-field__input:not(:placeholder-shown)~.text-field__label {
+    transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .itog {
+    grid-area: itog;
+    padding: 16px 24px 24px 24px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    display: grid;
+    margin-top: -12px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 113px 24px 65px 12px 52px 24px 52px 12px 66px 24px 44px 12px 48px ;
+    grid-template-areas:
+      "itog_cena"
+      "."
+      "itog_dostavka"
+      "."
+      "strokaInfoOtkaz"
+      "."
+      "itog_oplata"
+      "."
+      "itog_spisatOplatu"
+      "."
+      "button_zakaz"
+      "."
+      "itog_soglashenie";
+
+  }
+  .itog_cena{
+    grid-area: itog_cena;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: "itog_cena_zagalovki"
+    "itog_rasschet";
+  }
+  #itog_cena_zagalovki{
+    grid-area: itog_cena_zagalovki;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .itog_rasschet{
+    grid-area: itog_rasschet;
+    line-height: 24px;
+  }
+  .itog_rasschet_sum{
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .itog_dostavka{
+    grid-area: itog_dostavka;
+    display: grid;
+    gap: 4px;
+  }
+  #idGorod{
+    font-size: 13px;
+    line-height: 16px;
+  }
+  #idDataDost{
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline dotted;
+    color: #CB11AB;
+  }
+  .itog_dostavka_title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .strokaInfoOtkaz{
+    grid-area: strokaInfoOtkaz;
+  }
+  .itog_oplata{
+    grid-area: itog_oplata;
+    display: grid;
+  }
+  .itog_oplata_title{
+    display: grid;
+    gap: 4px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "itog_oplata_title"
+    "cartMir";
+  }
+  #itog_oplata_title{
+    grid-area: itog_oplata_title;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  #cartMir{
+    grid-area: cartMir;
+  }
+  .itog_spisatOplatu{
+    border-radius: 8px;
+    background-color: #F0ECF4;
+    display: grid;
+    grid-area: itog_spisatOplatu;
+    line-height: 16px;
+    font-size: 13px;
+    padding: 8px 8px 12px 8px;
+  }
+  .itog_srazy{
+    display: flex;
+    gap: 8px;
+
+    line-height: 16px;
+  }
+  #itog_srazy_checkbox{
+    width: 22px;
+    height: 22px;
+  }
+  #itog_spisatOplatu_label{
+    display: inline-block;
+    line-height: 16px;
+  }
+  #button_zakaz{
+    grid-area: button_zakaz;
+    color: #FFFFFF;
+    width: 100%;
+    height: 44px;
+    background: #CB11AB;
+    padding: 10px 32px 10px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .itog_soglashenie{
+    gap: 8px;
+    grid-area: itog_soglashenie;
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+
+  footer{
+    background-color: #6725A8;
+    grid-area: footer;
+
+  }
+  .footer_description{
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    padding: 20px;
+    color: #FFFFFFB2;
+    line-height: 16px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .tabbar{
+    grid-area: tabbar;
+    bottom: 0px;
+    position: sticky;
+    display:none;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "iconHome iconSearch iconBag iconFav iconProfile";
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 56px;
+    grid-area: tabbar;
+  }
+  .scruglenie{
+    height: 24px;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #F6F6FA;
+  }
+  .scruglenie2{
+    height: 24px;
+    border-radius: 0px 0px 24px 24px;
+    background-color: #F6F6FA;
+  }
+
+
+}
+@media screen and (max-width: 1399px) {
+
   .container{
     display: grid;
     gap: 10px;
@@ -301,7 +1196,7 @@ body {
   }
   .description_tovar_title{
     max-width: 275px;
-   line-height: 24px;
+    line-height: 24px;
     font-size: 16px;
   }
   .description_tovar_spec_punkt {
@@ -912,6 +1807,900 @@ body {
     background-color: #F6F6FA;
   }
 
+
+}
+@media screen and (max-width: 1024px) {
+  .container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 112px auto 88px;
+    grid-template-areas:
+    "nav"
+    "content"
+    "footer";
+  }
+  nav{
+    grid-area: nav;
+    display: grid;
+    background-color: #6725A8;
+  }
+  .menu{
+    padding: 0px 3px 0px 24px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 48px 16px 106px 32px auto 32px 170px;
+    grid-template-rows: 88px;
+    grid-template-areas:
+    "menu_icon . logo_icon . formSearch . menu_profile_cart";
+  }
+  .menu_icon{
+    grid-area: menu_icon;
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 8px;
+    border: solid 1px;
+    border-color: #FFFFFF73;
+    width: 48px;
+    height: 48px;
+  }
+  .menu_action_icon{
+    display: inline-block;
+
+  }
+  .logo_icon{
+    grid-area: logo_icon;
+    display: grid;
+    justify-content: center;
+    vertical-align: center;
+    text-align: start;
+    line-height: 24px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+  }
+  .menu_profile_cart{
+    grid-area: menu_profile_cart;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 17px 0px 0px;
+  }
+  #menu_profile{
+    width: 56px;
+    height: 56px;
+    display: grid;
+    gap: 4px;
+    color: #FFFFFF;
+  }
+  #menu_cart{
+    width: 56px;
+    height: 56px;
+    display: grid;
+    gap: 4px;
+    margin-top: -5px;
+    color: #FFFFFF;
+  }
+  .label_menu{
+    line-height: 16px;
+  }
+  .menu_icons{
+    display: flex;
+    justify-self: center;
+  }
+  #searchBtn {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  .menu_search{
+    display: none;
+  }
+  #formSearch {
+    grid-area: formSearch;
+    height: 56px; width: 100%;
+    background-color: #FFFFFF33;
+    height: 48px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #query {
+    display: flex;
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+  #query::placeholder {
+    color: #fff;
+    opacity: 0.7;
+    font-family: "SegoeUIRegular";
+  }
+  #idSvgSearch {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+  }
+
+  .content{
+    display: grid;
+    grid-area: content;
+    column-gap: 32px;
+    position: relative;
+    padding: 0px 24px 16px 24px;
+    border-radius: 24px 24px 0px 0px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 28px 36px 516px 40px auto 32px auto 16px 136px 16px 216px;
+    grid-template-areas:
+    "h_korzina itog"
+    ". itog"
+    "vnalichii itog"
+    ". ."
+    "otsutsv ."
+    ". ."
+    "sposob_dostavki ."
+    ". ."
+    "sposob_oplaty ."
+    ". ."
+    "poluchatel .";
+  }
+  .h_korzina{
+    grid-area: h_korzina;
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .vnalichii{
+    grid-area: vnalichii;
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 24px auto;
+    grid-template-areas:
+      "vyborVse"
+      "tovary";
+  }
+  .vyborVse{
+    grid-area: vyborVse;
+    display: flex;
+    justify-content: space-between;
+  }
+  .vyborVseInput{
+    display: flex;
+  }
+  .checked_vybor_vse{
+    width: 22px;
+    height: 22px;
+  }
+  .vyborVseInput label{
+    margin-left: 11px;
+  }
+  .tovary{
+    grid-area: tovary;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+    "tovar1"
+    "tovar2"
+    "tovar3";
+  }
+  #tovar1{
+    grid-area: tovar1;
+  }
+  #tovar2{
+    grid-area: tovar2;
+  }
+  #tovar3{
+    grid-area: tovar3;
+  }
+  .tovar{
+    display: grid;
+    grid-template-columns: 106px 16px auto auto 100px 16px 110px;
+    grid-template-rows: 1px 12px max-content;
+    grid-template-areas:
+    "hr hr hr hr hr hr hr"
+    ". . . . . . ."
+    "img_vnalichii . description_tovar . kolvo_tovar . sumFromSumAndCount";
+  }
+  .hr{
+    grid-area: hr;
+  }
+  #tovar2 .hr, #tovar3 .hr{
+    display: none;
+  }
+  .img_vnalichii{
+    grid-area: img_vnalichii;
+    align-items: center;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 22px 72px;
+    grid-template-rows: min-content;
+    grid-template-areas:
+    "checkedColor img_vnalichii";
+  }
+
+  .sumFromSumAndCount{
+    grid-area: sumFromSumAndCount;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 24px;
+    grid-template-rows:  min-content min-content;
+    grid-template-areas:
+    "cena_sumFromSumAndCount val_sumFromSumAndCount"
+    "old_sumFromSumAndCount old_sumFromSumAndCount";
+  }
+  .cena_sumFromSumAndCount{
+    grid-area: cena_sumFromSumAndCount;
+    display: flex;
+    justify-content: end;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #id_cena_sumFromSumAndCount1{
+    font-size: 16px;
+  }
+  .val_sumFromSumAndCount{
+    grid-area: val_sumFromSumAndCount;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .old_sumFromSumAndCount{
+    grid-area: old_sumFromSumAndCount;
+    display: flex;
+    justify-content: end;
+    font-size: 13px;
+    color: #9797AF;
+  }
+  .description_tovar{
+    grid-area: description_tovar;
+    display: grid;
+    font-size: 14px;
+    gap: 8px;
+    grid-template-rows: min-content min-content min-content;
+  }
+  .description_tovar_spec{
+    display: flex;
+    line-height: 16px;
+    font-size: 13px;
+    gap: 4px;
+  }
+  .description_tovar_spec_punkt{
+    display: grid;
+    line-height: 16px;
+    font-size: 13px;
+    gap: 4px;
+  }
+  .description_tovar_title{
+    max-width: 275px;
+   line-height: 24px;
+    font-size: 16px;
+  }
+  .description_tovar_spec_punkt {
+    color: #9797AF;
+  }
+
+  .kolvo_tovar{
+    grid-area: kolvo_tovar;
+    display: grid;
+    justify-content: space-between;
+    gap: 8px;
+    grid-template-rows: min-content min-content min-content;
+  }
+  .tovar_ostatki{
+    display: flex;
+    font-size: 13px;
+    line-height: 16px;
+    color: #F55123;
+    align-items: center;
+  }
+  .icons{
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+  }
+  .action_icon_container{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+  .action_icon{
+    height: 20px;
+  }
+  .button-card-wrapper{
+    height: 44px;
+    width: 100px;
+    display: flex;
+  }
+
+  .button-card-wrapper .subtract{
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .button-card-wrapper .add{
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .button-card-wrapper .subtract,
+  .button-card-wrapper .add{
+    border: none;
+    padding: 6px;
+    font-size: 20px;
+    transition: .2s linear;
+  }
+
+  .js-number{
+    width: 32px;
+    text-align: center;
+    background-color: #EFEFEF;
+    border: none;
+    font-size: 14px;
+  }
+
+  .button-card-wrapper .subtract:hover,
+  .button-card-wrapper .add:hover{
+    cursor: pointer;
+    transition: .2s linear;
+    background-color: #d3d3d3;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  .img_vnalichii_image{
+    width: 72px;
+    height: 96px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+    border-radius: 8px;
+  }
+  .otsutsv{
+    grid-area: otsutsv;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 24px auto;
+    grid-template-areas:
+      "otsutsv_text"
+      "otsutsv_tovary";
+  }
+  .otsutsv_text {
+    display: flex;
+    grid-area: otsutsv_text;
+    justify-content: space-between;
+  }
+  .otsutsv_tovary{
+    grid-area: otsutsv_tovary;
+    display: grid;
+    gap: 16px;
+    grid-template-rows: min-content min-content min-content;
+  }
+  .otsutsv_tovar{
+    display: grid;
+    grid-template-columns: 72px 16px 309px auto 100px auto 110px;
+    grid-template-rows: 1px 12px max-content;
+    grid-template-areas:
+    "hr hr hr hr hr hr hr"
+    ". . . . . . . "
+    "img_vnalichii . description_tovar . otsutsv_kolvo_tovar . . ";
+  }
+  .otsutsv_tovar .description_tovar_title{
+    max-width: 300px;
+  }
+  .img_otsutsv{
+    grid-area: img_vnalichii;
+    align-items: center;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 72px;
+    grid-template-rows: min-content;
+    grid-template-areas:
+     "img_vnalichii";
+  }
+  .otsutsv_kolvo_tovar {
+    grid-area: otsutsv_kolvo_tovar;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .sposob_dostavki{
+    background-color: #ffffff;
+    border-radius: 16px;
+    grid-area: sposob_dostavki;
+    display: grid;
+    padding: 24px 24px 24px 24px;
+    grid-template-columns: auto;
+    grid-template-rows: 28px 16px min-content 24px min-content;
+    grid-template-areas:
+    "sposob_dostavki_title"
+    "."
+    "sposob_dostavki_delivery"
+    "."
+   "strokaInfoOtkaz";
+  }
+  .sposob_dostavki_title {
+    grid-area: sposob_dostavki_title;
+    display: flex;
+    justify-content: space-between;
+  }
+  .zagalovki{
+    display: flex;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: space-between;
+  }
+  .containerForIzmenit{
+    padding: 5px 0px 0px 0px;
+    gap: 8px;
+    padding: 7px 0px 0px 0px;
+  }
+  .izmenit{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+
+  }
+  .sposob_dostavki_delivery{
+    grid-area: sposob_dostavki_delivery;
+    display: grid;
+    row-gap: 0px;
+    column-gap: 32px;
+    grid-template-columns: 153px auto;
+    grid-template-rows: min-content 16px min-content 16px min-content 16px min-content;
+    grid-template-areas:
+   "punktV idAdressDeliveryOfPost"
+    ". ."
+   "stoimost besplatno"
+    ". ."
+   "date1 idSmallTovary"
+    ". ."
+   "date2 idContainerSmallTovary8";
+  }
+  #punktV{
+    grid-area: punktV;
+    font-weight: 600;
+  }
+  #idAdressDeliveryOfPost{
+    grid-area: idAdressDeliveryOfPost;
+    display: grid;
+    gap: 4px;
+  }
+  #idInfoRaitingPost{
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+  }
+  .rating{
+    display: flex;
+    gap: 4px;
+  }
+  .line_height_dostavka{
+    line-height: 24px;
+  }
+  #stoimost{
+    grid-area: stoimost;
+    font-weight: 600;
+  }
+  #besplatno{
+    grid-area: besplatno;
+  }
+  #date1{
+    grid-area: date1;
+    font-weight: 600;
+  }
+  #idSmallTovary{
+    grid-area: idSmallTovary;
+  }
+  #date2{
+    grid-area: date2;
+    font-weight: 600;
+  }
+  #idContainerSmallTovary8{
+    grid-area: idContainerSmallTovary8;
+  }
+  .containerSmallTovary6{
+    display: flex;
+    height: 56px;
+    gap: 8px;
+  }
+  #picSmall1{
+    grid-area: picSmall1;
+  }
+  #picSmall2{
+    grid-area: picSmall2;
+  }
+  #picSmall3{
+    grid-area: picSmall3;
+  }
+  #idBesplat{
+    display: inline-block;
+    color:#0CB477;
+    text-decoration: underline dotted;
+  }
+  .strokaInfoOtkaz{
+    border-radius: 8px;
+    display: flex;
+    grid-area: strokaInfoOtkaz;
+    gap: 8px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+  #dostavka_strokaInfoOtkaz{
+    background-color: #F0ECF4;
+    padding: 8px 8px 12px 8px;
+  }
+  #idSber2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sposob_oplaty{
+    grid-area: sposob_oplaty;
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: grid;
+    padding: 16px 24px 24px 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 32px 16px 24px 8px 16px;
+    grid-template-areas:
+   "sposob_oplaty_title"
+    "."
+    "cartMir"
+    "."
+    "cartMir_text";
+  }
+  .sposob_oplaty_title{
+    grid-area: sposob_oplaty_title;
+    justify-content: space-between;
+    display: flex;
+
+  }
+  .sposob_oplaty_title .zagalovki{
+    line-height: 32px;
+    font-size: 24px;
+  }
+  .cartMir{
+    grid-area: cartMir;
+    display: flex;
+    gap: 8px;
+  }
+  .cartMir_numbers{
+    grid-area: cartMir_numbers;
+    display: flex;
+    font-size: 13px;
+    gap: 12px;
+    line-height: 24px;
+  }
+  .cartMir_text{
+    grid-area: cartMir_text;
+    display: flex;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .poluchatel{
+    grid-area: poluchatel;
+    background-color: #ffffff;
+    border-radius: 16px;
+    row-gap: 16px;
+    padding: 16px 24px 24px 24px;
+    display: grid;
+  }
+  .poluchatel .zagalovki{
+    line-height: 32px;
+    font-size: 20px;
+  }
+  .classAnketa{
+    display: grid;
+    width: auto;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 64px 64px;
+    grid-template-areas:
+    "name_input name_input name_input surname_input surname_input surname_input"
+    "email_input email_input phone_input phone_input innNumb_input innNumb_input";
+  }
+  #name_input {
+    grid-area: name_input;
+  }
+  #surname_input {
+    grid-area: surname_input;
+  }
+  #innNumb_input {
+    grid-area: innNumb_input;
+  }
+  #email_input {
+    grid-area: email_input;
+  }
+  #phone_input {
+    grid-area: phone_input;
+  }
+  #innNumb_input {
+    grid-area: innNumb_input;
+  }
+
+  .text-field_floating-3 {
+    position: relative;
+  }
+  input#idVyborCheck{
+    border-radius: 8px;
+    border-style: solid;
+  }
+  .checkedColor{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 8px;
+    position: static;
+  }
+  .checkedColor:checked{
+    accent-color: #CB11AB;
+  }
+  .greyText{
+    color:#9797AF;
+  }
+
+  .text-field_floating-3 .text-field__input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+    border-radius: 0;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+    padding: 1rem 0rem 0.5rem;
+    background-color: transparent ;
+  }
+
+  .text-field_floating-3 .text-field__input:focus {
+    outline: 0;
+    border-bottom: 1px solid #9797AF;
+    box-shadow: none;
+    background-color: #eee;
+  }
+
+  .text-field_floating-3 .text-field__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem 0.75rem 0rem 0rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: color .15s ease-in-out, transform .15s ease-in-out;
+    color: #9797AF;
+  }
+
+  .text-field_floating-3 .text-field__input::-moz-placeholder {
+    color: transparent;
+
+  }
+
+  .text-field_floating-3 .text-field__input::placeholder {
+    color: transparent;
+  }
+
+  .text-field_floating-3 .text-field__input:focus,
+  .text-field_floating-3 .text-field__input:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0rem;
+    border-bottom: 1px solid #03a9f4;
+    font-size: 16px;
+  }
+
+  .text-field_floating-3 .text-field__input:focus~.text-field__label,
+  .text-field_floating-3 .text-field__input:not(:placeholder-shown)~.text-field__label {
+    transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .itog {
+    grid-area: itog;
+    padding: 16px 24px 24px 24px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    display: grid;
+    margin-top: -12px;
+    width: 304px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 113px 24px 81px 12px 52px 24px 52px 12px 66px 24px 44px 12px 48px ;
+    grid-template-areas:
+      "itog_cena"
+      "."
+      "itog_dostavka"
+      "."
+      "strokaInfoOtkaz"
+      "."
+      "itog_oplata"
+      "."
+      "itog_spisatOplatu"
+      "."
+      "button_zakaz"
+      "."
+      "itog_soglashenie";
+
+  }
+  .itog_cena{
+    grid-area: itog_cena;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: "itog_cena_zagalovki"
+    "itog_rasschet";
+  }
+  #itog_cena_zagalovki{
+    grid-area: itog_cena_zagalovki;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .itog_rasschet{
+    grid-area: itog_rasschet;
+    line-height: 24px;
+  }
+  .itog_rasschet_sum{
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .itog_dostavka{
+    grid-area: itog_dostavka;
+    display: grid;
+    gap: 4px;
+  }
+  #idGorod{
+    font-size: 13px;
+    line-height: 16px;
+  }
+  #idDataDost{
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline dotted;
+    color: #CB11AB;
+  }
+  .itog_dostavka_title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .strokaInfoOtkaz{
+    grid-area: strokaInfoOtkaz;
+  }
+  .itog_oplata{
+    grid-area: itog_oplata;
+    display: grid;
+  }
+  .itog_oplata_title{
+    display: grid;
+    gap: 4px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "itog_oplata_title"
+    "cartMir";
+  }
+  #itog_oplata_title{
+    grid-area: itog_oplata_title;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  #cartMir{
+    grid-area: cartMir;
+  }
+  .itog_spisatOplatu{
+    border-radius: 8px;
+    background-color: #F0ECF4;
+    display: grid;
+    grid-area: itog_spisatOplatu;
+    line-height: 16px;
+    font-size: 13px;
+    padding: 8px 8px 12px 8px;
+  }
+  .itog_srazy{
+    display: flex;
+    gap: 8px;
+
+    line-height: 16px;
+  }
+  #itog_srazy_checkbox{
+    width: 22px;
+    height: 22px;
+  }
+  #itog_spisatOplatu_label{
+    display: inline-block;
+    line-height: 16px;
+  }
+  #button_zakaz{
+    grid-area: button_zakaz;
+    color: #FFFFFF;
+    width: 100%;
+    height: 44px;
+    background: #CB11AB;
+    padding: 10px 32px 10px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .itog_soglashenie{
+    gap: 8px;
+    grid-area: itog_soglashenie;
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+
+  footer{
+    background-color: #6725A8;
+    grid-area: footer;
+
+  }
+  .footer_description{
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    padding: 20px;
+    color: #FFFFFFB2;
+    line-height: 16px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .tabbar{
+    grid-area: tabbar;
+    bottom: 0px;
+    position: sticky;
+    display:none;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "iconHome iconSearch iconBag iconFav iconProfile";
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 56px;
+    grid-area: tabbar;
+  }
+  .scruglenie{
+    height: 24px;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #F6F6FA;
+  }
+  .scruglenie2{
+    height: 24px;
+    border-radius: 0px 0px 24px 24px;
+    background-color: #F6F6FA;
+  }
+
+}
+@media screen and (max-width: 991px) {
 }
 @media screen and (max-width: 768px) {
   .container{
@@ -1505,6 +3294,8 @@ body {
   }
   #itog_cena_zagalovki{
     grid-area: itog_cena_zagalovki;
+    font-size: 20px;
+    line-height: 28px;
   }
   .itog_rasschet{
     grid-area: itog_rasschet;
@@ -1628,6 +3419,7 @@ body {
 @media screen and (max-width: 320px){
   .container{
     display: grid;
+    gap: 0px;
     grid-template-columns: 320px;
     grid-template-rows: 80px 2717.33px 88px 56px;
     grid-template-areas:
@@ -1663,6 +3455,7 @@ body {
     top: 4.75px;
     left: 2.75px;
   }
+
   .logo_icon{
     grid-area: logo_icon;
     display: grid;
@@ -1676,10 +3469,16 @@ body {
     display: grid;
     justify-content: center;
   }
+  #formSearch{
+    display: none;
+  }
+  .menu_profile_cart{
+    display: none;
+  }
   .content{
     display: grid;
     grid-area: content;
-    top: -10px;
+
     position: relative;
     padding: 0px;
 
@@ -1774,11 +3573,20 @@ body {
     font-size: 13px;
   }
   .description_tovar_title{
-
+    line-height: 20px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .description_tovar_spec_punkt {
     color: #9797AF;
   }
+  .description_tovar_spec #idThingSize, .ooo_description_tovar_spec_punkt{
+    display: none;
+  }
+
 
   .kolvo_tovar{
     grid-area: kolvo_tovar;
@@ -1856,10 +3664,15 @@ body {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
   }
   .img_vnalichii{
+    display: block;
     width: 80px;
     height: 106px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
     border-radius: 8px;
+  }
+  .img_vnalichii_image{
+    width: 80px;
+    height: 106px;
   }
   .otsutsv{
     grid-area: otsutsv;
@@ -1923,6 +3736,9 @@ body {
     font-size: 20px;
     font-weight: 700;
     justify-content: space-between;
+  }
+  .sposob_oplaty_title .zagalovki {
+    font-size: 20px;
   }
   .containerForIzmenit{
     padding: 5px 0px 0px 0px;
@@ -2078,6 +3894,7 @@ body {
     border-radius: 16px;
     padding: 16px 16px 24px 16px;
     display: grid;
+    gap: 8px;
   }
   .classAnketa{
     display: grid;
@@ -2109,6 +3926,7 @@ body {
 
   .text-field_floating-3 {
     position: relative;
+    padding-bottom: 0px;
   }
   input#idVyborCheck{
     border-radius: 8px;
@@ -2138,7 +3956,7 @@ body {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     line-height: 1.25;
-    padding: 1rem 0rem;
+    padding: 12px;
     background-color: transparent ;
   }
 
@@ -2154,7 +3972,7 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    padding: 1rem 0.75rem 0rem 0rem;
+
     pointer-events: none;
     border: 1px solid transparent;
     transform-origin: 0 0;
@@ -2188,7 +4006,9 @@ body {
   .itog {
     grid-area: itog;
     display: grid;
-
+    border: none;
+    width: 100%;
+    background-color: transparent;
     padding: 8px 16px 0px 16px;
     grid-template-columns: 1fr;
     grid-template-rows: auto 16px 52px 16px 66px 24px 44px auto 12px auto ;
@@ -2213,6 +4033,7 @@ body {
   }
   #itog_cena_zagalovki{
     grid-area: itog_cena_zagalovki;
+
   }
   .itog_rasschet{
     grid-area: itog_rasschet;

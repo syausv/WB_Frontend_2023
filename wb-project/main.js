@@ -10,7 +10,7 @@ document.querySelector('#app').innerHTML = `
   
   <div class="menu_icon">
   <object style="display: none" class="menu_action_icon"  type="image/svg+xml" data="src/icons/bar.svg" id="svg4442"></object>
-   <object  class="menu_action_icon"  type="image/svg+xml" data="src/icons/3.svg" id="svg4442"></object>
+   <object  class="menu_action_icon" id="desktop_menu_action_icon" type="image/svg+xml" data="src/icons/3.svg" id="svg4442"></object>
 </div>
   <div class="logo_icon">
   товары и точка
@@ -47,10 +47,11 @@ document.querySelector('#app').innerHTML = `
   <div class="h_korzina">Корзина</div>
   <div class="vnalichii">
       <div class="vyborVse"><div class="vyborVseInput">
-      <input class="checked_vybor_vse" id="vyborCheck" type="checkbox" checked/>
+      <input style="accent-color: #CB11AB; width: 22px;
+    height: 22px" id="vyborCheck" type="checkbox" checked/>
     <label for="vyborCheck">Выбрать все</label>
 </div>
-<div>icon</div>
+<div><object type="image/svg+xml" data="src/icons/spisok.svg" id="svg4442"></object></div>
 </div>
   <div class="tovary" >
   <div class="tovar" id="tovar1">
@@ -113,7 +114,7 @@ document.querySelector('#app').innerHTML = `
               </div>
 <div class="description_tovar_spec_punkt">
    <div>Коледино WB</div>
-   <div>OOO Мегапрофстиль</div>
+   <div class="ooo_description_tovar_spec_punkt">OOO Мегапрофстиль</div>
    </div>
     </div>
   <div class="kolvo_tovar">
@@ -176,7 +177,7 @@ document.querySelector('#app').innerHTML = `
   <div class="otsutsv">
    <div class="otsutsv_text">
    Отсутствуют · 3 товара 
-<div>icon</div>
+<div><div><object type="image/svg+xml" data="src/icons/spisok.svg" id="svg4442"></object></div></div>
 </div>
   <div class="otsutsv_tovary">
     <div class="otsutsv_tovar">

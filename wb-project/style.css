@@ -3421,7 +3421,15 @@ body {
     border-radius: 0px 0px 24px 24px;
     background-color: #F6F6FA;
   }
-
+  .description_tovar_spec, .tovar_ostatki, .class13px, .cartMir_text, .itog_soglashenie{
+    font-size: 13px;
+  }
+  #vyborCheck, .otsutsv_text, .sposob_dostavki_delivery, .cartMir_numbers, .classAnketa, .itog_rasschet, #button_zakaz{
+    font-size: 16px;
+  }
+  #itog_cena_zagalovki, .zagalovki, .h_korzina{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 320px){
@@ -4161,4 +4169,6 @@ body {
     border-radius: 0px 0px 24px 24px;
     background-color: #F6F6FA;
   }
+
+
 }

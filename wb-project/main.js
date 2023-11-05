@@ -369,7 +369,7 @@ document.querySelector('#app').innerHTML = `
      <div class="strokaInfoOtkaz" id="dostavka_strokaInfoOtkaz">
        
        <div id="idSber2"><object class="idSber2" type="image/svg+xml" data="src/icons/priceshipping.svg" id="svg"></object> </div>
-       <div id="idObratDostav2" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat"> бесплатно</div></div>
+       <div id="idObratDostav3" class="class13px" style="display: inline-block">Обратная доставка товаров на склад при отказе — <div id="idBesplat"> бесплатно</div></div>
     
        </div>   
    <div class="itog_oplata"> 

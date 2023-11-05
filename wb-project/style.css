@@ -426,7 +426,7 @@ body {
     grid-template-areas:
     "hr hr hr hr hr hr hr"
     ". . . . . . . "
-    "img_vnalichii . description_tovar . otsutsv_kolvo_tovar . . ";
+    "img_vnalichii . description_tovar . .otsutsv_kolvo_tovar . ";
   }
   .otsutsv_tovar .description_tovar_title{
     max-width: 300px;
@@ -749,6 +749,7 @@ body {
     border-radius: 16px;
     background-color: #FFFFFF;
     display: grid;
+    height: auto;
     margin-top: -12px;
     grid-template-columns: 1fr;
     grid-template-rows: 113px 24px 65px 12px 52px 24px 52px 12px 66px 24px 44px 12px 48px ;
@@ -2766,7 +2767,12 @@ body {
   .menu_profile_cart{
     display: none;
   }
-
+  #mobile_menu_action_icon{
+    display: inline-block;
+  }
+  #desktop_menu_action_icon{
+    display: none;
+  }
   .content{
     display: grid;
     grid-area: content;
@@ -3433,7 +3439,7 @@ body {
     border-radius: 0px 0px 24px 24px;
     background-color: #F6F6FA;
   }
-  .description_tovar_spec, .tovar_ostatki, .class13px, .cartMir_text, .itog_soglashenie{
+  .description_tovar_spec, .tovar_ostatki, .class13px, .cartMir_text, .itog_soglashenie, .description_tovar_spec_punkt{
     font-size: 13px;
   }
   #vyborCheck, .otsutsv_text, .sposob_dostavki_delivery, .cartMir_numbers, .classAnketa, .itog_rasschet, #button_zakaz, .cena_sumFromSumAndCount{

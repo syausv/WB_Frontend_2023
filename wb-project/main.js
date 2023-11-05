@@ -60,7 +60,7 @@ document.querySelector('#app').innerHTML = `
   </div>
   <div class="img_vnalichii"> 
   <input class="checkedColor" type="checkbox" checked/>
-   <img class="img_vnalichii_image" src="src/img/Frame38531.png"/> 
+   <img class="img_vnalichii_image" src="src/img/tshirts.png"/> 
    
    </div>
   <div class="sumFromSumAndCount">
@@ -98,7 +98,7 @@ document.querySelector('#app').innerHTML = `
   </div>
   <div class="img_vnalichii"> 
    <input class="checkedColor" type="checkbox" checked/>
-   <img class="img_vnalichii_image" src="src/img/Frame38531.png"/>
+   <img class="img_vnalichii_image" src="src/img/mobiles.png"/>
    
     </div>
   <div class="sumFromSumAndCount">
@@ -139,7 +139,7 @@ document.querySelector('#app').innerHTML = `
   </div>
   <div class="img_vnalichii">
   <input class="checkedColor" type="checkbox" checked/>
-    <img class="img_vnalichii_image" src="src/img/Frame38531.png"/>  
+    <img class="img_vnalichii_image" src="src/img/pencils.png"/>  
   
   </div>
   <div class="sumFromSumAndCount">

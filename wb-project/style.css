@@ -2733,6 +2733,7 @@ body {
     gap: 24px;
     width: 28px;
     height: 28px;
+    border: none;
   }
   .menu_action_icon{
     display: inline-block;
@@ -2755,6 +2756,13 @@ body {
     display: grid;
     justify-content: center;
   }
+  #formSearch{
+    display: none;
+  }
+  .menu_profile_cart{
+    display: none;
+  }
+
   .content{
     display: grid;
     grid-area: content;
@@ -3448,6 +3456,7 @@ body {
     gap: 24px;
     width: 28px;
     height: 28px;
+    border: none;
   }
   .menu_action_icon{
     display: inline-block;

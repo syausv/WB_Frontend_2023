@@ -374,7 +374,9 @@ document.querySelector('#app').innerHTML = `
        </div>   
    <div class="itog_oplata"> 
       <div class="itog_oplata_title">
-           <div id="itog_oplata_title"> Оплата картой</div>
+           <div id="itog_oplata_title"> Оплата картой
+           <object type="image/svg+xml" data="src/icons/icon-20.svg" id="svg472"> </object> 
+           </div>
    <div class="cartMir">
          <div class="cartMir_icon"> 
            <object type="image/svg+xml" data="src/icons/platSber.svg" id="svg33"> </object> 

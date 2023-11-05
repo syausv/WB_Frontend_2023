@@ -831,6 +831,8 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
+    display: flex;
+    justify-content: space-between;
   }
   #cartMir{
     grid-area: cartMir;
@@ -853,6 +855,8 @@ body {
   #itog_srazy_checkbox{
     width: 22px;
     height: 22px;
+    accent-color: #CB11AB;
+    background-color: transparent;
   }
   #itog_spisatOplatu_label{
     display: inline-block;

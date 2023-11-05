@@ -2940,11 +2940,19 @@ body {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
   }
+
   .img_vnalichii{
+    grid-area: img_vnalichii;
+    position: relative;
+    display: block;
     width: 80px;
     height: 106px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
     border-radius: 8px;
+  }
+  .img_vnalichii_image{
+    width: 80px;
+    height: 106px;
   }
   .otsutsv{
     grid-area: otsutsv;

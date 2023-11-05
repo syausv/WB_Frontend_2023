@@ -23,6 +23,15 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.old_sumFromSumAndCount{
+  text-decoration: underline dashed;
+}
+#idBesplat{
+  display: inline-block;
+  color:#0CB477;
+  text-decoration: underline dashed;
+}
+
 @media screen and (max-width: 1920px) {
 
   .container{
@@ -551,8 +560,6 @@ body {
   }
   #idBesplat{
     display: inline-block;
-    color:#0CB477;
-    text-decoration: underline dotted;
   }
   .strokaInfoOtkaz{
     border-radius: 8px;
@@ -1443,8 +1450,6 @@ body {
   }
   #idBesplat{
     display: inline-block;
-    color:#0CB477;
-    text-decoration: underline dotted;
   }
   .strokaInfoOtkaz{
     border-radius: 8px;
@@ -2334,8 +2339,6 @@ body {
   }
   #idBesplat{
     display: inline-block;
-    color:#0CB477;
-    text-decoration: underline dotted;
   }
   .strokaInfoOtkaz{
     border-radius: 8px;
@@ -3108,8 +3111,6 @@ body {
   }
   #idBesplat{
     display: inline-block;
-    color:#0CB477;
-    text-decoration: underline dotted;
   }
   .strokaInfoOtkaz{
     border-radius: 8px;
@@ -3435,12 +3436,13 @@ body {
   .description_tovar_spec, .tovar_ostatki, .class13px, .cartMir_text, .itog_soglashenie{
     font-size: 13px;
   }
-  #vyborCheck, .otsutsv_text, .sposob_dostavki_delivery, .cartMir_numbers, .classAnketa, .itog_rasschet, #button_zakaz{
+  #vyborCheck, .otsutsv_text, .sposob_dostavki_delivery, .cartMir_numbers, .classAnketa, .itog_rasschet, #button_zakaz, .cena_sumFromSumAndCount{
     font-size: 16px;
   }
   #itog_cena_zagalovki, .zagalovki, .h_korzina{
     font-size: 20px;
   }
+
 }
 
 @media screen and (max-width: 320px){
@@ -3501,6 +3503,12 @@ body {
     display: none;
   }
   .menu_profile_cart{
+    display: none;
+  }
+  #mobile_menu_action_icon{
+    display: inline-block;
+  }
+  #desktop_menu_action_icon{
     display: none;
   }
   .content{
@@ -3857,8 +3865,6 @@ body {
   }
   #idBesplat{
     display: inline-block;
-    color:#0CB477;
-    text-decoration: underline dotted;
   }
   .strokaInfoOtkaz{
     border-radius: 8px;

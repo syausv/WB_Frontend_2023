@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
   <div class="menu">
   
   <div class="menu_icon">
-  <object style="display: none" class="menu_action_icon"  type="image/svg+xml" data="src/icons/bar.svg" id="svg4442"></object>
+  <object style="display: none" class="menu_action_icon" id="mobile_menu_action_icon" type="image/svg+xml" data="src/icons/bar.svg" id="svg4442"></object>
    <object  class="menu_action_icon" id="desktop_menu_action_icon" type="image/svg+xml" data="src/icons/3.svg" id="svg4442"></object>
 </div>
   <div class="logo_icon">

@@ -1,34 +1,52 @@
-function animate(element, duration) {
-  // Получаем время начала анимации
-  let start = performance.now();
+// Функция для получения данных из формы
+function Form(form) {
+  const elements = form.elements;
+  const formData = {};
+  //Обходим все элементы формы и сохраняем их значения в объекте formData
+  for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    const elementName = element.name;
 
-  // Вызываем первую отрисовку шага анимации через requestAnimationFrame
-  requestAnimationFrame(function animateFrame(time) {
-    // Вычисляем временную долю анимации (от 0 до 1)
-    let timeFraction = (time - start) / duration;
-    if (timeFraction > 1) timeFraction = 1;
-
-    // Вычисляем состояние анимации на основе временной доли
-    let progress = timing(timeFraction);
-
-    // Отрисовываем новое состояние элемента на текущем шаге анимации
-    draw(progress);
-
-    // Если анимация еще не завершилась, вызываем следующий кадр анимации
-    if (timeFraction < 1) {
-      requestAnimationFrame(animateFrame);
+    if (elementName) {
+      //В зависимости от типа элемента собираем его значение
+      if (element.type === 'select-one' && element.options.length > 0) {
+        formData[elementName] = element.options[element.selectedIndex].value;
+      } else {
+        formData[elementName] = element.value;
+      }
     }
-  });
-
-  // Функция для определения, как будет изменяться анимация со временем
-  function timing(timeFraction) {
-    // Изменение анимации с квадратичным законом
-    return timeFraction ** 2;
   }
 
-  // Функция для вычисления текущего состояния элемента по значению прогресса анимации
-  function draw(progress) {
-    // Изменение масштаба элемента (от 1 до 2)
-    element.style.transform = `scale(${progress + 1})`;
+  return formData;
+}
+
+// Функция для отправки данных на сервер
+async function sendToServerData(data, url) {
+  // Опции для запроса, используя метод POST
+  const requestOptions = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  };
+
+  //Отправляем запрос на сервер
+  try {
+    const response = await fetch(url, requestOptions);
+    //Если нет ответа вывод ошибки
+    if (!response.ok) {
+      throw new Error('Ошибка при отправке данных на сервер');
+    }
+
+    return response.json();
+
+  } catch (error) {
+    return error;
   }
 }
+
+// Пример использования:
+const formData = Form(document.querySelector('#form'));
+const sendResult = await sendToServerData(formData, 'some-url');
+console.log(sendResult);
